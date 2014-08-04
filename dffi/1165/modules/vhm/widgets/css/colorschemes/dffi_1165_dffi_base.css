@@ -1,0 +1,129 @@
+@import url("//hello.myfonts.net/count/29ee55");
+@import url("vhrd_1169_buttons.css");
+
+@font-face {
+	font-family: 'SabonMT';
+	src: url('//static.vhmengine.com/fonts/MyFontsWebfontsKit/webfonts/29EAB5_0_0.eot');
+	src: local('☺'),
+		 url('//static.vhmengine.com/fonts/MyFontsWebfontsKit/webfonts/29EAB5_0_0.eot?#iefix') format('embedded-opentype'), 
+		 url('//static.vhmengine.com/fonts/MyFontsWebfontsKit/webfonts/29EAB5_0_0.woff') format('woff'), 
+		 url('//static.vhmengine.com/fonts/MyFontsWebfontsKit/webfonts/29EAB5_0_0.ttf') format('truetype');
+}
+
+/*body { background: #1a252e !important; }  FOR TESTING ONLY...REMOVE BEFORE PUBLISHING */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a, a.link, a:link, a:visited {
+	color: #c2f0f0;
+	text-decoration: underline;
+}
+a:hover, a.link:hover {
+	color: #33cccc;
+	text-decoration: none;
+}
+.widget {
+	background: none transparent /*#1A252E*/;
+	color: #ffffff;
+	padding: 0 0 18px;
+	font-family: "SabonMT", Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	line-height: 18px;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.widget * {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#shareEventFB, #shareEventTwitter, #shareEventGoogle {
+	top: 6px;
+}
+#shareEventTwitter {
+}
+
+div.widgetHeaderInfo {
+	background: none transparent;
+	color: #fff;
+}
+table.linksArea {
+	display: none;
+}
+div.row {
+	background: none transparent;
+	padding: 0 12px 0 6px;
+	margin: 6px 0;
+	position: relative;
+	box-shadow: 0 3px 3px #1A252E;
+	-moz-box-shadow: 0 3px 3px #1A252E;
+	-webkit-box-shadow: 0 3px 3px #1A252E;
+	overflow: hidden;
+}
+.itemInfo {
+    padding: 6px 0;
+}
+div.thumbnail .mediaThumbnail {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 0px;
+	background: none transparent;
+}
+span.commentLink.link {
+	margin-left: 0;
+}
+table.icons .itemCounts {
+	color: #fff;
+}
+div.afList .row.expert {
+	color: #ffffff;
+	background: none transparent;
+}
+.contribText {
+	/*clear: both;*/
+}
+.button, .buttonBar .button {
+}
+.button:hover, .buttonBar .button:hover {
+}
+
+.widgetFooter {
+	background: none transparent;
+	color: #ffffff;
+}
+a.tagLine {
+	color: #999999;
+	font-weight: normal;
+	text-decoration: none;
+}
+a.tagLine:hover {
+	text-decoration: none;
+}
+a.tagLine:hover #tagLineVoices {
+	text-decoration: underline;
+}
+#tagLineVoices {
+	color: #ffffff;
+	font-weight: bold;
+}
+.widgetBottom {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	line-height: 0;
+}
+.widgetBottom * {
+	display: none;
+}
+@media(-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
+}
+@media(-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
+}
+@media only screen and (min-width:768px) {
+}
+@media only screen and (min-width:1024px) {
+}

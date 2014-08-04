@@ -1,0 +1,89 @@
+@import url('fxsp_1184_trivia_personality.css');
+
+.questionWindow.results {
+	border-bottom: 1px solid #ccc;
+}
+.resultList {
+	text-align: center;
+}
+.resultList .title .yourScore {
+	vertical-align: text-bottom;
+	padding: 0;
+}
+.resultList .resultRow {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	width: 50px;
+	margin: 6px 24px;
+}
+.resultRow td {
+    display: block;
+    float: none;
+	clear: both;
+    margin: 0 auto;
+	padding: 0;
+    text-align: center;
+    width: auto;
+}
+.rankPercent {
+	color: #7f7f7f;
+	float: none;
+	clear: both;
+	margin: 0;
+}
+.yourVotes {
+	max-width: 2400px;
+}
+.yourVotesTitle {
+    display: block;
+}
+.yourVotesTitle.resultList {
+	color: #7f7f7f;
+	font-size: 18px;
+	font-weight: bold;
+	min-height: 24px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border-bottom: 0 none transparent;
+}
+
+.resultList .title {
+		margin-bottom: 24px;
+	}
+	.sharingBar {
+		top: 42px;
+	}
+.yourVotes div.row > * {
+    margin: 6px 0;
+	font-size: 14px;
+	line-height: 1.3em;
+}
+
+@media only screen and (min-width:288px) {
+	.yourVotesTitle.resultList {
+		font-size: 14px;
+		min-height: 18px;
+	}
+}
+@media only screen and (min-width:450px) {
+	.yourVotesTitle.resultList {
+		font-size: 18px;
+		min-height: 24px;
+	}
+	.resultList .title {
+		margin-bottom: 30px;
+	}
+	.sharingBar {
+		top: 42px;
+	}
+}
+@media only screen
+and (min-width : 930px) {
+	.resultList .title {
+		margin-bottom: 48px;
+	}
+	.sharingBar {
+		top: 60px;
+	}
+}

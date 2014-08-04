@@ -1,0 +1,49 @@
+@import url(http://cdn.vhmengine.com/widgets/v1.12.7.2/modules/vhm/widgets/css/colorschemes/v2_newsDK.css);
+@import url(http://fonts.googleapis.com/css?family=Orbitron:400,900);
+div.headerEventTitle {
+	font-family:'Orbitron', Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 28px;
+	line-height: 27px;
+	color: #e8e8e8;
+	text-shadow: 4px 2px 4px #1D1D1D;
+}
+.widgetWindow {
+	background: #242424;
+}
+div.row {
+	background: #282828;
+}
+div.afList .row.expert { 
+	background: #393939;
+	box-shadow: 1px 1px 1px #1d1d1d;
+}
+div.widgetHeaderInfo {
+	min-height: 65px;
+	height: 65px;
+	margin-bottom: 1px;
+	background-image: none;
+	background: #000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #821310 10%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,#821310), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #821310 10%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #821310 10%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #821310 10%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #821310 10%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#821310', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+}
+#headerTweetButton {
+	position: absolute;
+    right: 10px;
+    top: 30px;
+}
+#shareEventFB {
+}
+#shareEventTwitter {
+	top: 4px;
+	right: 20px;
+}
+#shareEventGoogle {
+	top: 4px;
+	right: 40px;
+}

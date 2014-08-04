@@ -1,0 +1,543 @@
+html, body {
+    background: none repeat scroll 0 0 #FFFFFF !important;
+}
+.widget {
+background: #fff;
+background: -moz-linear-gradient(top,  #ffffff 30%, #faf2ff 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#ffffff), color-stop(100%,#faf2ff));
+background: -webkit-linear-gradient(top,  #ffffff 30%,#faf2ff 100%);
+background: -o-linear-gradient(top,  #ffffff 30%,#faf2ff 100%);
+background: -ms-linear-gradient(top,  #ffffff 30%,#faf2ff 100%);
+background: linear-gradient(to bottom,  #ffffff 30%,#faf2ff 100%);
+border-radius: 0 0 0 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 50px 0 0;
+	min-height: 0px !important;
+}
+.polling .widgetHeader, .polling .widgetHeader .askAreaWrap, .widgetFooter, .widgetBottom, .rowPager, div.contribInfo, table.linksArea, td.itemCounts, td.voteDownLink, td.itemCounts, tr.contribStatusArea {
+    display: none !important;
+}
+
+span.commentLink, span.answerStatus {
+	font-size: 10px;
+	font-weight: normal;
+}
+.mediaThumbnail {
+	margin-top: 0px;
+	width: 75px !important;
+	z-index: 101;
+}
+div.widgetHeaderInfo {
+	margin-bottom: 30px;
+	background: none transparent;
+	color: #474747;
+}
+div.headerEventTitle {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #633887;
+	line-height: 1.4em;
+}
+
+div.widgetWindow {
+}
+.widgetWindow div.qList {
+}
+
+div.qList div.row {
+	/*margin: 0 auto 30px;*/
+	margin: 0 2px 30px;
+	padding: 0;
+	text-align: center;
+	float: left;
+	background: none transparent;
+	overflow: hidden;
+}
+div.qList div.row * {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	float: none;
+	overflow: hidden;
+}
+
+div.row > table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: hide;
+	display: block;
+	border: 0px none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+div.row td {
+	display: block;
+	float: left;
+	clear: both;
+	margin:0;
+	padding:0;
+}
+table.icons {
+	/*bottom: 3px;*/
+	top: 0;
+	display: block;
+	float: none;
+	margin: 0;
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+}
+table.icons td {
+	/*padding: 2px 10px;*/
+	display: block;
+	padding: 110% 0 0;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	height: 0;
+	position: relative;
+}
+span.commentLink.link {
+	border: 0px solid red;
+	bottom: 8px;
+	margin-left: 9px;
+	position: absolute;
+	text-decoration: none;
+}
+div.icon.voteUp, div.icon.voteUp:hover, div.icon.votedUp {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+}
+div.icon.voteUp {
+	background: url('modules/vhm/widgets/img/brav/1156/sprite_vote.png') no-repeat transparent;
+	background-position: center top;
+}
+div.icon.votedUp, div.icon.voteUp:hover {
+	background-position: center bottom;
+}
+table.icons .itemCounts {
+	color: #e1e1e1;
+}
+div.contribInfo {
+	display: none;
+	clear: left;
+	font-size: larger;
+	font-weight: bold;
+	/*line-height: 50px;*/
+	display: none;
+}
+
+div.qList div.row .contribText {
+    height: auto;
+    text-indent: -9999px;
+    width: 150px;
+}
+.contribText > span {
+    display: none !important;
+}
+.polling div.qList div.row.upVotedQues .contribText {
+}
+.contribText img {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.widgetSubFooter {
+	text-align: center;
+}
+.jqmContent.noFill > * {
+	text-align: center;
+	font-family: helvetica, arial, sans-serif;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.jqmContent {
+	background: transparent;
+	text-align: center;
+}
+div.sharingBar .shareText {
+	font-weight: 100!important;
+}
+.sharingBar {
+	margin-bottom: 0;
+	text-align: left!important;
+}
+div.dialogContent > .caption, div.paneContent > .caption {
+	background-color: transparent;
+	margin-bottom: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-size: 2em;
+	text-align: center;
+	margin: 0 0 40px;
+	color: #464646;
+}
+div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption {
+	display: none;
+}
+.jqmOverlay {
+	border-radius: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+	filter: alpha(opacity=100)!important;
+	-moz-opacity: 1!important;
+	opacity: 1!important;
+	background: #fff;
+}
+
+.jqmContent p {
+    color: #464646;
+    font-weight: bold;
+}
+.voteAgain, .voteCategory {
+    background: url('modules/vhm/widgets/img/brav/1156/sprite_vote_again.png') no-repeat scroll center top transparent;
+    display: inline-block;
+	zoom: 1;
+    *display: inline;
+    height: 60px;
+    margin: 0 auto 20px;
+    width: 230px;
+	text-indent: -9999px;
+}
+
+.voteCategory {
+    background: url('modules/vhm/widgets/img/brav/1156/sprite_vote_category.png') no-repeat scroll center top transparent;
+}
+.voteAgain:hover, .voteCategory:hover {
+	background-position: center -60px;
+}
+.shareBtn {
+    display: inline-block;
+	zoom: 1;
+    *display: inline;
+    height: 40px;
+    margin: 0 20px 20px;
+    text-indent: -9999px;
+    width: 130px;
+	zoom: 1;
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+}
+.shareBtn:hover {
+	filter: alpha(opacity=100);
+	zoom: 1;
+	opacity: 1;
+}
+.shareBtn.facebook {
+    background: url('modules/vhm/widgets/img/brav/1156/button_facebook.png') no-repeat scroll center top transparent;
+}
+
+.shareBtn.twitter {
+    background: url('modules/vhm/widgets/img/brav/1156/button_twitter.png') no-repeat scroll center top transparent;
+}
+
+/*ITEM STYLES*/
+
+
+/*FIXES FOR RETURN LINK PAGE*/
+
+div.rowAd {
+	background: #000 !important;
+	border: 1px solid #333333 !important;
+	display: block;
+	height: 21px !important;
+	text-align: center;
+	vertical-align: bottom !important;
+	width: 463px !important;
+}
+div.moreQuestions {
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-size: larger;
+	font-style: italic;
+	font-weight: normal;
+}
+/*FIXES FOR RETURN LINK PAGE*/
+
+.jqmContent.noFill div.buttons {
+/* display: none;*/
+}
+#commentingArea, .contribText {
+/*display: none;*/
+}
+.contribText > p {
+	/*display: none;*/
+	padding: 0;
+	margin: 0;
+}
+div.commentAreaWrap {
+	border: 0px solid #ECEEF5;
+}
+.sharingBar {
+}
+span.shareText.smaller {
+}
+div.socialButton.smaller {
+}
+div.buttons .button.jqmClose {
+	display: none;
+}
+.jqmWindow {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+div.icon.closeButton {
+	display:none;
+}
+.link, img.popoutLink {
+/*	max-height: 300px!important;
+*/}
+.link {
+	color: #195794;
+}
+.link:hover {
+	color: #01A2D6;
+}
+.widgetSubFooter { display: none; }
+/*.button {
+	color: #fff;
+	display: inline-block;ÏÏ
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-weight: normal;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+div.submitButton, .button {
+	background: #195794;
+	color: #fff;
+	height: 36px;
+	width: 184px;
+	border: 0 none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 0;
+	text-indent: -9999px;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+button:-moz-focus-inner, button:hover:-moz-focus-inner {
+ padding: 0;
+ border: 0
+}
+div.submitButton:hover, .button:hover {
+	background: #01A2D6;
+}
+div.submitButton.disabled, .button.disabled {
+	cursor: default;
+	background-position: 3px -108px;
+	background-color: transparent;
+}
+div.submitButton > div {
+	color:#fff;
+}*/
+/*###### BEGIN SWEEPS #####*/
+.sweeps .afList {
+	display: none;
+}
+.sweeps .hideBadge .widgetHeaderInfo {
+	background: none transparent;
+	border: 1px solid #333333;
+	left: 317px;
+	padding: 20px 10px 20px 20px;
+	position: absolute;
+	top: 1320px;
+	z-index: 1;
+	width: 350px;
+}
+.sweeps .hideBadge div.headerEventTitle {
+	display: none;
+}
+#sweepstakesEntryFields td input, #sweepstakesEntryFields td select {
+	border-radius: 3px 3px 3px 3px;
+	font-size: 13px;
+	padding: 3px;
+	box-shadow: 2px 2px 4px rgba(20, 20, 20, 0.8);
+	-moz-box-shadow: 2px 2px 4px rgba(20, 20, 20, 0.8);
+	-webkit-box-shadow: 2px 2px 4px rgba(20, 20, 20, 0.8);
+}
+#sweepstakesEntryFields td select {
+	padding: 2px 4px;
+}
+#facebook.link, #twitter.link {
+	display: block;
+	width: 150px;
+	height: 140px;
+	position: absolute;
+	z-index: 999;
+	text-indent: -9999px;
+}
+#twitter.link {
+	background: none repeat scroll 0 0 transparent;
+	left: 298px;
+	top: 336px;
+}
+#facebook.link {
+	background: none repeat scroll 0 0 transparent;
+
+	right: 298px;
+	top: 336px;
+}
+/*reset to trick old browsers...newer browsers will follow first media query */
+div.qList div.row .contribText  {
+	width: 180px;
+	height: auto;
+}
+div.qList div.row {
+		margin: 0 32px 32px;
+	}
+.widget {
+		background: url('modules/vhm/widgets/img/brav/1156/widget-bgd.gif') left center repeat-x transparent;
+}
+/*first query to counter the reset above to fix issue with IE8*/
+@media only screen and (min-width:280px) {
+div.qList div.row .contribText {
+	width: 150px;
+	height: auto;
+}
+div.qList div.row {
+		margin: 0 0 30px;
+}
+
+div.icon.voteUp, div.icon.votedUp {
+	background: url('modules/vhm/widgets/img/brav/1156/sprite_vote_mobile.png') no-repeat transparent;
+	background-size: 100% auto;
+	background-position: center top;
+}
+div.icon.voteUp:hover {
+	background-position: center bottom;
+}
+
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (   min--moz-device-pixel-ratio: 1.5),
+only screen and (        min-device-pixel-ratio: 1.5) { 
+	.widget {
+	background: #fff;
+background: -moz-linear-gradient(top,  #ffffff 30%, #faf2ff 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#ffffff), color-stop(100%,#faf2ff));
+background: -webkit-linear-gradient(top,  #ffffff 30%,#faf2ff 100%);
+background: -o-linear-gradient(top,  #ffffff 30%,#faf2ff 100%);
+background: -ms-linear-gradient(top,  #ffffff 30%,#faf2ff 100%);
+background: linear-gradient(to bottom,  #ffffff 30%,#faf2ff 100%);
+border-radius: 0 0 0 0;
+}
+
+div.icon.voteUp, div.icon.voteUp:hover, div.icon.votedUp {
+	background-position: center top;
+}
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 321px),
+only screen and (   min--moz-device-pixel-ratio: 1.5) and (min-width: 321px),
+only screen and (        min-device-pixel-ratio: 1.5) and (min-width: 321px) { 
+	div.qList div.row {
+		margin: 0 10px 32px;
+	}
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 460px),
+only screen and (   min--moz-device-pixel-ratio: 1.5) and (min-width: 460px),
+only screen and (        min-device-pixel-ratio: 1.5) and (min-width: 460px) { 
+	div.qList div.row {
+		margin: 0 26px 32px;
+	}
+	div.qList div.row .contribText  {
+	width: 180px;
+	height: auto;
+}
+
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 520px),
+only screen and (   min--moz-device-pixel-ratio: 1.5) and (min-width: 520px),
+only screen and (        min-device-pixel-ratio: 1.5) and (min-width: 520px) { 
+	div.qList div.row {
+		margin: 0 32px 32px;
+	}
+	div.qList div.row .contribText  {
+	width: 180px;
+	height: auto;
+}
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 539px),
+only screen and (   min--moz-device-pixel-ratio: 1.5) and (min-width: 539px),
+only screen and (        min-device-pixel-ratio: 1.5) and (min-width: 539px) { 
+		div.qList div.row {
+		margin: 0 2px 32px;
+	}
+		div.qList div.row .contribText  {
+	width: 150px;
+	height: auto;
+}
+
+}
+
+
+@media only screen and (min-width:719px){
+	div.qList div.row {
+		margin: 0 0 32px;
+	}
+	div.qList div.row .contribText  {
+	width: 180px;
+	height: auto;
+}
+
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 719px),
+only screen and (   min--moz-device-pixel-ratio: 1.5) and (min-width: 719px),
+only screen and (        min-device-pixel-ratio: 1.5) and (min-width: 719px) { 
+		div.qList div.row {
+		margin: 0 26px 32px;
+	}
+div.qList div.row .contribText  {
+	width: 180px;
+	height: auto;
+}
+
+}
+
+
+/*@media only screen and (min-width:959px){
+	.widget {
+		background: url('modules/vhm/widgets/img/brav/1156/widget-bgd.gif') left center repeat-x transparent;
+	}
+div.qList div.row {
+		margin: 0 28px 32px;
+	}
+
+}*/
+@media only screen and (min-width:960px){
+	div.qList div.row {
+	float: left;
+	padding: 0;
+	position: relative;
+}
+div.qList div.row .contribText  {
+	width: 180px;
+	height: auto;
+}
+div.qList div.row {
+		margin: 0 28px 32px;
+}
+}

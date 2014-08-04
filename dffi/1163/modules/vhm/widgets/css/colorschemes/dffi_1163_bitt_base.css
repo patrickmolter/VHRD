@@ -1,0 +1,156 @@
+@import url("//hello.myfonts.net/count/2a3f7b");
+@import url("vhrd_1169_buttons.css");
+
+/*body { background: #e8e8e8 !important; FOR TESTING ONLY...REMOVE BEFORE PUBLISHING*/ }
+@font-face {
+    font-family: 'liberation_sansregular';
+    src: url('//static.vhmengine.com/fonts/liberation/liberationsans-regular-webfont.eot');
+    src: local('☺'),
+		 url('//static.vhmengine.com/fonts/liberation/liberationsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//static.vhmengine.com/fonts/liberation/liberationsans-regular-webfont.woff') format('woff'),
+         url('//static.vhmengine.com/fonts/liberation/liberationsans-regular-webfont.ttf') format('truetype'),
+         url('//static.vhmengine.com/fonts/liberation/liberationsans-regular-webfont.svg#liberation_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'liberation_sansbold';
+    src: url('//static.vhmengine.com/fonts/liberation/liberationsans-bold-webfont.eot');
+    src: local('☺'),
+		 url('//static.vhmengine.com/fonts/liberation/liberationsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//static.vhmengine.com/fonts/liberation/liberationsans-bold-webfont.woff') format('woff'),
+         url('//static.vhmengine.com/fonts/liberation/liberationsans-bold-webfont.ttf') format('truetype'),
+         url('//static.vhmengine.com/fonts/liberation/liberationsans-bold-webfont.svg#liberation_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'TradeGothicLT-BoldCondTwenty';
+    src: url('http://redgoatcreative.com/vhrd/dffi/webfonts/2A3F7B_0_0.eot');
+    src: local('☺'),
+		 url('http://redgoatcreative.com/vhrd/dffi/webfonts/2A3F7B_0_0.eot?#iefix') format('embedded-opentype'),
+         url('http://redgoatcreative.com/vhrd/dffi/webfonts/2A3F7B_0_0.woff') format('woff'),
+         url('http://redgoatcreative.com/vhrd/dffi/webfonts/2A3F7B_0_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a, a.link, a:link, a:visited {
+	color: #ff3300;
+	text-decoration: underline;
+}
+a:hover, a.link:hover {
+	color: #000000;
+	text-decoration: none;
+}
+.widget {
+	background: none transparent /*#e8e8e8*/;
+	color: #000000;
+	padding: 0 0 18px;
+	font-family: 'liberation_sansregular', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.widget * {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#shareEventFB, #shareEventTwitter, #shareEventGoogle {
+	top: 6px;
+}
+#shareEventTwitter {
+}
+div.widgetHeaderInfo {
+	background: none transparent;
+	color: #000;
+	font-family: "TradeGothicLT-BoldCondTwenty", Arial, Helvetica, sans-serif;
+}
+
+table.linksArea {
+	display: none;
+}
+
+div.row {
+	background: #fff;
+	padding: 6px 12px 6px 6px;
+	margin: 0 0 3px;
+	position: relative;
+	box-shadow: 0 3px 3px #e8e8e8;
+	-moz-box-shadow: 0 3px 3px #e8e8e8;
+	-webkit-box-shadow: 0 3px 3px #e8e8e8;
+	overflow: hidden;
+}
+.itemInfo {
+    padding: 6px 0;
+}
+div.thumbnail .mediaThumbnail {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 2px;
+	background: #000000;
+}
+span.commentLink.link {
+	margin-left: 0;
+}
+
+div.afList .row.expert {
+	color: #000000;
+	background: #fff
+}
+.contribText {
+	margin-top: 10px
+}
+.button, .buttonBar .button {
+}
+.button:hover, .buttonBar .button:hover {
+}
+
+.widgetFooter {
+	background: none transparent;
+	color: #000000;
+}
+a.tagLine {
+	color: #333;
+	font-weight: normal;
+	text-decoration: none;
+}
+a.tagLine:hover {
+	text-decoration: none;
+}
+a.tagLine:hover #tagLineVoices {
+	text-decoration: underline;
+}
+#tagLineVoices {
+	color: #000000;
+	font-weight: bold;
+}
+.widgetBottom {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	line-height: 0;
+}
+.widgetBottom * {
+	display: none;
+}
+@media(-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
+}
+@media(-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
+}
+@media only screen and (min-width:768px) {
+}
+@media only screen and (min-width:1024px) {
+}

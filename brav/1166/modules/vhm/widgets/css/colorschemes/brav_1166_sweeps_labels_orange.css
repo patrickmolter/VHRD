@@ -1,0 +1,330 @@
+.widget {
+  background-color: transparent;
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+  padding: 10px;
+  border: 0 none;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.widget *, .jqmWindow * { 
+}
+
+a, a:link, a.link { color: #14578e; }
+a:hover, a.link:hover { color: #07cfff; }
+
+div.widgetHeaderInfo {
+  background: none transparent;
+  padding: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  min-height: 28px;
+  color: #333;
+}
+
+
+.headerEventDesc {
+  display: none;
+}
+
+div.headerEventTitle {
+  margin-left: 0;
+}
+
+div.eventInfo {
+  background: transparent;
+  min-height: 28px;
+  display: none;
+}
+
+.watermark { font-style: italic; }
+
+div#sweepstakesEntryFields td > * {
+    vertical-align: middle;
+}
+
+.anonLabel, #adhocFields label {
+    display: inline-block !important;
+    margin: 12px 4px 0 0;
+    white-space: nowrap;
+	font-weight: bold;
+	font-size: 14px;
+	width: 94%;
+}
+
+div#sweepstakesFields input.watermark, div#sweepstakesEntryFields #adhocFields input.watermark { color: #999; }
+div#sweepstakesFields input[type="text"], div#sweepstakesFields select, div#sweepstakesEntryFields #adhocFields input[type="text"], div#sweepstakesEntryFields #adhocFields select {
+	display: inline-block;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 4px;
+	margin: 3px 0;
+	height: 24px;
+	min-width: 94%;
+	line-height: 24px;
+	font-size: 14px;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	color: #999;
+}
+div#sweepstakesEntryFields select, div#sweepstakesEntryFields #adhocFields select {
+	height: 34px;
+	color: #999;
+}
+div#sweepstakesEntryFields #adhocFields input[type="text"], div#sweepstakesEntryFields #adhocFields select {
+	min-width: 33%;
+}
+div#sweepstakesFields input#anonZipCode {
+    width: 33%;
+	min-width: 33%;
+}
+/*#sweepstakesEntryFields #anonMob, #sweepstakesEntryFields #anonDob, #sweepstakesEntryFields #anonYob,*/ div#sweepstakesEntryFields #anonState {
+    /*margin: 12px 9px 0 0;*/
+    min-width: 70px;
+}
+div#sweepstakesEntryFields #anonMob, div#sweepstakesEntryFields #anonDob, div#sweepstakesEntryFields #anonYob {
+	min-width: 20%;
+}
+div#sweepstakesEntryFields #anonYob, div#sweepstakesEntryFields #anonState {
+	margin-right: 0;
+}
+.anonStateWrapper {
+    padding-left: 9px;
+}
+div#sweepstakesEntryFields .anonStateWrapper .anonLabel {
+    display: block;
+    margin: 12px 0 0;
+}
+div#sweepstakesEntryFields #anonState {
+    margin-top: 1px;
+}
+div#sweepstakesFields #anonPhone {
+    margin-bottom: 3px;
+}
+div#sweepstakesEntryFields #anonOpt, #sweepsRules {
+    margin-top: 12px;
+}
+
+#adhocFields  {
+	padding-bottom: 18px;
+}
+
+
+#sweepsTermsLabel, #sweepsRulesLabel {
+    display: block;
+    margin-top: 18px;
+}
+
+div#sweepstakesEntryFields #anonOpt, #sweepsTerms, #sweepsRules {
+    margin-left: 0;
+    margin-right: 6px;
+}
+
+table.askArea { margin: 24px auto 0; }
+.askArea div.submitButton {
+    background: none repeat scroll 0 0 #ffb64f;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px #999999;
+	-moz-box-shadow: 0 1px 2px #999999;
+	-webkit-box-shadow: 0 1px 2px #999999;
+    display: block;
+    float: none;
+    height: auto;
+    margin: 0 auto;
+    padding: 6px 18px;
+    width: auto;
+}
+div.submitButton div {
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.askArea div.submitButton:hover {
+	background: none #d68222; 
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.askArea div.submitButton:hover div {
+	text-shadow: 0 1px 0 #999;
+}
+.widgetWindow {
+	display: none;
+}
+.widgetFooter {
+    background: none repeat scroll 0 0 transparent;
+    text-align: center;
+}
+
+span.refreshLink { display: none; }
+
+#shareEventTwitter, #shareEventFB, #shareEventGoogle {
+	display: none;
+}
+
+.loginLink {
+  display: none !important;
+}
+
+.footerStats {
+  margin: 0 10px 7px;
+  min-height: 14px;
+  padding: 6px 10px;
+  display: block;
+  clear: both;
+  background: none;
+  font-size: 0.7em;
+}
+
+.tagLine {
+    display: block;
+    float: none;
+    margin-top: 18px;
+}
+.tagLine:hover {
+    color: #000000
+}
+.link, img.popoutLink {
+}
+
+.widgetWindow div.qList, .widgetWindow div.afList { height: auto; }
+
+
+div.icon.closeButton {
+}
+
+.jqmContent.noFill>* {
+  padding: 10px 6px 0 10px;
+}
+
+
+.jqmContent #topArea {
+    text-align: center;
+}
+
+
+.jqmWindow.dialog {
+  top: 420px !important;
+}
+
+.embedLinkTag {
+}
+
+.jqmContent {
+}
+
+div.submitButton, div.paneContent div.submitButton.post {
+  border: medium none;
+  height: 30px;
+  line-height: 28px;
+  text-shadow: none !important;
+}
+
+div.dialog, .jqmContent.noFill>*, .jqmWindow div.paneContent>* {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 10px;
+	margin-top: 0;
+	background: none #fff;
+}
+
+div.dialog { padding: 0; }
+
+.jqmOverlay {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
+div.paneContent>.caption, div.dialogContent>.caption {
+    background: none repeat scroll 0 0 #306A9E;
+    border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+    margin-bottom: 0;
+    padding: 6px 0;
+}
+.jqmContent, div.pane {
+		border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+
+}
+
+div.paneContent>.caption {
+}
+
+table.sorterButtons {
+}
+
+table.sorterButtons {
+}
+
+div.paneContent table.sorterButtons {
+}
+
+.widgetNav {
+	
+	display: none;
+}
+
+table.sorterButtons td .button {
+}
+
+.button, div.paneContent div.submitButton.post {
+  border: medium none;
+  color: #fff;
+  box-shadow: none !important;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 20px;
+  min-width: 86px;
+  overflow: visible;
+  padding: 5px 10px 5px 15px;
+  margin: 0;
+  text-align: center;
+  height: 30px;
+  text-shadow: none;
+  background: #306a9e; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #306a9e 50%, #306a9e 50%, #185993 50%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#306a9e), color-stop(50%,#306a9e), color-stop(50%,#185993)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  306a9e 50%,#306a9e 50%,#185993 50%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #306a9e 50%,#306a9e 50%,#185993 50%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #306a9e 50%,#306a9e 50%,#185993 50%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #306a9e 50%,#306a9e 50%,#185993 50%); /* W3C */
+
+}
+
+.button:hover, div.paneContent div.submitButton.post:hover {
+	background: none #00ABE2;
+	text-shadow: 1px 1px 1px #185992;	
+}
+
+div.submitButton div { color: #fff; line-height: 30px; }
+
+.clearing.clearfix {
+}
+
+div.icon.offensive {
+}
+
+.paneContent .itemArea .contribText { font-size: 20px; }
+
+.widgetWindow .contribText p:first-child {
+}
+
+.widgetBottom  { visibility: hidden; padding: 0; }

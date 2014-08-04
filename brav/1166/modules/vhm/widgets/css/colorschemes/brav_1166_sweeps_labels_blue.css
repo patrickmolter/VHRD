@@ -1,0 +1,12 @@
+@import url('brav_1166_sweeps_labels_orange.css');
+
+.askArea div.submitButton {
+    background: none repeat scroll 0 0 #225e98;
+}
+div.submitButton div {
+}
+.askArea div.submitButton:hover {
+	background: none #01a5da; 
+}
+.askArea div.submitButton:hover div {
+}

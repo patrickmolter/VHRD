@@ -1,0 +1,92 @@
+@import url("brav_1183_singles_mpoll.css");
+div.qList div.row {
+	}
+@media only screen and (min-width:280px) {
+div.qList div.row .contribText {
+}
+
+}
+
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and ( min--moz-device-pixel-ratio: 1.5),
+only screen and ( min-device-pixel-ratio: 1.5) {
+div.qList div.row {
+}
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 321px),
+only screen and (   min--moz-device-pixel-ratio: 1.5) and (min-width: 321px),
+only screen and (        min-device-pixel-ratio: 1.5) and (min-width: 321px) { 
+div.qList div.row {
+}
+
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 460px),
+only screen and (   min--moz-device-pixel-ratio: 1.5) and (min-width: 460px),
+only screen and (        min-device-pixel-ratio: 1.5) and (min-width: 460px) { 
+div.qList div.row {
+}
+
+div.qList div.row .contribText {
+}
+
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 520px),
+only screen and (   min--moz-device-pixel-ratio: 1.5) and (min-width: 520px),
+only screen and (        min-device-pixel-ratio: 1.5) and (min-width: 520px) { 
+div.qList div.row {
+}
+
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 539px),
+only screen and (   min--moz-device-pixel-ratio: 1.5) and (min-width: 539px),
+only screen and (        min-device-pixel-ratio: 1.5) and (min-width: 539px) { 
+div.qList div.row {
+}
+div.qList div.row .contribText {
+}
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 719px),
+only screen and (   min--moz-device-pixel-ratio: 1.5) and (min-width: 719px),
+only screen and (        min-device-pixel-ratio: 1.5) and (min-width: 719px) { 
+div.qList div.row {
+}
+div.qList div.row .contribText {
+}
+
+}
+
+@media only screen
+and (min-width: 580px) {
+div.qList div.row {
+		margin: 0 10px 40px;
+		width: 180px;
+}
+div.qList div.row .contribText {
+}
+}
+@media only screen
+and (min-width: 700px) {
+	div.qList div.row {
+		margin: 0 20px 40px;
+		width: 200px;
+	}
+
+}
+
+@media only screen
+and (min-width: 730px) {
+
+}
+/* @media only screen and (min-width:1280px) {
+}
+*/

@@ -1,0 +1,945 @@
+#widget {
+	background: url("images/insk_logo.jpg") no-repeat scroll 6px top #fff;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	padding: 0;
+}
+.hideBadge div.headerEventTitle {
+	color: #808080;
+	font-size: 24px;
+	line-height: 1.1em;
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-transform:normal;
+}
+
+.size1.widget { font-size: 8px; }
+.size2.widget { font-size: 10px; }
+.size3.widget { font-size: 12px; }
+
+/*.size2 div.headerEventTitle {
+	font-size: 36px;
+	line-height: 36px;
+	
+}
+*/
+
+.size2 div.headerEventTitle {
+	font-size: 20px;
+	line-height: 1.1em;
+	
+}
+
+
+.size1 div.headerEventTitle {
+	font-size: 16px;
+	line-height: 1.1em;
+	
+}
+
+.size2 div.headerEventTitle.offset, .size2 div.headerTweetButton.offset, .size2 #fbLike {
+    margin-left: 2px;
+}
+
+/*MOBILEMODE*/
+
+
+.mobilemode div.headerEventTitle.offset {
+	margin-right: 0px;
+}
+
+.mobilemode div.headerEventTitle {
+	font-size: 32px;
+	line-height: 1.1em;
+}
+.mobilemode div.widgetHeaderInfo {
+	padding-top: 150px;
+}
+.mobilemode textarea.askBox, .mobilemode input.askBox {
+	font-size: 12pt;
+	line-height: 30px;
+}
+
+.mobileDialog  div#anonFields td {
+    display: block;
+}
+
+.mobilePane div.paneContent .postAreaWrap, div.paneContent table.askArea {
+    margin: 0;
+    width: 100%;
+}
+
+.mobilePane textarea.askBox.watermark, .mobilePane input.askBox.watermark, #commentBox {
+    width: 90%;
+}
+
+.mobilePane table.askArea tr td.askAreaCenter {
+    width: 90%;
+}
+
+.mobilemode #shareEventTwitter, .mobilemode #shareEventFB {
+	width: 36px;
+	height: 36px;
+	background:url("//test.vhm.me/cdn/modules/vhm/widgets/img/social-buttons-large.png") no-repeat scroll 0 -144px transparent;
+}
+.mobileDialogue div.mobileChoice.buttons .button {
+    clear: both;
+    color: #FFFFFF;
+    float: none;
+    font-size: 2em;
+    height: 40px;
+    left: auto;
+    margin: 10px 0;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+}
+.mobilemode .contribText > p {
+    line-height: 1.3em;
+}
+.mobilemode div.qList .contribText {
+    height: 50px;
+    margin-right: 90px;
+}
+
+
+
+/* EVENT HEADER 
+
+#widgetHeader {
+	background: url("images/indulge.jpg") no-repeat scroll right top transparent;
+}*/
+
+
+.headerEventDesc {
+	color: #808080;
+	font-size: 13px;
+	font-style: normal;
+	width: 400px;
+	line-height: 21px;
+	margin-top: 8px;
+}
+.mobilemode .headerEventDesc { width: auto; }
+div.widgetHeaderInfo {
+	background: none;
+	padding-left: 8px;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	margin-bottom: 0px;
+	padding-bottom: 15px;
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/arcShadow.png") no-repeat scroll center bottom transparent;
+}
+div.widgetHeaderInfo {
+    padding: 100px 0 20px 16px;
+}
+div.widgetHeaderInfo div.askAreaWrap {
+	padding-left: 0;
+	/*margin: 0 3px 0 0;*/
+	margin: 0 26px 0 0;
+}
+div.askAreaWrap {
+	margin-top: 0px !important;
+	position: relative;
+}
+textarea.askBox.watermark, input.askBox.watermark {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/textarea-watermark.png") repeat-x scroll center bottom #FFFFFF;
+	color: #808080;
+	height: 30px;
+	line-height: 28px;
+	overflow: hidden;
+}
+
+
+/*VOTING ICONS*/
+
+.size3 div.icon.viewComments {
+	background-position: 0 -94px;
+}
+
+
+
+.jqmContent div.icon.viewComments, .jqmWindow div.icon.viewComments {
+    background-position: 0 -94px!important;
+}
+
+
+
+div.icon {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/DKstd-icons-30.png") no-repeat scroll 30px 30px transparent;
+	display: inline-block;
+	height: 31px;
+	vertical-align: middle;
+	width: 31px;
+}
+
+
+.size2 .icon{
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/DKstd-icons-24.png") no-repeat scroll 24px 24px transparent;
+	display: inline-block;
+	height: 24px;
+	vertical-align: middle;
+	width: 24px;
+}
+
+
+
+.size1 .icon {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/DKstd-icons-16.png") no-repeat scroll 16px 16px transparent;
+	display: inline-block;
+	height: 16px;
+	vertical-align: middle;
+	width: 16px;
+}
+div.headerEventTitle.offset {
+	margin-left: 0;
+}
+
+.size1 div.headerEventTitle.offset{
+	margin-right: 26px;
+}
+
+
+.size1 div.widgetHeaderInfo div.askAreaWrap, .size2 div.widgetHeaderInfo div.askAreaWrap {
+    margin-left: 0;
+    margin-right: 26px;
+}
+
+
+div.eventInfo {
+	margin: 0;
+	padding: 0 124px 0 0;
+}
+div.paneContent > .caption, div.dialogContent > .caption {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 22px;
+	height: 35px;
+	line-height: 35px;
+	text-align: left;
+}
+div.dialogContent > .caption span {
+	margin: 3px 3px 3px 8px;
+}
+.contribText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: #808080;
+}
+
+div.origQuestion .contribText > p, div.itemArea .contribText > p, div.answerArea .contribText > p{
+	color: #666;
+}
+
+div.origQuestion span.userSpan, div.answerArea span.userSpan{
+    color: #333;
+	padding-left: 0px;
+}
+.widgetWindow {
+	border: none;
+	background: none;
+	box-shadow: none;
+	margin: 0;
+}
+.widgetFooter {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background: none;
+	height: 40px;
+	float: none;
+}
+#shareEventFB {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/fb_share.png") no-repeat scroll 0 0px transparent;
+	top: 2px;
+	right: auto;
+	left: 284px;
+	position: absolute;
+	text-decoration: none;
+	width: 28px;
+	height: 28px;
+}
+#shareEventTwitter {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/tw_share.png") no-repeat scroll 0 0px transparent;
+	top: 32px;
+	right: auto;
+	left: 284px;
+	position: absolute;
+	text-decoration: none;
+	width: 28px;
+	height: 28px;
+}
+
+
+span.submittedSpan {
+    color: #777777;
+}
+
+#shareEventGoogle {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/g_share.png") no-repeat scroll 0 0px transparent;
+	top: 41px;
+	right: 0px;
+	position: absolute;
+	text-decoration: none;
+	width: 28px;
+	height: 28px;
+}
+.size2 #shareEventFB {top: 7px;}
+.size2 #shareEventTwitter {top: 26px;}
+.size2 #shareEventGoogle {top: 45px;}
+
+
+span.commentLink.link {
+	margin-left: 0;
+	text-decoration: none;
+	font-size: 12px;
+}
+.loginLink {
+	display: none!important;
+}
+.footerStats {
+	margin: 7px 0 2px 0;
+	min-height: 14px;
+	font-size: 12px;
+	display: none;
+}
+
+.widgetFooter, .tagLine {
+    color: #777777;
+}
+.tagLine {
+	margin: 5px 0;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+#tagLineVoices {
+	color: #555555;
+	font-weight: lighter;
+}
+.link, img.popoutLink {
+	color: #999999;
+}
+div.row {
+	padding: 12px 6px 28px;
+	box-shadow: none;
+	margin: 0 3px;
+	border-bottom: 0 none transparent;
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/arcShadow.png") no-repeat scroll center bottom transparent;
+	position: relative;
+}
+
+.row > table {
+    border-collapse: collapse;
+}
+
+.row > table td {
+    vertical-align: top !important;
+}
+
+div.row.rowPager { display: none; }
+
+div.afList .row.expert {
+	background: #fff;
+}
+.polling div.row .contribText {
+	font-size: 17px;
+	line-height: 1.5em;
+	padding-right: 90px;
+}
+
+.size2.polling div.row .contribText {
+	font-size: 12px;
+	line-height: 18px;
+}
+.size1.polling div.row .contribText {
+	font-size: 11px;
+	line-height: 14px;
+}
+
+
+.polling div.row .contribText p a, .polling div.row .contribText p a:active, .polling div.row .contribText p a:visited {
+	color: #808080;
+	text-decoration:none;
+}
+.polling div.row .contribText p a:hover {
+	color: #808080;
+	text-decoration:underline!important;
+}
+div.qList .contribText {
+	background-color: inherit;
+	display: block;
+	font-family: Arial, helvetica, sans-serif;
+	font-size: 12px;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	color: #808080;
+}
+.thumbnail, .labelThumbnail {
+	 float: none;
+    margin: 0;
+    position: absolute;
+    right: 12px;
+    top: 6px;
+}
+span.userSpan {
+	color: #fafcd9;
+	font-size: 12px;
+	padding-left: 0px;
+}
+div.dialog {
+	background-color: #000;
+}
+div.pane {
+	background-color: #000;
+}
+div.itemArea {
+	background-color: #ffffff;
+	color: #000;
+	border-radius: 0px 0px 0px 0px;
+}
+div.events span.eventTitle {
+	color: #053543;
+}
+.playerContainer {
+	border-color: #053543;
+	background-color: #577381;
+}
+
+div.commentListArea, div.answerListArea {
+    color: #CCCCCC;
+}
+
+
+div.shareTagLine {
+	background-color: #555;
+}
+div.shareTagLine {
+	-moz-border-radius: 0px;
+	-webkit-border-radius:  0px;
+	border-radius: 0px;
+	clear: both;
+	color: #ccc;
+	cursor: pointer;
+	font-size: xx-small;
+	font-weight: normal;
+	padding: 0 5px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+}
+.embedLinkTag {
+	color: #FED022;
+}
+.jqmContent {
+	background: #fff;
+}
+.mobileMode_dialog .jqmContent { font-size: 2em; text-align: center; }
+
+div.submitButton, div.paneContent div.submitButton.post {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/newsX_btn_bg.jpg") repeat-x scroll 0 -33px transparent;
+  	height: 32px;
+	line-height: 28px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius:  3px;
+	border-radius:  3px;
+}
+div.submitButton div {
+	color: #333;
+	display: inline-block;
+	font-family: 'Oswald', Arial, sans-serif;
+	font-weight: normal;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+.button:hover, .buttonBar .button:hover {
+	background-color: #333;
+	color: #808080;
+}
+div.tweetButton {
+	margin-left: 0;
+	margin-top: 0;
+}
+.rankScore {
+	color: #ccc;
+	float: right;
+	font-size: 17px;
+	font-weight: bold;
+	margin-right: 5px;
+	margin-top: -4px;
+	text-align: right;
+}
+.rankBar .rank {
+	background-color: #333!important;
+	background-image: url("//test.vhm.me/cdn/modules/vhm/widgets/img/top_glosser.png"), -moz-linear-gradient(left center, #333333 0%, #666 100%);
+	background-image: url("//test.vhm.me/cdn/modules/vhm/widgets/img/top_glosser.png"), -webkit-linear-gradient(left, #333333 0%, #666 100%);
+	background-image: url("//test.vhm.me/cdn/modules/vhm/widgets/img/top_glosser.png"), -o-linear-gradient(left, #333333 0%, #666 100%);
+	background-image: url("//test.vhm.me/cdn/modules/vhm/widgets/img/top_glosser.png"), -ms-linear-gradient(left, #333333 0%, #666 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#666', GradientType=1 );
+	background-image: url("//test.vhm.me/cdn/modules/vhm/widgets/img/top_glosser.png"), linear-gradient(left, #333333 0%, #666 100%);
+	background-position: 0 -44px, 0 0;
+	background-repeat: repeat-x, repeat;
+	border-radius: 3px 3px 3px 3px;
+	height: 12px;
+	position: relative;
+}
+.rankBar {
+	margin-top: 0;
+	position: relative;
+}
+
+.rankBar.dual {
+    font-style: italic;
+    font-weight: bold;
+    height: 42px;
+    line-height: 12px;
+}
+
+.rankBar .rank.neg {
+    top: 10px;
+}
+
+
+div.shareTagLine {
+	display: inline-block;
+	float: right;
+	padding: 2px 5px;
+	width: 60px;
+}
+div.dialog, .jqmContent.noFill > * {
+	-moz-border-radius: 0px;
+	-webkit-border-radius:  0px;
+	border-radius: 0px;
+}
+
+
+/*OVERLAY PANELS*/
+
+.jqmOverlay {
+	background-color: #000000;
+	-moz-border-radius: 0px;
+	-webkit-border-radius:  0px;
+	border-radius: 0px;
+}
+div.dialogContent > .caption {
+	background-color: #333333;
+	-moz-border-radius: 0px;
+	-webkit-border-radius:  0px;
+	font-family: 'Oswald', Arial, sans-serif;
+	text-transform:uppercase;
+	border-radius: 0px;
+	color: #808080;
+	margin-bottom: 5px;
+	width: 100%;
+}
+.jqmContent, div.pane {
+	-moz-border-radius: 0px;
+	-webkit-border-radius:  0px;
+	border-radius: 0px;
+}
+div.paneContent > .caption {
+	background-color: #333333;
+	-moz-border-radius: 0px;
+	-webkit-border-radius:  0px;
+	font-family: 'Oswald', Arial, sans-serif;
+	text-transform:uppercase;
+	border-radius: 0px;
+	color: #808080;
+	margin-bottom: 5px;
+	padding-left: 5px;
+}
+div.icon.closeButton {
+	background-position: 0 -138px;
+	height: 30px;
+	width: 30px;
+}
+
+
+/*BUTTONS*/
+
+.widgetNav {
+	margin: 0 10px;
+	min-height: 10px;
+}
+table.sorterButtons {
+	border-spacing: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	table-layout: auto;
+}
+table.sorterButtons td {
+	padding: 0 1px 0 0;
+}
+table.sorterButtons td .button {
+	background-position: center top;
+	-moz-border-radius: 0px;
+	-webkit-border-radius:  0px;
+	border-radius: 0px;
+	margin-bottom: 10px;
+	margin-top: 3px;
+	padding: 5px;
+	width: 100%;
+ *width: 250px;
+}
+.button {
+	background: #000;
+	color: #808080;
+	border: 0px solid #000;
+	-moz-border-radius: 3px;
+	-webkit-border-radius:  3px;
+	border-radius: 3px;
+	box-shadow: 3px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'Oswald', arial, helvetica, sans-serif;
+	font-size: 14px;
+	letter-spacing: .04em;
+	*letter-spacing: 0;
+	font-weight: normal;
+	line-height: 19px;
+	overflow: visible;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	height: 33px;
+	min-width: 50px;
+	/*min-width: 150px;*/
+}
+
+
+
+#anonSubmit {
+	width: 80px;
+}
+#recentBtn.button, #multiBtn.button, #popularBtn.button {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/newsDK_btn_bg.jpg") repeat-x scroll 0 -33px transparent;
+	color: #666;
+	font-family: helvetica,arial,sans-serif;
+    font-weight: 100;
+}
+
+.size1 #recentBtn.button, .size1 #multiBtn.button, .size1 #popularBtn.button {
+	font-size: 14px;
+}
+#multiBtn.button:hover, #multiBtn.button:focus {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/newsDK_btn_bg.jpg") repeat-x scroll 0 -66px transparent;
+	color: #808080;
+}
+#popularBtn.button:hover, #popularBtn.button:focus {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/newsDK_btn_bg.jpg") repeat-x scroll 0 -66px transparent;
+	color: #808080;
+}
+#recentBtn.button:hover, #recentBtn.button:focus {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/newsDK_btn_bg.jpg") repeat-x scroll 0 -66px transparent;
+	color: #808080;
+}
+#multiBtn.activeSortButton {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/newsDK_btn_bg.jpg") repeat-x scroll 0 0 transparent;
+	color: #808080;
+}
+#popularBtn.activeSortButton {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/newsDK_btn_bg.jpg") repeat-x scroll 0 0 transparent;
+	color: #808080;
+}
+#recentBtn.activeSortButton {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/newsDK_btn_bg.jpg") repeat-x scroll 0 0 transparent;
+	color: #808080;
+}
+
+/*MOBILEMODE*/
+.mobilemode #multiBtn.activeSortButton {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/newsDK_btn_bg.jpg") repeat-x scroll 0 0 transparent;
+	color: #808080;
+}
+.mobilemode #popularBtn.activeSortButton {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/newsDK_btn_bg.jpg") repeat-x scroll 0 0 transparent;
+	color: #808080;
+}
+.mobilemode #recentBtn.activeSortButton {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/newsDK_btn_bg.jpg") repeat-x scroll 0 0 transparent;
+	color: #808080;
+}
+/*MOBILEMODE*/
+
+
+
+table.icons {
+	margin: 0 0;
+}
+table.sorterButtons .multiTD {
+	display: block;
+}
+
+/*ASK AREA*/
+
+textarea.askBox.watermark, input.askBox.watermark, #commentBox {
+	background: #FFFFFF;
+	color: #666;
+	height: 32px;
+	line-height: 33px;
+	overflow: hidden;
+}
+textarea.askBox.watermark, input.askBox.watermark, div.paneContent textarea.askBox.watermark {
+	background: #FAFCD9;
+	color: #666;
+	overflow: hidden;
+	-moz-border-radius: 0px;
+	-webkit-border-radius:  0px;
+	border-radius: 0px;
+	font-style: normal;
+}
+textarea.askBox, input.askBox {
+	border: 1px solid #ccc;
+	-moz-border-radius: 0px;
+	-webkit-border-radius:  0px;
+	border-radius: 0px;
+	color: #000000;
+	font-family: Helvetica, Arial,  sans-serif;
+	font-size: 14pt;
+	height: 23px;
+	line-height: 23px;
+	margin: 0;
+	outline: medium none;
+	overflow-x: hidden;
+	padding: 0 0 0 2px;
+	position: absolute;
+	top: 0;
+	z-index: 115;
+	font-weight: 100;
+}
+
+
+.size1 textarea.askBox, .size1 input.askBox {
+	font-size: 9pt;
+	line-height: 30px;
+}
+
+.size2 textarea.askBox, .size2 input.askBox {
+	font-size: 14pt;
+	line-height: 30px;
+}
+
+
+div.paneContent textarea.askBox.watermark {
+	font-style: regular;
+}
+.jqmWindow {
+	font-size: 13px;
+	width: 100%;
+}
+div.commentAreaWrap {
+	border: 1px solid #CCCCCC;
+	-moz-border-radius: 0px;
+	-webkit-border-radius:  0px;
+	border-radius: 0px;
+	clear: both;
+	margin: 5px 0 6px;
+	padding: 1px;
+	position: relative;
+}
+div.socialButton.smaller, div.socialButton.std, div.socialButton.large {
+	background: url("//test.vhm.me/cdn/modules/vhm/widgets/img/v2/social-buttons.png") no-repeat scroll 0 0 transparent;
+	display: inline-block;
+	*display: inline;
+	height: 24px;
+	margin-left: 2px;
+	margin-top: -3px;
+	vertical-align: middle;
+	width: 24px;
+}
+.socialIcons {
+	top: -4px !important;
+	left: -83px !important;
+}
+
+.size3.socialIcons {
+    bottom: 0px !important;
+	right: -110px !important;
+}
+
+
+
+div.socialButton.large.twitter {
+    background-position: -24px -96px;
+}
+div.socialButton.large.facebook {
+    background-position: 0px -96px;
+}
+
+div.socialButton.large.more {
+    background-position: 0px -144px;
+}
+
+
+.size1 div.icon.offensive, .size2 div.icon.offensive {
+    background-position: -35px -100px;
+    height: 16px;
+    width: 16px;
+}
+.size1 div.icon.offensive:hover {
+    background-position: -52px -100px;
+    height: 16px;
+    width: 16px;
+}
+
+.size2 div.icon.offensive {
+    background-position: -41px -100px;
+    height: 14px;
+    width: 14px;
+}
+.size2 div.icon.offensive:hover {
+    background-position: -55px -100px;
+    height: 14px;
+    width: 14px;
+}
+
+.size3 div.icon.offensive {
+    margin-left: 5px;
+}
+
+.refreshLink {
+    font-size: 10px;
+}
+
+.questionWindow .prevQuestion, .questionWindow .nextQuestion {
+    margin-top: 0;
+}
+.questionWindow .prevQuestion {
+    margin-left: 10px;
+}
+.questionWindow .nextQuestion {
+    margin-right: 10px;
+}
+
+.questionWindow .question {
+    color: #808080;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 16px!important;
+    font-weight: bold;
+    text-align: left!Important;
+}
+
+.size2 .questionWindow .question {
+    font-size: 13px!important;
+}
+
+.size1 .questionWindow .question {
+    font-size: 11px!important;
+}
+
+
+.questionWindow .questionText {
+    padding: 30px 5px 0;
+    vertical-align: top;
+}
+.questionWindow .questionBackgroundFilter {
+    background: none;
+    opacity: 1;
+    visibility: hidden;
+}
+
+.questionWindow .questionNumberWrapper {
+    color: #777777;
+    font-family: 'Oswald' , helvetica, arial, sans-serif;
+    font-size: 1.5em;
+    left: 5px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+.questionWindow .questionNumberWrapper {
+    /*border: 1px solid #999999;*/
+	background: #fff;
+    color: #777777;
+    font-family: helvetica,arial,sans-serif;
+    font-size: 12px;
+    padding: 3px;
+    text-align: left;
+    width: 97%;
+	margin-top: 3px;
+}
+
+.widgetWindow .row {
+    display: block;
+   /* display: table;*/
+}
+
+
+div.adDialog {
+    background: none repeat scroll 0 0 #FFFFFF;
+    -moz-border-radius: 2px;
+	-webkit-border-radius:  2px;
+	border-radius: 2px;
+    box-shadow: 2px -2px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/*DISPLAY NONE*/
+
+
+div.badge {
+	display: none;
+	visibility: hidden;
+}
+span.moreLink, span.loginLink, #widgetBottom .link, .questionTotal, .polling div.row span.userSpan, div.widgetBottom, .prevNumber, .nextNumber {
+	display: none;
+}
+ @media screen and (-webkit-min-device-pixel-ratio:0) {
+.button {
+ text-shadow: none;
+}
+}
+
+table.icons { display: none; }
+
+@media only screen and (min-device-width:320px) and (orientation:portrait) {
+.mobilemode #shareEventFB, .mobilemode #shareEventTwitter {
+top:90px;
+position:absolute;
+left:36px;
+text-decoration:none;
+}
+.mobilemode #shareEventTwitter {
+left:80px;
+background-position:-36px -144px;
+}
+}
+@media only screen and (max-device-width:800px) and (orientation:landscape) {
+.mobilemode #shareEventFB, .mobilemode #shareEventTwitter {
+top:35px;
+position:absolute;
+left:224px;
+text-decoration:none;
+}
+.mobilemode #shareEventTwitter {
+left:270px;
+background-position:-36px -144px;
+}
+}
+@media only screen and (min-width : 480px) {
+	.polling div.row .contribText {
+		line-height: 40px;
+	}
+	#shareEventFB {
+	top: 32px;
+	left: 224px;
+}
+#shareEventTwitter {
+	top: 32px;
+	left: 260px;
+}
+
+}

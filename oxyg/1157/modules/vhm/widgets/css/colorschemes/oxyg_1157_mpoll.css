@@ -1,0 +1,310 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+.widget {
+	border: 0 none transparent;
+	background: none transparent;
+	border-radius: 0 0 0 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 0px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;  
+	box-sizing: border-box; 
+}
+.widget * {
+	font-family: 'Helvetica Neue', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	color: #4b3a3a;
+}
+.widgetHeader, .widgetBottom {
+	display: none !important;
+}
+.widgetWindow div.qList, .widgetWindow div.afList { height: auto; } 
+
+div.row {
+	position: relative;
+	margin: 0 auto 6px;
+	padding: 10px;
+	min-height: 90px;
+	float: none;
+	background: none #fff6d5;
+	border-radius: 0 0 0 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	overflow: hidden;
+/*	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;  
+	box-sizing: border-box; 
+*/}
+div.row.resultRow {
+	min-height: 110px;
+}
+div.row.rowPager {
+	background: none transparent;
+}
+div.row .contribText, div.row .contribInfo, div.row .footer {
+    margin-right: 80px;
+}
+div.row.resultRow .contribText, div.row.resultRow .contribInfo, div.row.resultRow .footer {
+    margin-right: 140px;
+}
+.thumbnail.link {
+    float: none;
+    position: absolute;
+	z-index: 20;
+    right: 0;
+    top: 6px;
+	margin: 10px;
+}
+.resultRow .thumbnail.link {
+	top: 26px;
+}
+.shareArea {
+	margin-left: 0; 
+}
+div.shareTagLine {
+	background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 80%, #dddddd 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(80%,#ffffff), color-stop(100%,#dddddd));
+background: -webkit-linear-gradient(top,  #ffffff 80%,#dddddd 100%);
+background: -o-linear-gradient(top,  #ffffff 80%,#dddddd 100%);
+background: -ms-linear-gradient(top,  #ffffff 80%,#dddddd 100%);
+background: linear-gradient(to bottom,  #ffffff 80%,#dddddd 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 );
+	border: 1px solid #ccc;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border: 1px solid #ccc;
+}
+
+.shareTagLine > span {
+    color: #006699;
+    font-family: Helvetica,Arial,sans-serif;
+}
+.shareArea div.socialIcons {
+    display: none !important;
+}
+div.row table {
+    border-collapse: collapse;
+}
+div.row > table td {
+	vertical-align: top !important;
+}
+table.icons * {
+}
+table.icons {
+}
+table.icons td {
+}
+td.itemCounts {
+    display: none;
+}
+span.commentLink.link {
+	margin-left: 0;
+}
+table.icons div.icon, .button {
+	min-width: 86px;
+	height: 36px;
+}
+
+div.icon.voteUp {
+	background-image: url('../../img/oxyg/1157/vote_bg.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #8c0000;
+background: url('../../img/oxyg/1157/vote_bg.png') center center no-repeat, -moz-linear-gradient(top,  #db0000 0%, #8c0000 100%);
+background: url('../../img/oxyg/1157/vote_bg.png') center center no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#db0000), color-stop(100%,#8c0000));
+background: url('../../img/oxyg/1157/vote_bg.png') center center no-repeat, -webkit-linear-gradient(top,  #db0000 0%,#8c0000 100%);
+background: url('../../img/oxyg/1157/vote_bg.png') center center no-repeat, -o-linear-gradient(top,  #db0000 0%,#8c0000 100%);
+background: url('../../img/oxyg/1157/vote_bg.png') center center no-repeat, -ms-linear-gradient(top,  #db0000 0%,#8c0000 100%);
+background: url('../../img/oxyg/1157/vote_bg.png') center center no-repeat, linear-gradient(to bottom,  #db0000 0%,#8c0000 100%);
+	border: 1px solid #ecb43a;
+	box-shadow: 0 0 6px #ecb43a;
+}
+div.icon.voteUp:hover {
+	background-image: url('../../img/oxyg/1157/vote_bg.png');
+	background-color: #db0000;
+	border: 1px solid #fbd505;
+	box-shadow: 0 0 6px #fbd505;
+}
+div.icon.votedUp {
+	background: url('../../img/oxyg/1157/voted_bg.png') center center no-repeat transparent;
+	border: 1px solid #8c0000;
+	box-shadow: none;
+}
+
+.polling div.row .contribText {
+}
+.contribText {
+	font-weight: 700;
+}
+.contribText img {
+}
+
+.rankBar .rank {
+	background: #ffe674;
+background: -moz-linear-gradient(top,  #ffe674 70%, #ffd214 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(70%,#ffe674), color-stop(100%,#ffd214));
+background: -webkit-linear-gradient(top,  #ffe674 70%,#ffd214 100%);
+background: -o-linear-gradient(top,  #ffe674 70%,#ffd214 100%);
+background: -ms-linear-gradient(top,  #ffe674 70%,#ffd214 100%);
+background: linear-gradient(to bottom,  #ffe674 70%,#ffd214 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe674', endColorstr='#ffd214',GradientType=0 );
+border-radius: 0;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+}
+
+.rankScore {
+    color: #E15218;
+    margin: 10px;
+    position: absolute;
+    right: 90px;
+}
+.resultRow .rankScore {
+	margin-top: 14px;
+}
+.widgetFooter {
+	background: none transparent;
+}
+div.buttons {
+	text-align: center;
+}
+div.buttons .button {
+	border-radius: 0;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+background: #8c0000;
+background: -moz-linear-gradient(top,  #db0000 0%, #8c0000 100%);
+background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%,#db0000), color-stop(100%,#8c0000));
+background:  -webkit-linear-gradient(top,  #db0000 0%,#8c0000 100%);
+background:  -o-linear-gradient(top,  #db0000 0%,#8c0000 100%);
+background:  -ms-linear-gradient(top,  #db0000 0%,#8c0000 100%);
+background:  linear-gradient(to bottom,  #db0000 0%,#8c0000 100%);
+	border: 1px solid #ecb43a;
+	box-shadow: 0 0 6px #ecb43a;
+}
+div.buttons .button:hover {
+	background:  none, #db0000;
+	border: 1px solid #fbd505;
+	box-shadow: 0 0 6px #fbd505;
+}
+div.buttons .button label {
+	font-family: 'Helvetica Neue', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	text-transform: lowercase;
+	color:	#ffe674;
+	font-size: 16px;
+}
+.submitButton.post:hover {
+    background-color: #db0000;
+}
+div.dialogContent > .caption, div.paneContent > .caption {
+	background-color: #4B3A3A;
+    border-radius: 0;
+    color: #FFFFFF;
+	font-family: 'Helvetica Neue', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    min-height: 24px;
+	line-height: 1em;
+    margin: 0 0 40px;
+    text-align: center;
+}
+
+div.commentListArea, div.answerListArea {
+	color: #4B3A3A;
+}
+
+.jqmOverlay {
+	border-radius: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"!important;
+	filter: alpha(opacity=100)!important;
+	-moz-opacity: 1!important;
+	opacity: 1!important;
+	background: #fff6d5;
+}
+.jqmWindow, .jqmWindow *{
+    /*background: none repeat scroll 0 0 transparent;*/
+}
+
+.jqmContent.noFill > *, .jqmContent div.rowAd {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background: none transparent;
+}
+.jqmContent {
+	background: transparent;
+}
+
+.jqmContent p {
+    color: #4b3a3a;
+    font-weight: bold;
+}
+div.itemArea {
+	background-color: #4B3A3A;
+}
+.answerArea {
+    text-align: center;
+}
+div.dialogContent div.icon.closeButton {
+}
+.link, img.popoutLink {
+	max-height: 300px!important;
+}
+.link {
+	color: #8c0000;
+}
+.link:hover {
+	color: #db0000;
+}
+
+/* Responsive */
+@media only screen
+and (min-width: 686px) {
+	div.row {
+	}
+	table.icons, div.icon {
+}
+	div.icon.voteUp, div.icon.votedUp, div.row:hover div.icon.voteUp, .rankScore {
+	}
+	.rankScore {
+	}
+}
+@media only screen
+and (min-width: 930px) {
+	.widget {
+	}
+	table.icons, div.icon {
+}
+	div.icon.voteUp, div.icon.votedUp, div.row:hover div.icon.voteUp, .rankScore {
+	}
+	.rankScore {
+	}
+
+}
+
+/* iPhone/Retina */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+}
+/* iPhone/Retina - (portrait) ---------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 2) and (orientation:portrait),
+only screen and (min-device-pixel-ratio : 2)  and (orientation:portrait){
+
+
+}
+
+/* iPhone/Retina - (landscape) ---------- */
+@media screen and (-webkit-min-device-pixel-ratio : 2) and (orientation:landscape), screen and (min-device-pixel-ratio : 2) and (orientation:landscape){
+}

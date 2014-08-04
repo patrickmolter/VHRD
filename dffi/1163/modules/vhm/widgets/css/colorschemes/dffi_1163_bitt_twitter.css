@@ -1,0 +1,97 @@
+@import url('dffi_1163_bitt_base.css');
+
+div.widgetHeaderInfo {
+	background: 0;
+	padding: 0;
+	min-height: 0;
+}
+.eventInfo {
+	display: none;
+}
+.widgetNav {
+    border-bottom: 0 none transparent;
+}
+.twitterBranding {
+	display: none;
+}
+.twitterLogo {
+	background: url('../../img/dffi/1163/twitter_bird_24.png') top center no-repeat;
+	vertical-align: text-bottom;
+}
+.twitterBranding a, .twitterBranding a:hover {
+	text-decoration: none;
+}
+div.tweetButton {
+	margin-top: 0;
+	background: url('../../img/dffi/1163/tweet_button.png') top center no-repeat;
+	width: 54px;
+	height: 24px;
+}
+div.tweetButton:hover {
+	background-position: 0 -24px;
+}
+a.twitterLink {
+}
+
+a.twitterLink.submittedLink {
+    display: block;
+    float: none;
+    font-size: 16px;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+	text-decoration: none;
+	color: #000000;
+}
+.row > div {
+    margin-left: 54px;
+}
+.itemInfo {
+    padding: 6px 0 24px;
+}
+.twitterActions a.twitterLink, .twitterActions a.twitterLink span {
+    color: #999999;
+	text-decoration: none;
+}
+.twitterActions a.twitterLink:hover, .twitterActions a.twitterLink:hover span {
+	text-decoration: none;
+	color: #333333;
+}
+
+a.userName {
+	display: block;
+	font-family: "TradeGothicLT-BoldCondTwenty", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+a.userHandle {
+	display: block;
+	float: left;
+	line-height: 2em;
+	text-decoration: none;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+a.userName:hover, a.userHandle:hover {
+	text-decoration: underline;
+}
+.contribText {
+	margin-top: 10px
+}
+.row .footer {
+    margin: 9px 0 9px 54px;
+}
+.row .footer .twitterLink {
+	padding-right: 6%;
+}
+@media(-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
+}
+@media(-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
+}
+@media only screen and (min-width:768px) {
+}
+@media only screen and (min-width:1024px) {
+}

@@ -1,0 +1,135 @@
+div.widgetHeaderInfo {
+    border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	margin-bottom: 12px;
+}
+.widgetHeaderInfo .askAreaWrap {
+    margin-top: 24px;
+}
+textarea.askBox, input.askBox {
+    border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+div.submitButton, div.dummySubmitButton {
+    border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	background-color: #999;
+}
+div.submitButton:hover, div.submitButton:hover {
+	background-color: #333;
+}
+div.submitButton div, div.submitButton div {
+	color: #c8c8c8;
+}
+.widgetNav {
+    border-bottom: 1px solid #666666;
+}
+.row { 
+    border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	margin: 1px 0;
+}
+.button {
+    background: none repeat scroll 0 0 #cccccc;
+    border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+    box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	text-shadow: 0 0 2px #999999
+}
+
+table.sorterButtons {
+    padding: 3px 0 0;
+}
+
+table.sorterButtons td {
+	vertical-align: bottom;
+}
+
+table.sorterButtons td .button {
+    background: none repeat scroll 0 0 #cccccc;
+    border-radius: 2px 2px 0 0;
+	-moz-border-radius: 2px 2px 0 0;
+	-webkit-border-radius: 2px 2px 0 0;
+    box-shadow: 0 -3px 2px #b0b0b0 inset;
+	-moz-box-shadow: 0 -3px 2px #b0b0b0 inset;
+	-webkit-box-shadow: 0 -3px 2px #b0b0b0 inset;
+    text-shadow: none;
+	font-weight: normal;
+	margin-top: 3px;
+}
+table.sorterButtons td .button label {
+    color: #666666;
+}
+
+table.sorterButtons td .button:hover, table.sorterButtons td .button.activeSortButton {
+    background: none repeat scroll 0 0 #444;
+    text-shadow: 0 1px 3px #111111;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	margin-top: 0;
+	padding-top: 3px;
+}
+
+table.sorterButtons td .button:hover label, table.sorterButtons td .button.activeSortButton label {
+    color: #FFFFFF;
+}
+div.shareTagLine {
+	background: none #666666;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	color: #FFFFFF;
+    font-size: 9px;
+    text-shadow: 0 -1px 0 #333333;
+}
+div.shareTagLine:hover {
+    background: none repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+div.socialIcons { display: none !important; }
+
+.voteUpLink div.icon {
+    background: url("../../img/vhrd/1169/button_vote.png") no-repeat scroll left top transparent;
+    height: 42px;
+    width: 90px;
+	transition: background-position 0.3s ease 0s;
+}
+
+.voteUpLink div.icon.voteUp {
+    background-position: left -42px;
+}
+.voteUpLink div.icon.votedUp {
+	background-position: left -84px;
+}
+div.icon.mineUp {
+	background-position: left -126px;
+}
+.voteUpLink div.icon.voteUp:hover {
+    background-position: left 0;
+}
+.rankBar .rank {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.widgetFooter {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
+/* mobile */
+.jqmOverlay, div.dialogContent > .caption, .jqmContent {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radiu:0;
+}

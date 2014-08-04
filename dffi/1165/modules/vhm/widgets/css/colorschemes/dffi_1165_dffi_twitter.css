@@ -1,0 +1,101 @@
+@import url('dffi_1165_dffi_base.css');
+
+.widgetHeader {
+	display: none;
+}
+div.widgetHeaderInfo {
+	background: 0;
+	padding: 0;
+	min-height: 0;
+}
+.eventInfo {
+	display: none;
+}
+.widgetNav {
+    border-bottom: 0 none transparent;
+}
+.twitterBranding {
+	display: none;
+}
+.twitterLogo {
+	width: 55px;
+	height: 55px;
+	background: url('../../img/dffi/1165/twitter_bird_55.png') top center no-repeat;
+	vertical-align: text-bottom;
+}
+.twitterBranding a, .twitterBranding a:hover {
+	text-decoration: none;
+}
+div.tweetButton {
+	margin-top: 0;
+	background: url('../../img/dffi/1165/tweet_button.png') top center no-repeat;
+	width: 54px;
+	height: 24px;
+}
+div.tweetButton:hover {
+	background-position: 0 -24px;
+}
+a.twitterLink {
+}
+
+.row > div {
+    margin-left: 54px;
+}
+.itemInfo {
+    padding: 6px 0 24px;
+}
+a.twitterLink.submittedLink {
+    display: block;
+    float: none;
+    font-size: 16px;
+    position: absolute;
+    right: 12px;
+    top: 0;
+	text-decoration: none;
+	color: #ffffff;
+}
+.twitterActions a.twitterLink, .twitterActions a.twitterLink span {
+    color: #39414A;
+	text-decoration: none;
+}
+.twitterActions a.twitterLink:hover, .twitterActions a.twitterLink:hover span {
+	text-decoration: none;
+	color: #cccccc;
+}
+
+a.userName {
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+a.userHandle {
+	display: block;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	float: left;
+	line-height: 2em;
+	text-decoration: none;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-top: 6px;
+}
+a.userName:hover, a.userHandle:hover {
+	text-decoration: underline;
+	color: #ffffff;
+}
+.row .footer {
+    margin: 9px 0 9px 54px;
+}
+.row .footer .twitterLink {
+	padding-right: 6%;
+}
+@media(-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
+}
+@media(-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
+}
+@media only screen and (min-width:768px) {
+}
+@media only screen and (min-width:1024px) {
+}

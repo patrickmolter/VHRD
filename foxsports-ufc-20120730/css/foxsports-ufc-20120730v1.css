@@ -1,0 +1,85 @@
+html {
+	overflow-y: scroll;
+}
+body {
+	background: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	margin: 0;
+    padding: 0;
+}
+h1 {
+	font-size: 22px;
+	line-height: 24px;
+}
+.centertext {
+	text-align: center;
+}
+
+a {
+	color: #ffc823;
+	text-decoration: none;
+}
+a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+body, p, ol, ul, td {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+}
+div.content {
+	padding: 0;
+	border: 0px solid #BBBBBB;
+	background: #fff;
+	margin: 0 auto;
+	width: 810px;
+}
+div.maincontent {
+	background: url('../images/SuitePeek_r2_c1.jpg') 0 0 no-repeat #000;
+	border: 0px solid #ccc;
+	margin: 0 auto;
+	padding: 0px;
+	width: 810px;
+	margin-top: 0px;
+	min-height: 500px;
+}
+div.content.login_width {
+	background-color: #fff;
+	border: 0px solid #ccc;
+	color: #FFFFFF;
+	margin: 0 auto;
+	padding: 0px;
+	width: 810px;
+	background: #000;
+}
+.buttonholder {
+	/*background: url("../images/thin-Poll.jpg") no-repeat scroll 0 0 transparent;*/
+	width: 810px;
+	height: 115px;
+}
+.btn {
+	display: inline;
+	float: left;
+	width: 403px;
+	height: 115px;
+	border: 0px solid red;
+}
+.vhmfeed {
+	margin: 20px auto;
+	width: 604px;
+	height: 360px;
+	-moz-box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.95);
+	-webkit-box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.95);
+	box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.95);
+}
+.videoEmbed {
+	width: 604px;
+	height: 340px;
+	margin: 0 auto;
+	border: 1px solid #282828;
+	-moz-box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.95);
+	-webkit-box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.95);
+	box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.95);
+}	
