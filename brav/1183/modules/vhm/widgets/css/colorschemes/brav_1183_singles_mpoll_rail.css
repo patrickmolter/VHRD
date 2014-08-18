@@ -12,7 +12,7 @@ html, body {
 
 }
 
-.widgetHeader, .widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption {
+.widgetHeader, .widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar {
 	display: none !important;
 }
 div.qList div.row {
@@ -176,7 +176,7 @@ div.buttons .button.jqmClose:hover {
 
 @media only screen
 and (min-width: 768px) and (max-width: 991px) {
-	.widgetHeader, .widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, div.buttons .button.jqmClose, .rankBar {
+	.widgetHeader, .widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, .rankBar {
 		display: none !important;
 	}
 	

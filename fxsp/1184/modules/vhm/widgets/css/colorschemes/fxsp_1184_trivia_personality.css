@@ -1,6 +1,6 @@
 html, body { background: #fff !important; overflow-x: hidden;}
 
-.widgetHeader, .widgetHeaderMisc, .headerEventDesc, .questionWindow .prevQuestion, .questionWindow .nextQuestion, .widgetNav, .askAreaWrap, .widgetFooter .tagLine, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, div.buttons .button.jqmClose, .rankBar, .yourVotes .label-media, .yourVotes .label-description, .buttonBar, .yourVotes .label-comment-area, .yourVotes .icon, .resultList br {
+.widgetHeader, .widgetHeaderMisc, .headerEventDesc, .questionWindow .prevQuestion, .questionWindow .nextQuestion, .widgetNav, .askAreaWrap, .widgetFooter .tagLine, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, div.buttons .button.jqmClose, .rankBar, .yourVotes .label-description, .buttonBar, .yourVotes .label-comment-area, .yourVotes .icon, .resultList br {
 	display: none !important;
 }
 
@@ -268,6 +268,9 @@ div.row:hover .thumbnail.thumbWrapper {
 div.row .thumbnail.hidden {
 	background: none #373737
 }
+div.row .thumbnail.small {
+	width: auto;
+}
 div.row:hover .thumbnail.hidden, div.row:hover .thumbnail {
 	background: none #3793ff
 }
@@ -381,12 +384,13 @@ table.askArea {
 	margin: 0 auto;
 }
 .yourVotes div.row > * {
-    margin: 1.3em 0;
+    margin: 0 0 1.3em 0;
 	text-align: left;
-	font-size: 14pt;
+/*	font-size: 14pt;
 	line-height: 30pt;
-	dislay: inline;
+*/	
 }
+
 .yourVotesTitle {
 	display: none;
 }
@@ -406,10 +410,12 @@ table.askArea {
 
 .yourVotes h2.label-name {
 	color: #0097ff;
-	text-align: center;
-	font-size: 14px;
+	text-align: left;
 	font-weight: normal;
 	margin: 0 0 84px;
+	display: block;
+	clear: both;
+	padding: 0 !important;
 }
 .yourVotes h2.label-name:before {
 	font-weight: bold;
@@ -420,11 +426,12 @@ table.askArea {
 .yourVotes div.row p a {
     display: inline;
 }
+.yourVotes div.label-media {
+    clear: both;
+	text-align: center;
+    margin: 0 auto;
+}
 .yourVotes div.row img {
-    box-sizing: border-box;
-    display: block;
-    float: left;
-    margin: 6px 12px 12px 0;
     max-width: 100%;
 	height: auto !important;
 }
@@ -451,7 +458,7 @@ div.answerInfo.correct, .yourVotes .yourPick.correct {
 }
 .sharingBar {
 	position: absolute;
-	top: 39px;
+	top: 42px;
 	left: 0;
 	width: 100%;
 	margin: 0 auto !important;
@@ -556,7 +563,7 @@ div.row .contribText p {
 .widgetWindow .row {
 		margin: 0 15px 30px;
 		}
-.questionWindow .questionText p, .yourVotesTitle, .resultList .title, .resultList .title .yourScore {
+.questionWindow .questionText p, .yourVotesTitle, .resultList .title, .resultList .title .yourScore, .yourVotes h2.label-name {
 		font-size: 38px;
 	}
 #shareEventFB,#shareEventTwitter {
@@ -595,13 +602,12 @@ div.row .contribText p {
 	}
 	.questionWindow .question {
 		height: 60px;
-}
-.questionWindow .questionTextWrapper {
-	min-height: 42px;
-	height: 42px;
-}
+	}
+	.questionWindow .questionText, .yourVotesTitle, .resultList .title, .resultList .title .yourScore {
+		min-height: 60px;
+	}
 
-	.questionWindow .questionText p, .yourVotesTitle, .resultList .title, .resultList .title .yourScore {
+	.questionWindow .questionText p, .yourVotesTitle, .resultList .title, .resultList .title .yourScore, .yourVotes h2.label-name {
 		font-size: 20px;
 	}
 /*	.questionTextWrapper .questionText p {
@@ -634,19 +640,25 @@ div.row .contribText p {
 	div.row .contribText p {
 		width: 90px;
 	}
-	.yourVotes div.row > * {
+	/*.yourVotes div.row > * {
 		font-size: 16px;
 		line-height: 22px;
-	}
+	}*/
 }
 
 @media only screen and (min-width:550px) {
 	.large_text {
 		font-size: 3em !important
 	} 
+	.questionWindow .question {
+		height: 42px;
+	}
+	.questionWindow .questionText, .yourVotesTitle, .resultList .title, .resultList .title .yourScore {
+		min-height: 42px;
+	}
 	.widgetWindow {
 	min-height: 346px;
-}
+	}
 
 	.widgetWindow .row {
 		margin: 10px;
@@ -675,20 +687,20 @@ div.row .contribText p {
 		font-size: 5em !important
 	} 
 
-	.headerEventTitle, .yourVotes h2.label-name  {
+	.headerEventTitle  {
 		font-size: 18px;
 	}
 	.sharingBar {
-		top: 36px;
+		top: 48px;
 	}
-.questionWindow .question {
-		height: 66px;
-}
+	.questionWindow .question {
+		height: 60px;
+	}
 	.questionWindow .questionText, .yourVotesTitle, .resultList .title, .resultList .title .yourScore {
-		min-height: 66px;
+		min-height: 60px;
 	}
 	
-	.questionWindow .questionText p, .yourVotesTitle, .resultList .title, .resultList .title .yourScore {
+	.questionWindow .questionText p, .yourVotesTitle, .resultList .title, .resultList .title .yourScore, .yourVotes h2.label-name {
 		font-size: 24px;
 		padding: 0 10px 10px;
 	}
@@ -718,12 +730,18 @@ and (min-width : 880px) {
 		width: 220px;
 		height: 220px;
 		}
-	.questionWindow .questionText p, .yourVotesTitle, .resultList .title, .resultList .title .yourScore {
+	.questionWindow .question {
+		height: 90px;
+	}
+	.questionWindow .questionText, .yourVotesTitle, .resultList .title, .resultList .title .yourScore {
+		min-height: 90px;
+	}
+	.questionWindow .questionText p, .yourVotesTitle, .resultList .title, .resultList .title .yourScore, .yourVotes h2.label-name {
 		font-size: 38px;
 		padding: 0 10px 10px;
 	}
-	sharingBar {
-		top: 48px;
+	.sharingBar {
+		top: 60px;
 	}
 	/*#shareEventFB,#shareEventTwitter {
 		background: url('../../img/fxsp/1184/social_icons.png') top left no-repeat transparent;
@@ -750,11 +768,11 @@ and (min-width : 880px) {
 		width: 720px;
 		margin: 0 auto;
 		padding: 0;
-	}*/
+	}
 	.yourVotes div.row > * {
 		font-size: 24px;
 		line-height: 32px;
-	}
+	}*/
 	div.row .contribText p {
 		width: 200px;
 	}
