@@ -131,6 +131,9 @@ div.dialogContent > .caption {
 	height: 50px;
 	margin-bottom: 0px;
 }
+.voteCB_dialog div.dialogContent > .caption {
+	background: url('../../img/brav/1183/vote-overlay-thanks-300-header.png') center center no-repeat transparent;
+}
 div.icon.closeButton {
 	display: none;
 }
@@ -324,6 +327,9 @@ and (min-width: 768px) and (max-width: 991px) {
 	}
 		div.dialogContent > .caption {
 	background: url('../../img/brav/1183/vote-overlay-720x150_header.jpg') center center no-repeat transparent;
+	}
+	.voteCB_dialog div.dialogContent > .caption {
+	background: url('../../img/brav/1183/vote-overlay-thanks-720-header.png') center center no-repeat transparent;
 	}
 .jqmContent.ACCOUNT_ACCESS_EXCEEDED > div {
 	background: url('../../img/brav/1183/vote-overlay-720x150_body.jpg') top center no-repeat transparent;	
