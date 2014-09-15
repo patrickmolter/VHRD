@@ -1,4 +1,4 @@
-html, body { background: #fff !important; overflow-x: hidden;}
+html, body { background: none transparent; overflow-x: hidden;}
 
 .widgetHeader, .widgetHeaderMisc, .headerEventDesc, .questionWindow .prevQuestion, .questionWindow .nextQuestion, .widgetNav, .askAreaWrap, .widgetFooter .tagLine, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, div.buttons .button.jqmClose, .rankBar, .yourVotes .label-description, .buttonBar, .yourVotes .label-comment-area, .yourVotes .icon, .resultList br {
 	display: none !important;
@@ -6,7 +6,7 @@ html, body { background: #fff !important; overflow-x: hidden;}
 
 .widget {
 	border: 0 none transparent;
-	background: none #fff;
+	background: none transparent;
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
@@ -135,7 +135,7 @@ div.icon.next {
 	
 	float: none;
 	position: relative;
-	margin: 0 0 3px;
+	margin: 0 0 6px;
 	padding: 0;
 	
 	background: none #373737;
@@ -146,7 +146,7 @@ div.icon.next {
 	
 	
 	width: 280px;
-	min-height: 36px;
+	min-height: 30px;
 	box-shadow: 0 0 3px rgba(55,55,55,.25);
 	-moz-box-shadow: 0 0 3px rgba(55,55,55,.25);
 	-webkit-box-shadow: 0 0 3px rgba(55,55,55,.25);
@@ -281,15 +281,13 @@ div.row .contribText {
 	-moz-hyphens: auto;
 	hyphens: auto;
 	display: block;
-	font-size: 18px;
 	font-weight: bold;
 }
 
 div.row .contribText p {
     box-sizing: border-box;
     display: inline-block;
-    line-height: 36px;
-    min-height: 36px;
+    line-height: 22px;
     padding: 3px 10px;
 }
 
