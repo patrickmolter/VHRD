@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'Open Sans Condensed Bold';
+	src: url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondBold-webfont.eot');
+	src: local('☺'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondBold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondBold-webfont.woff') format('woff'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondBold-webfont.ttf') format('truetype'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondBold-webfont.svg#OpenSans-CondBold-webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 html, body { background: none transparent; overflow-x: hidden;}
 
 .widgetHeader, .widgetHeaderMisc, .headerEventDesc, .questionWindow .prevQuestion, .questionWindow .nextQuestion, .widgetNav, .askAreaWrap, .widgetFooter .tagLine, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, div.buttons .button.jqmClose, .rankBar, .yourVotes .label-description, .buttonBar, .yourVotes .label-comment-area, .yourVotes .icon, .resultList br {
@@ -84,8 +95,9 @@ div.widgetHeaderInfo {
 	display: none
 }
 .questionTextWrapper .questionText p, .yourVotesTitle, .resultList .title, .resultList .title .yourScore {
+	font-family: "Open Sans Condensed Bold";
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: normal;
 	color: #373737;
 	padding: 0;
 }
@@ -505,3 +517,23 @@ div.answerInfo.correct, .yourVotes .yourPick.correct {
 	background-position: bottom right;
 }
 
+.yourVotes button {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	background: #619690;
+	padding: 6px 12px;
+	border: 1px solid #575757;
+	color: #fff;
+	font-family: "Open Sans Condensed Bold";
+	font-size: 18px;
+	line-height: 24px;
+	height: 36px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.yourVotes button:hover {
+	background: #575757;
+}
+	
