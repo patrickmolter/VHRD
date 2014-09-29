@@ -14,7 +14,7 @@ html, body {
     background: none repeat scroll 0 0 transparent !important;
 }
 .widget {
-	background: none transparent;
+	background: none #919191;
 	border-radius: 0 0 0 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
@@ -30,7 +30,7 @@ html, body {
 }
 
 
-.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar {
+.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .contribStatusArea, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar {
 	display: none !important;
 }
 
@@ -40,22 +40,26 @@ div.widgetHeaderInfo {
     border-radius: 0;
     height: auto;
 	background-size: cover cover;
+	padding: 10px 40px 10px 10px;
 }
 
-.headerEventTitle {
+div.headerEventTitle {
     text-shadow: 0 1px 4px #111;
     text-transform: uppercase;
 	line-height: 1.1em;
+	font-size: 2.5em;
 }
 
 #shareEventTwitter {
     bottom: auto;
     top: 10px;
+	right: 10px;
 }
 
 #shareEventFB {
     bottom: auto;
     top: 30px;
+	right: 10px;
 }
 
 div#widgetWindow {
