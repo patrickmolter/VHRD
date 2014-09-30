@@ -237,7 +237,7 @@ table.icons td.link:hover div.icon.voteUp {
 	color: #fff;
 	width: 100%;
 	height: auto;
-	font-size: 2.1em;
+	font-size: 1.8em;
 }
 
 .polling div.row div.contribText p {
@@ -337,7 +337,9 @@ and (min-width: 420px) {
 		width: 180px;
 	}
 
-	
+	.polling div.row div.contribText {
+		font-size: 2.1em;
+	}
 
 
 }
