@@ -1,3 +1,11 @@
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
 @font-face {
 	font-family: 'Open Sans Condensed Bold';
 	src: url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondBold-webfont.eot');
@@ -10,27 +18,47 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Open Sans Condensed Light';
+	src: url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondLight-webfont.eot');
+	src: local('☺'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondLight-webfont.woff') format('woff'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondLight-webfont.ttf') format('truetype'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondLight-webfont.svg#OpenSans-CondBold-webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 html, body {
     background: none repeat scroll 0 0 transparent !important;
 }
 .widget {
 	background: none #919191;
+	color: #222;
 	border-radius: 0 0 0 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
 	padding: 0;
 	min-height: 0px !important;
-	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;
-
+	font-family: "Open Sans Condensed Light", Helvetica, Arial, sans-serif;
+	max-width: 1000px;
 }
 
 
 .widget table {
     border-collapse: collapse;
+	empty-cells: hide;
+	margin: 0;
+	padding: 0;
 }
 
+.widget table tr, .widget table td {
+    margin: 0;
+    padding: 0;
+}
 
-.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .contribStatusArea, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar {
+.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .resultRow td.voteUpLink, .contribStatusArea, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar {
 	display: none !important;
 }
 
@@ -40,7 +68,7 @@ div.widgetHeaderInfo {
     border-radius: 0;
     height: auto;
 	background-size: cover cover;
-	padding: 10px 40px 10px 10px;
+	padding: 10px 50px 10px 10px;
 }
 
 div.headerEventTitle {
@@ -48,18 +76,38 @@ div.headerEventTitle {
     text-transform: uppercase;
 	line-height: 1.1em;
 	font-size: 2.5em;
+	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;
 }
 
-#shareEventTwitter {
-    bottom: auto;
-    top: 10px;
+#shareEventTwitter, #shareEventFB {
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	zoom: 1;
 	right: 10px;
+	bottom: auto;
+	border-radius: 1.375rem;
+    display: block;
+    height: 1.9375rem;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-indent: 9999rem;
+    width: 1.9375rem;
+	background: url("../../img/opry/1194/social_icons_1x.png") no-repeat scroll 0 0 #c4c4c4;
+}
+
+#shareEventTwitter:hover, #shareEventFB:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	background-color: #3b579d;
+}
+#shareEventTwitter {
+    top: 6px;
+	background-position: 0 -1.9375rem;
 }
 
 #shareEventFB {
-    bottom: auto;
-    top: 30px;
-	right: 10px;
+    top: 42px;
+	background-position: 0 -0.0625rem;
 }
 
 div#widgetWindow {
@@ -81,11 +129,15 @@ div.qList div.row {
 	border-top: 0 none;
 	background: none #fff;
 	position: relative;
-	padding: 0;
+	padding: 0 0 36px;
 	margin: 0 0 3px;
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
+}
+
+div.qList div.row.resultRow {
+	padding-bottom: 0;
 }
 
 table.icons {
@@ -102,18 +154,24 @@ table.icons td.link {
     width: 100%;
     z-index: 999;
 }
+
+.icons div.icon {
+	    background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_hover.png") no-repeat right top transparent;
+	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote.png") no-repeat right top transparent;
+
+}
 .icons div.icon.voteUp {
     display: block;
 	width: 100%;
 	height: 36px;
-	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote.png") repeat right top transparent;
+	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote.png") no-repeat right top transparent;
 	bottom: 0;
     left: 0;
     position: absolute;
 }
 
 table.icons td.link:hover div.icon.voteUp {
-    background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_hover.png") repeat right top transparent;
+    background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_hover.png") no-repeat right top transparent;
 }
 
 div.icon.votedUp {
@@ -121,32 +179,28 @@ div.icon.votedUp {
 	color: #526E91;
 }
 
-.thumbWrapper.small {
+.thumbWrapper.orig, .thumbWrapper.small {
 	min-height: 100px;
 	min-width: 100px;
 	height: auto;
 	width: 100px;
+	margin: 0;
 }
 
-
-.polling div.row .contribText {
-    font-size: 24px;
-    font-weight: bold;
+.mediaThumbnail {
+	margin: 0 0 -6px;
+	width: 100%;
+	max-height: 100%;
+}
+.polling div.row div.contribText {
+    font-size: 3em;
+    font-weight: normal;
     margin: 12px;
+	z-index: 0;
 }
 
-
-div.contribInfo {
-    width: 110px;
-	height: 110px;
-	position: absolute;
-	top: 10px;
-	left: 15px;
-	z-index: 130;
-}
-
-.contribInfo * {
-    display: none !important;
+.polling div.row div.contribText p {
+	z-index: 1000;
 }
 
 .rankScore {
@@ -156,6 +210,7 @@ div.contribInfo {
     position: absolute;
 	color: #5c7594;
 	font-size: 22px;
+	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;		
 }
 
 .rankBar .rank {
@@ -234,10 +289,7 @@ div.buttons .button.jqmClose:hover {
 }
 
 @media only screen
-and (min-width: 768px) and (max-width: 991px) {
-	.widgetHeader, .widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, .rankBar {
-		display: none !important;
-	}
+and (min-width: 420px) {
 	
 	
 	div.qList {
@@ -249,9 +301,9 @@ and (min-width: 768px) and (max-width: 991px) {
 		*display: inline;
 		zoom: 1;
 		position: relative;
-		margin: 0 5px 40px;
+		margin: 20px 10px;
 		width: 180px;
-		height: 300px;
+		height: auto;
 		padding: 0;
 		text-align: center;
 		float: none;
@@ -265,6 +317,10 @@ and (min-width: 768px) and (max-width: 991px) {
 		border: 0 solid transparent;
 	}
 	
+	div.qList div.row.resultRow {
+		padding-top: 36px;
+	}
+	
 	div.qList div.row * {
 		display: block;
 		margin: 0 auto;
@@ -273,8 +329,9 @@ and (min-width: 768px) and (max-width: 991px) {
 		clear: both;
 		overflow: hidden;
 		width: 100%;
+		box-sizing: border-box;
+		padding: 0;
 	}
-	
 	div.row > table {
 		border-collapse: collapse;
 		border-spacing: 0;
@@ -293,64 +350,39 @@ and (min-width: 768px) and (max-width: 991px) {
 		margin:0;
 		padding:0;
 	}
-	table.icons * {
-		overflow: visible !important;
-	}
-	table.icons {
-		/*bottom: 3px;*/
-		top: 0;
-		left: 0;
-		display: block;
-		float: none;
-		margin: 0;
-		position: absolute;
-		z-index: 999;
-		width: 100%;
-		height: 100%;
-	}
-	table.icons td {
-		/*padding: 2px 10px;*/
-		display: block;
-		padding: 0;
-		margin: 0;
-		text-align: center;
-	}
-	td.voteUpLink.link {
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-	}
+
 	.icons div.icon {
-		width: 100%;
-		height: 100%;
-		background: url("../../img/opry/1194/vote-bg.png") no-repeat scroll center bottom transparent;
-		background: url("../../img/opry/1194/vote-bg-selected.png") no-repeat scroll center bottom transparent;
-		background: url("../../img/opry/1194/vote-bg-hover.png") no-repeat scroll center bottom transparent;
-		background: url("../../img/opry/1194/vote-bg-indactive.png") no-repeat scroll center bottom transparent;
+		background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet_hover.png") no-repeat center top transparent;
+		background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet.png") no-repeat center top transparent;
+	}
+	.icons div.icon.voteUp {
+		background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet.png") no-repeat center top transparent;
+		top: 204px;
+		bottom: auto;
 	}
 	
-	div.icon.voteUp {
-		background: url("../../img/opry/1194/vote-bg.png") no-repeat scroll center bottom transparent;
+	table.icons td.link:hover div.icon.voteUp {
+		background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet_hover.png") no-repeat center top transparent;
 	}
-	div.qList div.row:hover div.icon.voteUp {
-		background: url("../../img/opry/1194/vote-bg-hover.png") no-repeat scroll center bottom transparent;
-	}
-	div.icon.votedUp {
-		background: url("../../img/opry/1194/vote-bg-selected.png") no-repeat scroll center bottom transparent;
-	}
-	
+
 	.resultRow table.icons.hidden {
 		display: block !important;
 	}
 	
-	.polling div.row .contribText {
+	.polling div.row div.contribText {
+		margin: 0;
+		padding: 6px;
+		position: relative;
+		top: auto;
+		left: auto;
+		z-index: 0;
+		background: #333;
+		color: #fff;
+		width: 100%;
 		height: auto;
-		padding-bottom: 32%;
-		font-weight: bold;
-		margin-top: 12px;
+		font-size: 2.1em;
 	}
+
 	
 	/*.contribText img {
 		height: auto;
@@ -366,20 +398,27 @@ and (min-width: 768px) and (max-width: 991px) {
 		height: auto;
 		width: auto;
 	}
+	.mediaThumbnail {
+		margin: 0;
+	}
 	
+	.rankBar {
+		display: none !important;
+	}
 	.rankScore {
-		bottom: 10px;
 		right: 0;
+		top: 0;
 		margin: 0 auto;
+		padding: 3px !important;
 		position: absolute;
 		width: 100%;
 		text-align: center !important;
-		background: url('../../img/opry/1194/results-bg.png') no-repeat scroll center bottom transparent;
-		text-indent: 55%;
-		font-size: 40px;
-		line-height: 40px;
-		color: #36bdb2;
-		background-size: 100% auto;
+		background: url('../../img/opry/1194/rankbar.png') top left repeat-x transparent;
+		background-size: auto 100%;
+		font-size: 36px;
+		line-height: 36px;
+		color: #fff;
+		z-index: 999;
 	}
 	div.jqmWindow.dialog {
 		min-height: 184px;
