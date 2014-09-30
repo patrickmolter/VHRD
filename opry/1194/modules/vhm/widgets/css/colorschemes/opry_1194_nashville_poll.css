@@ -46,6 +46,11 @@ html, body {
 }
 
 
+.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .resultRow td.voteUpLink, .resultRow table.icons.hidden, .rankBar, .contribStatusArea, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar {
+	display: none !important;
+}
+
+
 .widget table {
     border-collapse: collapse;
 	empty-cells: hide;
@@ -57,11 +62,6 @@ html, body {
     margin: 0;
     padding: 0;
 }
-
-.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .resultRow td.voteUpLink, .contribStatusArea, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar {
-	display: none !important;
-}
-
 
 div.widgetHeaderInfo {
     background: url("../../img/opry/1194/header_bg.jpg") center center no-repeat;
@@ -110,93 +110,134 @@ div.headerEventTitle {
 	background-position: 0 -0.0625rem;
 }
 
-div#widgetWindow {
-	padding: 10px;
+div.qList {
+	text-align: center;
 }
 
 div.qList div.row {
-	overflow: hidden;
-}
-.resultRow:first-child {
-	margin-top: 0;
-}
-
-div.qList div.row:first-child {
-	border-top: 0 solid transparent;
-}
-
-div.qList div.row {
-	border-top: 0 none;
-	background: none #fff;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: top;
 	position: relative;
-	padding: 0 0 36px;
-	margin: 0 0 3px;
-	border-radius: 0;
+	margin: 20px 10px;
+	width: 120px;
+	height: auto;
+	padding: 0;
+	text-align: center;
+	float: none;
+	background: none transparent;
+	border-radius: 0 0 0 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;  
+	box-sizing: border-box; 
+	border: 0 solid transparent;
 }
 
-div.qList div.row.resultRow {
-	padding-bottom: 0;
+
+div.qList div.row * {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	float: left;
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0;
 }
 
-table.icons {
+div.row > table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: hide;
+	display: block;
+	border: 0px none;
 	margin: 0;
+	padding: 36px 0 0 !important;
+	position: relative;
+	height: 100%;
+}
+div.row td {
+	display: block;
+	float: none;
+	clear: both;
+	margin:0;
+	padding:0;
 }
 
-table.icons td.link {
-    bottom: 0;
-    display: block;
-    height: 100%;
+table.icons * {
+	overflow: visible !important;
+}
+table.icons {
+	/*bottom: 3px;*/
+	top: 0;
+	display: block;
+	float: none;
+	margin: 0;
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+}
+table.icons td {
+	/*padding: 2px 10px;*/
+	display: block;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+td.voteUpLink.link {
     left: 0;
     position: absolute;
-    top: auto;
+    top: 0;
     width: 100%;
-    z-index: 999;
+	height: 100%;
+	background: url('//cdn.vhmengine.com/static/images/spacer.gif');
 }
-
 .icons div.icon {
-	    background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_hover.png") no-repeat right top transparent;
-	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote.png") no-repeat right top transparent;
-
+    width: 100%;
+	height: 36px;
+	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet_hover.png") no-repeat center top transparent;
+	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet.png") no-repeat center top transparent;
 }
 .icons div.icon.voteUp {
-    display: block;
-	width: 100%;
-	height: 36px;
-	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote.png") no-repeat right top transparent;
-	bottom: 0;
-    left: 0;
-    position: absolute;
+	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet.png") no-repeat center top transparent;
 }
 
 table.icons td.link:hover div.icon.voteUp {
-    background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_hover.png") no-repeat right top transparent;
+	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet_hover.png") no-repeat center top transparent;
 }
 
-div.icon.votedUp {
-    background: #5c7594;
-	color: #526E91;
-}
-
-.thumbWrapper.orig, .thumbWrapper.small {
-	min-height: 100px;
-	min-width: 100px;
+.thumbWrapper.small, .thumbWrapper.orig {
+	min-height: 120px;
 	height: auto;
-	width: 100px;
+	width: auto;
 	margin: 0;
+	margin: 36px 0 0 0 \ !important  ;
 }
 
 .mediaThumbnail {
-	margin: 0 0 -6px;
+	margin: 0;
 	width: 100%;
 	max-height: 100%;
 }
+
 .polling div.row div.contribText {
-    font-size: 3em;
-    font-weight: normal;
-    margin: 12px;
+	margin: 0;
+	padding: 6px;
+	position: relative;
+	top: auto;
+	left: auto;
 	z-index: 0;
+	background: #313131;
+	color: #fff;
+	width: 100%;
+	height: auto;
+	font-size: 2.1em;
 }
 
 .polling div.row div.contribText p {
@@ -205,24 +246,24 @@ div.icon.votedUp {
 
 .rankScore {
 	float: none;
-	top: 10px;
-    right: 0;
-    position: absolute;
-	color: #5c7594;
-	font-size: 22px;
+	right: 0;
+	top: 0;
+	margin: 0 auto;
+	padding: 3px !important;
+	position: absolute;
+	width: 100%;
+	text-align: center !important;
+	background: url('../../img/opry/1194/rankbar.png') top left repeat-x transparent;
+	background-size: auto 100%;
 	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;		
+	font-size: 36px;
+	line-height: 36px;
+	color: #fff;
+	z-index: 999;
+	height: 36px;
 }
 
-.rankBar .rank {
-	top: 8px;
-	left: 12px;
-	background: url('../../img/opry/1194/rankbar.png') top left repeat-x transparent;
-	filter: none;
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	width: 56% !important;
-}
+
 .jqmOverlay {
 	border-radius: 0;
 	-moz-border-radius: 0;
@@ -292,136 +333,11 @@ div.buttons .button.jqmClose:hover {
 and (min-width: 420px) {
 	
 	
-	div.qList {
-		text-align: center;
-	}
-	
 	div.qList div.row {
-		display: inline-block;
-		*display: inline;
-		zoom: 1;
-		position: relative;
-		margin: 20px 10px;
 		width: 180px;
-		height: auto;
-		padding: 0;
-		text-align: center;
-		float: none;
-		background: none transparent;
-		border-radius: 0 0 0 0;
-		-moz-border-radius: 0;
-		-webkit-border-radius: 0;
-		-webkit-box-sizing: border-box; 
-		-moz-box-sizing: border-box;  
-		box-sizing: border-box; 
-		border: 0 solid transparent;
-	}
-	
-	div.qList div.row.resultRow {
-		padding-top: 36px;
-	}
-	
-	div.qList div.row * {
-		display: block;
-		margin: 0 auto;
-		text-align: center;
-		float: left;
-		clear: both;
-		overflow: hidden;
-		width: 100%;
-		box-sizing: border-box;
-		padding: 0;
-	}
-	div.row > table {
-		border-collapse: collapse;
-		border-spacing: 0;
-		empty-cells: hide;
-		display: block;
-		border: 0px none;
-		margin: 0;
-		padding: 0;
-		position: relative;
-		height: 100%;
-	}
-	div.row td {
-		display: block;
-		float: none;
-		clear: both;
-		margin:0;
-		padding:0;
-	}
-
-	.icons div.icon {
-		background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet_hover.png") no-repeat center top transparent;
-		background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet.png") no-repeat center top transparent;
-	}
-	.icons div.icon.voteUp {
-		background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet.png") no-repeat center top transparent;
-		top: 204px;
-		bottom: auto;
-	}
-	
-	table.icons td.link:hover div.icon.voteUp {
-		background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet_hover.png") no-repeat center top transparent;
-	}
-
-	.resultRow table.icons.hidden {
-		display: block !important;
-	}
-	
-	.polling div.row div.contribText {
-		margin: 0;
-		padding: 6px;
-		position: relative;
-		top: auto;
-		left: auto;
-		z-index: 0;
-		background: #333;
-		color: #fff;
-		width: 100%;
-		height: auto;
-		font-size: 2.1em;
 	}
 
 	
-	/*.contribText img {
-		height: auto;
-		max-width: 200px;
-		width: 100%;
-		font-size: 18px;
-		line-height: 1.2em;
-	}
-	*/
-	
-	.thumbWrapper.small {
-		min-height: 120px;
-		height: auto;
-		width: auto;
-	}
-	.mediaThumbnail {
-		margin: 0;
-	}
-	
-	.rankBar {
-		display: none !important;
-	}
-	.rankScore {
-		right: 0;
-		top: 0;
-		margin: 0 auto;
-		padding: 3px !important;
-		position: absolute;
-		width: 100%;
-		text-align: center !important;
-		background: url('../../img/opry/1194/rankbar.png') top left repeat-x transparent;
-		background-size: auto 100%;
-		font-size: 36px;
-		line-height: 36px;
-		color: #fff;
-		z-index: 999;
-	}
-	div.jqmWindow.dialog {
-		min-height: 184px;
-	}
+
 
 }
