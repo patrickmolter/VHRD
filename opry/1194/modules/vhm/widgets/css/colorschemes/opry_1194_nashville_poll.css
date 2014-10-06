@@ -46,7 +46,7 @@ html, body {
 }
 
 
-.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .resultRow td.voteUpLink, .resultRow table.icons.hidden, .rankBar, .contribStatusArea, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar {
+.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .resultRow td.voteUpLink, .rankBar, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar {
 	display: none !important;
 }
 
@@ -134,6 +134,19 @@ div.qList div.row {
 	-moz-box-sizing: border-box;  
 	box-sizing: border-box; 
 	border: 0 solid transparent;
+}
+
+div.qList div.row.resultRow table.icons.hidden, .resultRow div.contribStatus.hidden {
+	display: block !important;
+}
+
+.resultRow div.contribStatus.hidden {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 8888;
 }
 
 
@@ -273,7 +286,7 @@ table.icons td.link:hover div.icon.voteUp {
 
 div.jqmWindow.dialog {
     background: none repeat scroll 0 0 #FFFFFF;
-	border: 3px solid #ab0e6f;
+	border: 10px solid #c8c8c8;
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
@@ -291,9 +304,9 @@ div.dialogContent > .caption {
 	margin-bottom: 0px;
 }
 .voteCB_dialog div.dialogContent > .caption {
-}
-div.icon.closeButton {
-	display: none;
+	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	line-height: 1.6em;
 }
 
 .jqmContent {
