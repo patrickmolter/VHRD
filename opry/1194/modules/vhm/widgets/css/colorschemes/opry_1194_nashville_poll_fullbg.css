@@ -43,6 +43,7 @@ html, body {
 	min-height: 0px !important;
 	font-family: "Open Sans Condensed Light", Helvetica, Arial, sans-serif;
 	max-width: 1000px;
+	border: 10px solid #c4c4c4;
 }
 
 
@@ -63,6 +64,10 @@ html, body {
     padding: 0;
 }
 
+.widgetHeader {
+    background: url('../../img/opry/1194/header_transparent_bg.png') top left repeat transparent;
+}
+
 div.widgetHeaderInfo {
     background: none transparent;
     border-radius: 0;
@@ -71,14 +76,14 @@ div.widgetHeaderInfo {
 }
 
 div.headerEventTitle {
-    text-shadow: 0 1px 4px #999;
+   /* text-shadow: 0 1px 4px #999;*/
     text-transform: uppercase;
 	line-height: 1.1em;
 	font-size: 2.5em;
 	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;
 }
 
-#shareEventTwitter, #shareEventFB {
+#shareEventTwitter, #shareEventFB, .resultsShare {
 	opacity: 0.6;
 	filter: alpha('opacity=60');
 	zoom: 1;
@@ -94,17 +99,25 @@ div.headerEventTitle {
 	background: url("../../img/opry/1194/social_icons_1x.png") no-repeat scroll 0 0 #c4c4c4;
 }
 
-#shareEventTwitter:hover, #shareEventFB:hover {
+.resultsShare {
+    display: inline-block;
+	*display: block;
+	zoom: 1;
+    margin: 0 10px;
+	text-indent: -9999px;
+}
+
+#shareEventTwitter:hover, #shareEventFB:hover, .resultsShare:hover {
 	opacity: 1;
 	filter: alpha('opacity=100');
 	background-color: #3b579d;
 }
-#shareEventTwitter {
+#shareEventTwitter, .resultsShare.shareTwt {
     top: 6px;
 	background-position: 0 -1.9375rem;
 }
 
-#shareEventFB {
+#shareEventFB, .resultsShare.shareFB {
     top: 42px;
 	background-position: 0 -0.0625rem;
 }
@@ -299,6 +312,11 @@ div.jqmWindow.dialog {
 	-moz-box-sizing: border-box;
 	min-height: 138px;
 }
+
+div.dialogContent {
+	margin: 0;
+}
+
 div.dialogContent > .caption {
 	border-radius: 0;
 	-moz-border-radius: 0;
@@ -310,6 +328,12 @@ div.dialogContent > .caption {
 	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;
 	font-size: 2em;
 	line-height: 1.6em;
+}
+
+div.icon.closeButton {
+	position: absolute;
+	top: -10px;
+	right: -3px;
 }
 
 .jqmContent {
