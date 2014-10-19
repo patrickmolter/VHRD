@@ -1,6 +1,6 @@
 html, body { background: none transparent !important; overflow-x: hidden;}
 
-.headerEventTitle, .widgetHeaderMisc, .headerEventDesc, .startPage .questionWindow, .startPage .gameBar, .questionWindow .prevQuestion, .widgetNav, .askAreaWrap, .widgetFooter .tagLine, .widgetSubfooter, .widgetBottom, .rowPager, td.itemCounts, td.voteDownLink, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .yourVotes .label-description, .yourVotes .label-comment-area, .resultList br {
+.headerEventTitle, .widgetHeaderMisc, .headerEventDesc, .startPage .questionWindow, .startPage .gameBar, .questionWindow .prevQuestion, .widgetNav, .askAreaWrap, .widgetFooter .tagLine, .widgetSubfooter, .widgetBottom, .rowPager, td.itemCounts, td.voteDownLink, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .yourVotes .label-description, .yourVotes .label-comment-area, .resultList br, button.button.smackBox, .resultRow, .yourVotesTitle, .yourVotes {
 	display: none !important;
 }
 
@@ -90,7 +90,6 @@ div.widgetHeaderInfo {
 	display: block;
 	min-height: 42px;
 	height: auto;
-	text-align: left !important;
 	padding: 0;
 	vertical-align: top;
 }
@@ -105,7 +104,6 @@ div.widgetHeaderInfo {
 .questionTextWrapper .questionText p, .yourVotesTitle, .resultList .title, .resultList .title .yourScore {
 	font-size: 18px;
 	font-weight: bold;
-	padding: 0 10px 10px 10px;
 }
 
 .questionWindow .prevQuestion, .questionWindow .nextQuestion {
@@ -238,9 +236,7 @@ div.row:hover .contribText img, div.row:hover .thumbnail img {
 }
 
 
-div.buttons {
-}
-.buttonBar .button {
+.button, div.buttons button, .buttonBar .button {
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
@@ -252,15 +248,26 @@ div.buttons {
 	color: #ffca00;
 	padding: 3px 9px;
 }
-.buttonBar .button:hover {
+#loginCancel.button {
+	background: none #444;	
+	text-shadow: none;
+}
+.button:hover div.buttons button:hover, .buttonBar .button:hover {
 	background: #03237c
 }
-.buttonBar .button label {
+#loginCancel.button:hover {
+	background: none #c4c4c4;	
+}
+.button label, div.buttons button label, .buttonBar .button label {
 	text-transform: uppercase;
 	color: #ffca00;
-	font-size: 16px
+	font-size: 16px;
 }
-.buttonBar .button:hover label {
+#loginCancel.button label {
+	color: #fff;
+}
+#loginCancel.button:hover label {
+		color: #444;
 }
 .jqmOverlay {
 	border-radius: 0;
@@ -275,6 +282,19 @@ div.buttons {
 	-webkit-border-radius: 0;
 	border-radius: 0;
 	background: none transparent
+}
+div.dialogContent {
+	margin: 0;
+}
+div.dialogContent > .caption {
+	background: none #444;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	text-align: left;	
+	padding: 3px 12px;
+	box-sizing: border-box;
+	height: auto;
 }
 .jqmContent {
 	background: transparent
@@ -297,7 +317,9 @@ table.askArea {
 	padding: 0;
 }
 /* Results */
-
+.questionWindow.results {
+    max-height: 100% !important;
+}
 .yourVotes {
 }
 .yourVotes div.row > * {
@@ -331,6 +353,8 @@ div.answerInfo.incorrect, .yourVotes .yourPick.incorrect {
 div.answerInfo.correct, .yourVotes .yourPick.correct {
 }
 .sharingBar {
+    background: none repeat scroll 0 0 transparent;
+    padding-top: 30px;
 }
 .sharingBar:hover {
 }
