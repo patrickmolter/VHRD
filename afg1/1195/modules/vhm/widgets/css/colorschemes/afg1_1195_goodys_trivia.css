@@ -40,9 +40,9 @@ h3, .callout {
 }
 
 div.widgetHeader {
-	background: url('../../img/afg1/1195/header_mobile.png') top center no-repeat;
+	background: url('../../img/afg1/1195/header_mobile.png') center center no-repeat;
 	background-size: 100% auto;
-	height: 210px;
+	height: 250px;
 	max-height: 450px;
 	max-width: 800px;
 	margin: 0 auto;
@@ -53,21 +53,22 @@ div.widgetHeaderInfo {
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
+	padding: 0;
 }
 
-#shareEventFB,#shareEventTwitter {
+#shareEventFB,#shareEventTwitter, .sharingBar div.socialButton.twitter, .sharingBar div.socialButton.facebook {
 	background: url('../../img/afg1/1195/sprite_social.png') top left no-repeat transparent;
 	width: 34px;
 	height: 34px;
-	top: 30px;
-	right: 50px;
+	top: 5px;
+	right: 45px;
 	bottom: auto;
 	z-index: 20;
 }
 
-#shareEventTwitter {
+#shareEventTwitter, .sharingBar div.socialButton.twitter {
 	background-position: top right;
-	right: 10px;
+	right: 5px;
 	bottom: auto;
 	width: 40px;
 }
@@ -82,6 +83,7 @@ div.widgetHeaderInfo {
 	text-align: left;
 	margin-left: 30px;
 	font-size: 16px;
+	width: auto;
 }
 .questionWindow .questionBackgroundFilter {
 	background: none transparent;
@@ -249,14 +251,15 @@ div.row:hover .contribText img, div.row:hover .thumbnail img {
 	padding: 3px 9px;
 }
 #loginCancel.button {
-	background: none #444;	
+	background: none #c4c4c4;	
 	text-shadow: none;
+	margin: 5px;
 }
 .button:hover div.buttons button:hover, .buttonBar .button:hover {
 	background: #03237c
 }
 #loginCancel.button:hover {
-	background: none #c4c4c4;	
+	background: none #444;	
 }
 .button label, div.buttons button label, .buttonBar .button label {
 	text-transform: uppercase;
@@ -267,15 +270,14 @@ div.row:hover .contribText img, div.row:hover .thumbnail img {
 	color: #fff;
 }
 #loginCancel.button:hover label {
-		color: #444;
 }
 .jqmOverlay {
 	border-radius: 0;
-	-ms-filter: "alpha(opacity=100)"!important;
-	filter: alpha(opacity=100)!important;
-	-moz-opacity: 1!important;
-	opacity: 1!important;
-	background: #fff
+	-ms-filter: "alpha(opacity=50)"!important;
+	filter: alpha(opacity=50)!important;
+	-moz-opacity: .5!important;
+	opacity: .5!important;
+	background: #000;
 }
 .jqmContent.noFill>*, .jqmContent div.rowAd {
 	-moz-border-radius: 0;
@@ -283,8 +285,19 @@ div.row:hover .contribText img, div.row:hover .thumbnail img {
 	border-radius: 0;
 	background: none transparent
 }
+
+.jqmWindow {
+	top: 25% !important;
+}
+
 div.dialogContent {
-	margin: 0;
+    margin: 0 auto;
+    max-width: 530px;
+	background: #fff;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+
 }
 div.dialogContent > .caption {
 	background: none #444;
@@ -297,8 +310,55 @@ div.dialogContent > .caption {
 	height: auto;
 }
 .jqmContent {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
 	background: transparent
 }
+
+.VHMLogin div.buttons {
+    clear: both;
+    margin-top: 40px !important;
+    text-align: left;
+    width: 240px;
+}
+
+div#anonFields table {
+    position: relative;
+	width: 240px;
+}
+
+div#anonFields td {
+	display: block;
+}
+
+div#anonFields input, div#anonFields select {
+    display: block;
+	width: 100%;
+}
+
+
+div#anonFields input#anonOpt {
+    display: inline-block;
+	width: auto;
+}
+#anonFields td > label {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+#anonSubmit {
+    bottom: -32px;
+    left: 5px;
+    position: absolute;
+}
+
+.terms {
+    margin: 6px auto 0 !important;
+    text-align: left;
+    width: 230px;
+}
+
 table.askArea {
 	width: 100%
 }
@@ -317,9 +377,16 @@ table.askArea {
 	padding: 0;
 }
 /* Results */
+
 .questionWindow.results {
     max-height: 100% !important;
 }
+
+.results-interstitial.row {
+    background: none repeat scroll 0 0 transparent;
+    text-align: center;
+}
+
 .yourVotes {
 }
 .yourVotes div.row > * {
@@ -352,14 +419,49 @@ div.answerInfo.incorrect, .yourVotes .yourPick.incorrect {
 }
 div.answerInfo.correct, .yourVotes .yourPick.correct {
 }
+
+.resultList {
+    margin-bottom: 52px;
+}
+
+.resultList .title .yourScore {
+    display: inline-block;
+	*display: block;
+	zoom: 1;
+    font-size: 22px;
+    vertical-align: baseline;
+	margin: 0 4px;
+}
+.title .yourScorePre {
+    background: url("../../img/afg1/1195/scorepre.png") no-repeat scroll left center transparent;
+    display: inline-block;
+	*display: inline;
+	zoom: 1;
+    text-indent: -9999px;
+    width: 140px;
+}
+
+
+.yourScorePost {
+    background: url("../../img/afg1/1195/scorepost.png") no-repeat scroll left center transparent;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 220px;
+}
 .sharingBar {
     background: none repeat scroll 0 0 transparent;
-    padding-top: 30px;
+    position: absolute;
+	top: 330px;
+	width: 100%;
 }
 .sharingBar:hover {
 }
 
 .sharingBar .shareText {
+    background: url("../../img/afg1/1195/sharetext.png") no-repeat scroll right center transparent;
+    margin-right: 10px;
+    text-indent: -9999px;
+    width: 180px;
 }
 .sharingBar div.socialButton {
 }
@@ -378,17 +480,23 @@ div.answerInfo.correct, .yourVotes .yourPick.correct {
 	div.widgetHeader {
 		height: 320px;
 	}
+	.sharingBar {
+		top: 380px;
+	}
 }
 
 @media only screen and (min-width: 520px) {
 	div.widgetHeader {
-		height: 400px;
+		height: 360px;
+	}
+	.sharingBar {
+		top: 420px;
 	}
 
 }
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:680px) {
 	div.widgetHeader {
-		background: url('../../img/afg1/1195/header_desktop.png') top center no-repeat;
+		background: url('../../img/afg1/1195/header_desktop.png') center center no-repeat;
 		background-size: 100% auto;
 		height: 220px;
 	}
@@ -397,25 +505,31 @@ div.answerInfo.correct, .yourVotes .yourPick.correct {
 	.headerEventTitle  {
 	}
 	.sharingBar {
+		top: 290px;
 	}
 	.questionWindow .question {
 	}
-	#shareEventFB,#shareEventTwitter {
+	#shareEventFB,#shareEventTwitter, .sharingBar div.socialButton.twitter, .sharingBar div.socialButton.facebook {
 		background: url('../../img/afg1/1195/sprite_social.png') top left no-repeat transparent;
-		top: 40px;
-		right: 60px;
-		bottom: auto;
-		z-index: 20;
 		zoom: 1;
 		filter: alpha(opacity=68);
 		opacity: .68;
 	}
-	#shareEventFB:hover,#shareEventTwitter:hover {
+	#shareEventFB,#shareEventTwitter {
+		top: 20px;
+		right: 60px;
+		bottom: auto;
+		z-index: 20;
+		
+	}
+	#shareEventFB:hover,#shareEventTwitter:hover, .sharingBar div.socialButton.twitter:hover, .sharingBar div.socialButton.facebook:hover {
 		filter: alpha(opacity=100);
 		opacity: 1;
 	}
-	#shareEventTwitter {
+	#shareEventTwitter, .sharingBar div.socialButton.twitter {
 		background-position: top right;
+	}
+	#shareEventTwitter {
 		right: 10px;
 		bottom: auto;
 	}
@@ -429,6 +543,9 @@ and (min-width : 880px) {
 	#shareEventFB:hover {
 	}
 	shareEventTwitter:hover {
+	}
+	.sharingBar {
+		top: 310px;
 	}
 }
 
