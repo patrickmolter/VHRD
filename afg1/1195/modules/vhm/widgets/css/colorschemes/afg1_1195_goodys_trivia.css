@@ -4,19 +4,22 @@ html, body { background: none transparent !important; overflow-x: hidden;}
 	display: none !important;
 }
 
+sup {
+    font-size: 0.6em;
+}
+
 h2, h3, .callout {
 	font-size: 22px;
-	font-weight: bold !important;
+	font-weight: normal !important;
 	text-transform: uppercase;
-	margin: 0;
+	margin: 0 0 12px;
 }
-h3, .callout {
+h3 {
 	font-size: 18px;
-	color: #0d4ea5;
+	color: #0000ff;	
+	margin: 0 0 36px;
 }
-.callout {
-	font-size: 22px;
-}
+
 
 .widget {
 	border: 0 none transparent;
@@ -40,37 +43,40 @@ h3, .callout {
 }
 
 div.widgetHeader {
-	background: url('../../img/afg1/1195/header_mobile.png') center center no-repeat;
+	background: url('../../img/afg1/1195/header_mobile.png') center top no-repeat;
 	background-size: 100% auto;
-	height: 250px;
+	height: 210px;
 	max-height: 450px;
 	max-width: 800px;
 	margin: 0 auto;
 }
 
 div.widgetHeaderInfo {
-	background: none transparent;
+ 	background: url("../../img/afg1/1195/header_share.png") no-repeat scroll 160px 8px transparent;	
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
 	padding: 0;
+	height: 40px;
+	min-height: 40px;
 }
 
 #shareEventFB,#shareEventTwitter, .sharingBar div.socialButton.twitter, .sharingBar div.socialButton.facebook {
-	background: url('../../img/afg1/1195/sprite_social.png') top left no-repeat transparent;
-	width: 34px;
-	height: 34px;
+	background: url('../../img/afg1/1195/sprite_social.png') top right no-repeat transparent;
+	width: 24px;
+	height: 20px;
 	top: 5px;
-	right: 45px;
+	right: 30px;
 	bottom: auto;
 	z-index: 20;
+	background-size: auto 100%;
 }
 
-#shareEventTwitter, .sharingBar div.socialButton.twitter {
-	background-position: top right;
+#shareEventFB, .sharingBar div.socialButton.facebook {
+	background-position: top left;
 	right: 5px;
 	bottom: auto;
-	width: 40px;
+	width: 20px;
 }
 .questionWindow .question {
 	margin: 0 0 10px;
@@ -115,7 +121,7 @@ div.widgetHeaderInfo {
 }
 div.gameBar {
     visibility: hidden;
-    max-width: 440px;
+    max-width: 520px;
     margin: 0 auto;
 }
 div.timerWrapper {
@@ -161,12 +167,25 @@ div.icon.next {
 	min-height: 312px;
 }
 .widgetWindow.startPage, .questionWindow {
-	max-width: 440px;
+	max-width: 520px;
 	margin: 0 auto;
 	font-size: 14px;
 	font-weight: normal;
-	padding: 20px;
+	padding: 0 20px;
 	box-sizing: border-box;
+}
+.startPage div.row {
+	margin: 0 auto;
+}
+.startPage div.row p.callout {
+	font-size: 22px;
+	text-align: center !important;
+	color: #0d4ea5;
+}
+
+.startPage div.row p.offer {
+	text-align: center;
+	margin-top: 36px;
 }
 .widgetWindow div.row {
 	background: none transparent;
@@ -174,6 +193,9 @@ div.icon.next {
 }
 div.row p {
 	font-weight: normal;
+}
+.startPage div.row p {
+    text-align: left;
 }
 div.row * {
 }
@@ -264,7 +286,11 @@ div.row:hover .contribText img, div.row:hover .thumbnail img {
 .button label, div.buttons button label, .buttonBar .button label {
 	text-transform: uppercase;
 	color: #ffca00;
-	font-size: 16px;
+	font-size: 34px;
+	line-height: 34px;
+}
+#anonSubmit label, #loginCancel label {
+	font-size: 18px;
 }
 #loginCancel.button label {
 	color: #fff;
@@ -313,7 +339,9 @@ div.dialogContent > .caption {
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
 	border-radius: 0;
-	background: transparent
+	background: transparent;
+	overflow-x: hidden;
+	max-height: 100% !important;
 }
 
 .VHMLogin div.buttons {
@@ -330,11 +358,13 @@ div#anonFields table {
 
 div#anonFields td {
 	display: block;
+	box-sizing: border-box;
 }
 
 div#anonFields input, div#anonFields select {
     display: block;
 	width: 100%;
+	box-sizing: border-box;
 }
 
 
@@ -348,7 +378,7 @@ div#anonFields input#anonOpt {
 }
 
 #anonSubmit {
-    bottom: -32px;
+    bottom: -42px;
     left: 5px;
     position: absolute;
 }
@@ -451,7 +481,7 @@ div.answerInfo.correct, .yourVotes .yourPick.correct {
 .sharingBar {
     background: none repeat scroll 0 0 transparent;
     position: absolute;
-	top: 330px;
+	top: 270px;
 	width: 100%;
 }
 .sharingBar:hover {
@@ -477,47 +507,87 @@ div.answerInfo.correct, .yourVotes .yourPick.correct {
 }
 
 @media only screen and (min-width: 440px) {
+	h2 {
+		font-size: 28px;
+	}
 	div.widgetHeader {
 		height: 320px;
+	}
+	div.widgetHeaderInfo {
+		background-position: 316px 8px;
 	}
 	.sharingBar {
 		top: 380px;
 	}
+	div#anonFields table, .VHMLogin div.buttons {
+		width: 340px;
+	}
 }
 
-@media only screen and (min-width: 520px) {
+@media only screen and (min-width: 516px) {
+	
 	div.widgetHeader {
 		height: 360px;
 	}
+	div.widgetHeaderInfo {
+		background-position: 398px 8px;
+	}
 	.sharingBar {
-		top: 420px;
+		top: 363px;
+	}
+
+}
+@media only screen and (min-width:520px) {
+	h2, h3, .callout {
+	font-size: 34px;
+	margin: 0 0 12px;
+	}
+	h3{
+		font-size: 24px;
+	}
+	.startPage div.row p.callout {
+		font-size: 34px;
+	}
+	.widgetWindow.startPage, .questionWindow {
+		font-size: 18px;
+	}
+	.sharingBar {
+		top: 403px;
 	}
 
 }
 @media only screen and (min-width:680px) {
 	div.widgetHeader {
-		background: url('../../img/afg1/1195/header_desktop.png') center center no-repeat;
+		background: url('../../img/afg1/1195/header_desktop.png') center top no-repeat;
 		background-size: 100% auto;
 		height: 220px;
 	}
+	div.widgetHeaderInfo {
+		background-position: 542px 20px;
+	}
 	.widgetWindow {
+		
+	}
+	.widgetWindow.startPage, .questionWindow {
+		padding: 0;
 	}
 	.headerEventTitle  {
 	}
 	.sharingBar {
-		top: 290px;
+		top: 267px;
 	}
 	.questionWindow .question {
 	}
 	#shareEventFB,#shareEventTwitter, .sharingBar div.socialButton.twitter, .sharingBar div.socialButton.facebook {
-		background: url('../../img/afg1/1195/sprite_social.png') top left no-repeat transparent;
 		zoom: 1;
 		filter: alpha(opacity=68);
 		opacity: .68;
+		width: 40px;
+		height: 34px;
 	}
 	#shareEventFB,#shareEventTwitter {
-		top: 20px;
-		right: 60px;
+		top: 10px;
+		right: 50px;
 		bottom: auto;
 		z-index: 20;
 		
@@ -529,23 +599,47 @@ div.answerInfo.correct, .yourVotes .yourPick.correct {
 	#shareEventTwitter, .sharingBar div.socialButton.twitter {
 		background-position: top right;
 	}
-	#shareEventTwitter {
+	#shareEventFB {
 		right: 10px;
 		bottom: auto;
+		width: 34px;
 	}
+	.button label, div.buttons button label, .buttonBar .button label {
+		font-size: 24px;
+	}
+
 }
 
 @media only screen
 and (min-width : 880px) {
-		div.widgetHeader {
+	h2 {
+	font-size: 22px;
+	}
+	h3{
+		font-size: 18px;
+	}
+	.startPage div.row p.callout {
+		font-size: 22px;
+	}
+	.widgetWindow.startPage, .questionWindow {
+		font-size: 14px;
+	}
+	div.widgetHeader {
 		height: 240px;
+	}
+	div.widgetHeaderInfo {
+		background-position: 560px 20px;
 	}
 	#shareEventFB:hover {
 	}
 	shareEventTwitter:hover {
 	}
 	.sharingBar {
-		top: 310px;
+		top: 287px;
 	}
 }
-
+@media only screen and (min-width: 960px) {
+	div.widgetHeaderInfo {
+    	background-position: 638px 20px;
+	}
+}
