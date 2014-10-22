@@ -23,7 +23,13 @@ h3 {
 
 .widget {
 	border: 0 none transparent;
-	background: url('../../img/afg1/1195/widget_bg.png') top left repeat transparent;
+	background: url('../../img/afg1/1195/widget_bg_gradient.png') top left / auto 100% repeat-x transparent;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0.33) 0%, rgba(255,255,255,0.75) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.33)), color-stop(100%,rgba(255,255,255,0.75)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0.33) 0%,rgba(255,255,255,0.75) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,0.33) 0%,rgba(255,255,255,0.75) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0.33) 0%,rgba(255,255,255,0.75) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,0.33) 0%,rgba(255,255,255,0.75) 100%);
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
@@ -186,6 +192,11 @@ div.icon.next {
 .startPage div.row p.offer {
 	text-align: center;
 	margin-top: 36px;
+}
+
+
+.startPage .buttonBar {
+    margin-top: -30px;
 }
 .widgetWindow div.row {
 	background: none transparent;
