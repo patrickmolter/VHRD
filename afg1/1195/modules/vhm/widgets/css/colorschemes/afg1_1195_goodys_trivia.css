@@ -40,6 +40,9 @@ h3 {
 	color: #03237c;
 	font-family: Arial, Helvetica, sans-serif;
 	overflow-x: hidden;
+	max-width: 800px;
+	min-height: 700px;
+	margin: 0 auto;
 }
 .link {
 	color: #03237c;
@@ -148,26 +151,22 @@ div.timeLeft {
 	display: none
 }
 div.icon.next, div.icon.prev {
-	width: 50px;
-	height: 50px;
-	background: url('../../img/fxsp/1184/icon_prev-next.png') top left no-repeat transparent;
-	zoom: 1;
-	filter: alpha(opacity=40);
-	opacity: .4
+	display: none;
+	width: 32px;
+	height: 30px;
+	background: url('../../img/afg1/1195/sprite_arrow_next.png') top left no-repeat transparent;
+	background-size: auto 30px;
 }
 div.icon.next:hover, div.icon.prev:hover {
-	zoom: 1;
-	filter: alpha(opacity=100);
-	opacity: 1
+	background-position: top right;
 }
 div.icon.next {
-	background-position: top right
 }
 .prevQuestion {
 	left: 10px
 }
 .nextQuestion {
-	right: 10px
+	right: 0px
 }
 .widgetWindow {
 	min-height: 312px;
@@ -591,6 +590,11 @@ div.answerInfo.correct, .yourVotes .yourPick.correct {
 		top: 267px;
 	}
 	.questionWindow .question {
+	}
+	div.icon.next, div.icon.prev {
+	}
+	.nextQuestion {
+    	right: 80px;
 	}
 	#shareEventFB,#shareEventTwitter, .sharingBar div.socialButton.twitter, .sharingBar div.socialButton.facebook {
 		zoom: 1;
