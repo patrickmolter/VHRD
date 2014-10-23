@@ -58,7 +58,7 @@ div.widgetHeader {
 }
 
 div.widgetHeaderInfo {
- 	background: url("../../img/afg1/1195/header_share.png") no-repeat scroll 160px 8px transparent;	
+ 	background: url("../../img/afg1/1195/header_share.png") no-repeat scroll 195px 8px transparent;	
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
@@ -86,7 +86,7 @@ div.widgetHeaderInfo {
 }
 .questionWindow .question {
 	margin: 0 0 10px;
-	height: 60px;
+	height: 78px;
 	color: #03237c;
 }
 .questionWindow .questionTextWrapper {
@@ -428,6 +428,9 @@ table.askArea {
     text-align: center;
 }
 
+.results-interstitial.row > iframe {
+    max-width: 100%;
+}
 .yourVotes {
 }
 .yourVotes div.row > * {
@@ -639,7 +642,7 @@ and (min-width : 880px) {
 		height: 240px;
 	}
 	div.widgetHeaderInfo {
-		background-position: 560px 20px;
+		background-position: 640px 20px;
 	}
 	#shareEventFB:hover {
 	}
