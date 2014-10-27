@@ -1,0 +1,663 @@
+html, body { background: none transparent !important; overflow-x: hidden;}
+
+.headerEventTitle, .widgetHeaderMisc, .headerEventDesc, .startPage .questionWindow, .startPage .gameBar, .questionWindow .prevQuestion, .widgetNav, .askAreaWrap, .widgetFooter .tagLine, .widgetSubfooter, .widgetBottom, .rowPager, td.itemCounts, td.voteDownLink, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .yourVotes .label-description, .yourVotes .label-comment-area, .resultList br, button.button.smackBox, .resultRow, .yourVotesTitle, .yourVotes {
+	display: none !important;
+}
+
+sup {
+    font-size: 0.6em;
+}
+
+h2, h3, .callout {
+	font-size: 22px;
+	font-weight: normal !important;
+	text-transform: uppercase;
+	margin: 0 0 12px;
+}
+h3 {
+	font-size: 18px;
+	color: #0000ff;	
+	margin: 0 0 36px;
+}
+
+
+.widget {
+	border: 0 none transparent;
+	background: url('../../img/afg1/1195/widget_bg_gradient.png') top left / auto 100% repeat-x transparent;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0.33) 0%, rgba(255,255,255,0.75) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.33)), color-stop(100%,rgba(255,255,255,0.75)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0.33) 0%,rgba(255,255,255,0.75) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,0.33) 0%,rgba(255,255,255,0.75) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0.33) 0%,rgba(255,255,255,0.75) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,0.33) 0%,rgba(255,255,255,0.75) 100%);
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 0 0 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #03237c;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+	max-width: 800px;
+	min-height: 700px;
+	margin: 0 auto;
+}
+.link {
+	color: #03237c;
+}
+.link:hover {
+	color: #0d4ea5;
+}
+
+div.widgetHeader {
+	background: url('../../img/afg1/1195/header_mobile.png') center top no-repeat;
+	background-size: 100% auto;
+	height: 210px;
+	max-height: 450px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+div.widgetHeaderInfo {
+ 	background: url("../../img/afg1/1195/header_share.png") no-repeat scroll 195px 8px transparent;	
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 0;
+	height: 40px;
+	min-height: 40px;
+}
+
+#shareEventFB,#shareEventTwitter, .sharingBar div.socialButton.twitter, .sharingBar div.socialButton.facebook {
+	background: url('../../img/afg1/1195/sprite_social.png') top right no-repeat transparent;
+	width: 24px;
+	height: 20px;
+	top: 5px;
+	right: 30px;
+	bottom: auto;
+	z-index: 20;
+	background-size: auto 100%;
+}
+
+#shareEventFB, .sharingBar div.socialButton.facebook {
+	background-position: top left;
+	right: 5px;
+	bottom: auto;
+	width: 20px;
+}
+.questionWindow .question {
+	margin: 0 0 10px;
+	height: 78px;
+	color: #03237c;
+}
+.questionWindow .questionTextWrapper {
+	min-height: 42px;
+	height: 42px;
+	text-align: left;
+	margin-left: 30px;
+	font-size: 16px;
+	width: auto;
+}
+.questionWindow .questionBackgroundFilter {
+	background: none transparent;
+}
+.questionWindow .questionText, .yourVotesTitle, .resultList .title {
+	display: block;
+	min-height: 42px;
+	height: auto;
+	padding: 0;
+	vertical-align: top;
+}
+.questionWindow .questionNumberWrapper {
+	width: auto;
+	top: -2px;
+}
+.questionNumber {
+	color: #0d4ea5;
+	font-size: 20px;
+}
+.questionTextWrapper .questionText p, .yourVotesTitle, .resultList .title, .resultList .title .yourScore {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.questionWindow .prevQuestion, .questionWindow .nextQuestion {
+	margin-top: 80px;
+	position: absolute;
+	z-index: 100;
+}
+div.gameBar {
+    visibility: hidden;
+    max-width: 520px;
+    margin: 0 auto;
+}
+div.timerWrapper {
+	background: none #fff;
+}
+div.timerBar {
+	background: none #ffca00;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+div.timeLeft {
+	text-shadow: none;
+	color: #0d4ea5;
+}
+
+.prevNumber, .nextNumber {
+	display: none
+}
+div.icon.next, div.icon.prev {
+	display: none;
+	width: 32px;
+	height: 30px;
+	background: url('../../img/afg1/1195/sprite_arrow_next.png') top left no-repeat transparent;
+	background-size: auto 30px;
+}
+div.icon.next:hover, div.icon.prev:hover {
+	background-position: top right;
+}
+div.icon.next {
+}
+.prevQuestion {
+	left: 10px
+}
+.nextQuestion {
+	right: 0px
+}
+.widgetWindow {
+	min-height: 312px;
+}
+.widgetWindow.startPage, .questionWindow {
+	max-width: 520px;
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.startPage div.row {
+	margin: 0 auto;
+}
+.startPage div.row p.callout {
+	font-size: 22px;
+	text-align: center !important;
+	color: #0d4ea5;
+}
+
+.startPage div.row p.offer {
+	text-align: center;
+	margin-top: 36px;
+}
+
+
+.startPage .buttonBar {
+    margin-top: -30px;
+}
+.widgetWindow div.row {
+	background: none transparent;
+	padding: 0;
+}
+div.row p {
+	font-weight: normal;
+}
+.startPage div.row p {
+    text-align: left;
+}
+div.row * {
+}
+.widgetWindow div.row>.noWrap {
+}
+div.row table {
+}
+div.row td {
+}
+div.row table.icons {
+}
+div.row table.icons td.link {
+}
+span.commentLink.link {
+}
+div.icon.voteUp, div.icon.voteUp:hover, div.icon.votedUp {
+}
+div.icon.checked {
+}
+div.icon.pick {
+	background: url('../../img/afg1/1195/sprite_checkbox.png') center bottom no-repeat transparent;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	width: 30px;
+	height: 34px;
+}
+div.icon.pick:hover {
+	background-position: center top;
+}
+.commentLink.link {
+	display: none
+}
+div.contribInfo {
+}
+div.row .thumbnail.hidden, div.row .thumbnail {
+}
+div.row .thumbnail.thumbWrapper {
+}
+div.row:hover .thumbnail.thumbWrapper {
+}
+div.row .thumbnail.hidden {
+}
+div.row .thumbnail.small {
+}
+div.row:hover .thumbnail.hidden, div.row:hover .thumbnail {
+}
+
+div.row .contribText {
+}
+div.row .contribText p {
+	font-size: 16px;
+}
+
+.contribText>span {
+}
+.contribText p.image {
+}
+.contribText img, div.row .thumbnail img {
+}
+div.row:hover .contribText img, div.row:hover .thumbnail img {
+}
+
+
+.button, div.buttons button, .buttonBar .button {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	background: none #0d4ea5;
+	border: 0 none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	color: #ffca00;
+	padding: 3px 9px;
+}
+#loginCancel.button {
+	background: none #c4c4c4;	
+	text-shadow: none;
+	margin: 5px;
+}
+.button:hover div.buttons button:hover, .buttonBar .button:hover {
+	background: #03237c
+}
+#loginCancel.button:hover {
+	background: none #444;	
+}
+.button label, div.buttons button label, .buttonBar .button label {
+	text-transform: uppercase;
+	color: #ffca00;
+	font-size: 34px;
+	line-height: 34px;
+}
+#anonSubmit label, #loginCancel label {
+	font-size: 18px;
+}
+#loginCancel.button label {
+	color: #fff;
+}
+#loginCancel.button:hover label {
+}
+.jqmOverlay {
+	border-radius: 0;
+	-ms-filter: "alpha(opacity=50)"!important;
+	filter: alpha(opacity=50)!important;
+	-moz-opacity: .5!important;
+	opacity: .5!important;
+	background: #000;
+}
+.jqmContent.noFill>*, .jqmContent div.rowAd {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background: none transparent
+}
+
+.jqmWindow {
+	top: 25% !important;
+}
+
+div.dialogContent {
+    margin: 0 auto;
+    max-width: 530px;
+	background: #fff;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+
+}
+div.dialogContent > .caption {
+	background: none #444;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	text-align: left;	
+	padding: 3px 12px;
+	box-sizing: border-box;
+	height: auto;
+}
+.jqmContent {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background: transparent;
+	overflow-x: hidden;
+	max-height: 100% !important;
+}
+
+.VHMLogin div.buttons {
+    clear: both;
+    margin-top: 40px !important;
+    text-align: left;
+    width: 240px;
+}
+
+div#anonFields table {
+    position: relative;
+	width: 240px;
+}
+
+div#anonFields td {
+	display: block;
+	box-sizing: border-box;
+}
+
+div#anonFields input, div#anonFields select {
+    display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+div#anonFields input#anonOpt {
+    display: inline-block;
+	width: auto;
+}
+#anonFields td > label {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+#anonSubmit {
+    bottom: -42px;
+    left: 5px;
+    position: absolute;
+}
+
+.terms {
+    margin: 6px auto 0 !important;
+    text-align: left;
+    width: 230px;
+}
+
+table.askArea {
+	width: 100%
+}
+.widgetFooter {
+	background: none transparent;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align:center;
+	margin: 0 auto;
+}
+.widgetFooter, .tagLine {
+	color: #fff;
+}
+.footerStats {
+	padding: 0;
+}
+/* Results */
+
+.questionWindow.results {
+    max-height: 100% !important;
+}
+
+.results-interstitial.row {
+    background: none repeat scroll 0 0 transparent;
+    text-align: center;
+}
+
+.results-interstitial.row > iframe {
+    max-width: 100%;
+}
+.yourVotes {
+}
+.yourVotes div.row > * {
+}
+
+.yourVotesTitle {
+}
+.widgetWindow .interstitial * {
+}
+.widgetWindow .yourVotes div.row, .widgetWindow .interstitial div.row {
+}
+
+.yourVotes h2.label-name {
+}
+.yourVotes h2.label-name:before {
+}
+
+.yourVotes div.row p a {
+}
+.yourVotes div.label-media {
+}
+.yourVotes div.row img {
+}
+
+.yourVotes .yourPick {
+}
+.yourVotes .text {
+}
+div.answerInfo.incorrect, .yourVotes .yourPick.incorrect {
+}
+div.answerInfo.correct, .yourVotes .yourPick.correct {
+}
+
+.resultList {
+    margin-bottom: 52px;
+}
+
+.resultList .title .yourScore {
+    display: inline-block;
+	*display: block;
+	zoom: 1;
+    font-size: 22px;
+    vertical-align: baseline;
+	margin: 0 4px;
+}
+.title .yourScorePre {
+    background: url("../../img/afg1/1195/scorepre.png") no-repeat scroll left center transparent;
+    display: inline-block;
+	*display: inline;
+	zoom: 1;
+    text-indent: -9999px;
+    width: 140px;
+}
+
+
+.yourScorePost {
+    background: url("../../img/afg1/1195/scorepost.png") no-repeat scroll left center transparent;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 220px;
+}
+.sharingBar {
+    background: none repeat scroll 0 0 transparent;
+    position: absolute;
+	top: 270px;
+	width: 100%;
+}
+.sharingBar:hover {
+}
+
+.sharingBar .shareText {
+    background: url("../../img/afg1/1195/sharetext.png") no-repeat scroll right center transparent;
+    margin-right: 10px;
+    text-indent: -9999px;
+    width: 180px;
+}
+.sharingBar div.socialButton {
+}
+.sharingBar div.socialButton:hover {
+}
+.sharingBar div.socialButton.facebook {
+}
+.sharingBar div.socialButton.facebook:hover {
+}
+.sharingBar div.socialButton.twitter {
+}
+.sharingBar div.socialButton.twitter:hover {
+}
+
+@media only screen and (min-width: 440px) {
+	h2 {
+		font-size: 28px;
+	}
+	div.widgetHeader {
+		height: 320px;
+	}
+	div.widgetHeaderInfo {
+		background-position: 316px 8px;
+	}
+	.sharingBar {
+		top: 380px;
+	}
+	div#anonFields table, .VHMLogin div.buttons {
+		width: 340px;
+	}
+}
+
+@media only screen and (min-width: 516px) {
+	
+	div.widgetHeader {
+		height: 360px;
+	}
+	div.widgetHeaderInfo {
+		background-position: 398px 8px;
+	}
+	.sharingBar {
+		top: 363px;
+	}
+
+}
+@media only screen and (min-width:520px) {
+	h2, h3, .callout {
+	font-size: 34px;
+	margin: 0 0 12px;
+	}
+	h3{
+		font-size: 24px;
+	}
+	.startPage div.row p.callout {
+		font-size: 34px;
+	}
+	.widgetWindow.startPage, .questionWindow {
+		font-size: 18px;
+	}
+	.sharingBar {
+		top: 403px;
+	}
+
+}
+@media only screen and (min-width:680px) {
+	div.widgetHeader {
+		background: url('../../img/afg1/1195/header_desktop.png') center top no-repeat;
+		background-size: 100% auto;
+		height: 220px;
+	}
+	div.widgetHeaderInfo {
+		background-position: 542px 20px;
+	}
+	.widgetWindow {
+		
+	}
+	.widgetWindow.startPage, .questionWindow {
+		padding: 0;
+	}
+	.headerEventTitle  {
+	}
+	.sharingBar {
+		top: 267px;
+	}
+	.questionWindow .question {
+	}
+	div.icon.next, div.icon.prev {
+	}
+	.nextQuestion {
+    	right: 80px;
+	}
+	#shareEventFB,#shareEventTwitter, .sharingBar div.socialButton.twitter, .sharingBar div.socialButton.facebook {
+		zoom: 1;
+		filter: alpha(opacity=68);
+		opacity: .68;
+		width: 40px;
+		height: 34px;
+	}
+	#shareEventFB,#shareEventTwitter {
+		top: 10px;
+		right: 50px;
+		bottom: auto;
+		z-index: 20;
+		
+	}
+	#shareEventFB:hover,#shareEventTwitter:hover, .sharingBar div.socialButton.twitter:hover, .sharingBar div.socialButton.facebook:hover {
+		filter: alpha(opacity=100);
+		opacity: 1;
+	}
+	#shareEventTwitter, .sharingBar div.socialButton.twitter {
+		background-position: top right;
+	}
+	#shareEventFB {
+		right: 10px;
+		bottom: auto;
+		width: 34px;
+	}
+	.button label, div.buttons button label, .buttonBar .button label {
+		font-size: 24px;
+	}
+
+}
+
+@media only screen
+and (min-width : 880px) {
+	h2 {
+	font-size: 22px;
+	}
+	h3{
+		font-size: 18px;
+	}
+	.startPage div.row p.callout {
+		font-size: 22px;
+	}
+	.widgetWindow.startPage, .questionWindow {
+		font-size: 14px;
+	}
+	div.widgetHeader {
+		height: 240px;
+	}
+	div.widgetHeaderInfo {
+		background-position: 640px 20px;
+	}
+	#shareEventFB:hover {
+	}
+	shareEventTwitter:hover {
+	}
+	.sharingBar {
+		top: 287px;
+	}
+}
+@media only screen and (min-width: 960px) {
+	div.widgetHeaderInfo {
+    	background-position: 638px 20px;
+	}
+}
