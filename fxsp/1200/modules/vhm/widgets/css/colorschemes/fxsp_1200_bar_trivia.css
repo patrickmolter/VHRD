@@ -1,0 +1,281 @@
+@import url('http://www.redgoatcreative.com/vhrd/fxsp/_old/1184/modules/vhm/widgets/css/colorschemes/fxsp_1184_trivia_personality.css');
+
+.widget {
+	padding: 30px 0;
+}
+
+
+#questionText > p {
+    text-align: center;
+}
+
+.questionWindow.results {
+	border-bottom: 1px solid #ccc;
+}
+.resultList {
+	text-align: center;
+}
+.resultList .title .yourScore {
+	vertical-align: text-bottom;
+	padding: 0;
+}
+.resultList .resultRow {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	width: 50px;
+	margin: 6px 24px;
+}
+.resultRow td {
+    display: block;
+    float: none;
+	clear: both;
+    margin: 0 auto;
+	padding: 0;
+    text-align: center;
+    width: auto;
+}
+.rankPercent {
+	color: #7f7f7f;
+	float: none;
+	clear: both;
+	margin: 0;
+}
+.yourVotes {
+	max-width: 640px;
+	padding: 20px;
+}
+.yourVotesTitle {
+    display: block;
+}
+.yourVotesTitle.resultList {
+	color: #7f7f7f;
+	font-size: 18px;
+	font-weight: bold;
+	min-height: 24px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border-bottom: 0 none transparent;
+	text-align: center !important;
+}
+
+.resultList .title {
+		margin-bottom: 24px;
+		text-align: center !important;
+	}
+	.sharingBar {
+		top: 72px;
+	}
+.yourVotes div.row > * {
+    margin: 6px 0;
+	font-size: 14px;
+	line-height: 1.3em;
+}
+
+.interstitial div.buttons {
+	display: none;
+}
+
+.interstitial #thankyou h2 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center !important;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/*FORM STYLES*/
+
+div.dialogContent > .caption {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	background: #373737;
+	text-transform: uppercase;
+	font-size: 20px;
+	height: auto;
+}
+div.icon.closeButton {
+	position: absolute;
+	top: -10px;
+	right: -3px;
+}
+
+div.buttons {
+    padding: 0;
+	text-align: left;
+	max-width: 320px;
+}
+
+.button, div.buttons button, .buttonBar .button {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border: 0 none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	color: #fff;
+	padding: 3px 9px;
+	margin: 0;
+}
+#loginCancel.button {
+	background: none #c4c4c4;	
+	text-shadow: none;
+	margin: 0;
+	border: 0 none;
+}
+.button:hover, div.buttons button:hover, .buttonBar .button:hover {
+	background: #3793ff;
+}
+#loginCancel.button:hover, #anonSubmit.button:hover {
+	background: none #373737;	
+}
+.button label, div.buttons button label, .buttonBar .button label {
+	text-transform: uppercase;
+	color: #fff;
+}
+#anonSubmit label, #loginCancel label {
+}
+#loginCancel.button label {
+	color: #fff;
+}
+#loginCancel.button:hover label {
+}
+
+
+.jqmContent {
+    border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 0;
+	max-height: 100% !important;
+}
+.jqmContent.ACCOUNT_ACCESS_EXCEEDED > div {
+
+}
+
+div.dialogContent > div.caption span {
+    font-size: 24px;
+    line-height: 1.8em;
+    margin: 0 0 18px;
+    text-align: center;
+    text-transform: uppercase;
+	display: block;
+}
+
+div.buttons .button.jqmClose {
+	background: #c4c4c4 none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	display: block;
+	margin: 0 auto;
+	text-shadow: none;
+}
+div.buttons .button.jqmClose:hover {
+	background: #3b579d none;
+}
+div.buttons .button.jqmClose:hover {
+	background-position: bottom center;
+}
+.jqmContent.ACCOUNT_ACCESS_EXCEEDED > div.buttons {
+	text-indent: 0;
+	width: auto;
+	height: auto;
+	background: none transparent;		
+}
+
+/* Entry Form */
+
+div#anonFields {
+    padding: 0;
+    text-align: center;
+	margin-bottom: 48px;
+}
+
+div#loginAgents table, div#anonFields table {
+    margin: 0 auto;
+    width: 100%;
+	max-width: 320px;
+}
+
+div#loginAgents table td, div#anonFields table td {
+	position: relative;
+	display: block;
+	padding: 0;
+}
+
+div#anonFields input, div#anonFields select {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #999;
+    display: inline-block;
+    font-size: 14px;
+    height: 36px;
+    line-height: 24px;
+    margin: 6px 0;
+    padding: 4px;
+    width: 100%;
+}
+
+div#anonFields input#anonOpt {
+    height: auto;
+    margin: 0 10px 0 0;
+    min-width: 1px;
+	width: auto;
+}
+
+
+button#anonSubmit {
+    left: 0;
+    position: absolute;
+    top: 48px;
+	background: none #3793ff;
+}
+
+.triviaWidget + button#anonSubmit {
+	top: 15px
+}
+
+.terms {
+    text-align: center;
+	color: #fff;
+}
+
+@media only screen and (min-width:288px) {
+	.yourVotesTitle.resultList {
+		font-size: 14px;
+		min-height: 18px;
+	}
+}
+@media only screen and (min-width:450px) {
+	.yourVotesTitle.resultList {
+		font-size: 18px;
+		min-height: 24px;
+	}
+	.resultList .title {
+		margin-bottom: 30px;
+	}
+	.sharingBar {
+		top: 63px;
+	}
+}
+@media only screen and (min-width: 686px) {
+	.sharingBar {
+		top: 72px;
+	}	
+}
+@media only screen
+and (min-width : 930px) {
+	.resultList .title {
+		margin-bottom: 48px;
+	}
+	.sharingBar {
+		top: 104px;
+	}
+}
