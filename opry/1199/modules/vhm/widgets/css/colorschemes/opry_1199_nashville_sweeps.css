@@ -84,14 +84,14 @@ div#sweepstakesEntryFields table td, div#anonFields table td {
 	padding: 0;
 }
 div#sweepstakesFields input {
-    border: 1px solid #ccc;
+    border: 1px solid #ccc !important;
     box-shadow: none;
     color: #999;
     display: inline-block;
     font-size: 14px;
     height: 24px;
     line-height: 24px;
-    margin: 6px 0;
+    margin: 6px 0 !important;
     min-width: 94%;
     padding: 4px;
 }
