@@ -47,7 +47,7 @@ html, body {
 }
 
 
-.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .resultRow td.voteUpLink, .rankBar, .commentLink, span.itemInfo, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar, .button.smackBox {
+.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .resultRow td.voteUpLink, .rankBar, .commentLink, span.itemInfo, div.contribInfo, .contribText > span, div.paneContent > .caption > span, #commentingArea, .sharingBar, .button.smackBox {
 	display: none !important;
 }
 
@@ -229,6 +229,20 @@ div.widgetWindow div.row * {
 	padding: 0;
 }
 
+div.widgetWindow .interstitial iframe {
+    float: none;
+    height: 400px;
+    margin: 42px auto 0;
+    max-width: 420px;
+    width: 100%;
+}
+
+
+.interstitial .buttons {
+    margin: 0 0 50px;
+    text-align: center;
+}
+
 div.row > table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -252,7 +266,8 @@ div.row table.icons {
 	float: none;
 	height: 100%;
 	width: 100%;
-	position: absolute
+	position: absolute;
+	z-index: 20;
 }
 div.row table * {
 	height: 100%;
@@ -262,7 +277,8 @@ div.row table.icons td.link {
 	margin: 0;
 	text-align: center;
 	width: 100%;
-	position: relative;
+	height: 100%;
+	position: absolute;
 	background: url('//cdn.vhmengine.com/static/images/spacer.gif')
 }
 
@@ -312,6 +328,7 @@ div.row .contribText {
 div.row .contribText p {
 	text-align: left;
 	padding: 12px 10px;
+	font-weight: normal;
 }
 
 .contribText>span {
@@ -424,6 +441,27 @@ div.widgetWindow .yourVotes div.row > * {
 	line-height: 1.3em;
 }
 
+
+div.widgetWindow .yourVotes div.row .label-media {
+    float: none;
+    text-align: center;
+    width: auto;
+}
+
+.yourVotes .label-media .thumbnailarea {
+    display: inline;
+    float: none;
+    width: auto;
+}
+
+div.widgetWindow .yourVotes div.row .mediaThumbnail {
+    display: inline;
+    float: none;
+    height: auto;
+    margin: 0 auto;
+    width: auto;
+}
+
 div.widgetWindow .yourVotes div.row div.text {
     box-sizing: border-box;
     padding: 0 10px;
@@ -442,6 +480,8 @@ div.widgetWindow .yourVotes div.row div.text {
 	margin: 6px 0;
 	font-style: normal;
 }
+
+
 
 .jqmOverlay {
 	border-radius: 0;
@@ -499,8 +539,9 @@ div.icon.closeButton {
 	-webkit-box-shadow: none;
 	color: #fff;
 	padding: 3px 9px;
+	margin: 0;
 	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;
-
+	height: 28px;
 }
 #loginCancel.button {
 	background: none #c4c4c4;	
@@ -516,8 +557,8 @@ div.icon.closeButton {
 .button label, div.buttons button label, .buttonBar .button label {
 	text-transform: uppercase;
 	color: #fff;
-	font-size: 34px;
-	line-height: 34px;
+	font-size: 24px;
+	line-height: 24px;
 }
 #anonSubmit label, #loginCancel label {
 	font-size: 18px;
@@ -629,4 +670,12 @@ and (min-width: 420px) {
 	.resultList .title br {
 		display: none;
 	}
+	.button, div.buttons button, .buttonBar .button {
+		height: 36px;
+	}
+	.button label, div.buttons button label, .buttonBar .button label {
+		font-size: 34px;
+		line-height: 34px;
+	}
+
 }
