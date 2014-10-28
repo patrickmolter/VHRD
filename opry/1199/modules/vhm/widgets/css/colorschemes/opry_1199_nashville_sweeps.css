@@ -181,7 +181,7 @@ div.icon.closeButton {
 	color: #fff;
 	padding: 3px 9px;
 	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;
-
+	height: 18px;
 }
 #loginCancel.button {
 	background: none #c4c4c4;	
