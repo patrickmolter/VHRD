@@ -398,11 +398,11 @@ div.row:hover .contribText img, div.row:hover .thumbnail img {
 }
 
 div.widgetWindow .yourVotes div.row {
-	/*background: url('/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/header_transparent_bg.png') top left repeat transparent;*/
-	background: #3f3f3f;
+	background: url('/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/header_transparent_bg.png') top left repeat transparent;
 	color: #fff;
 	height: auto;
 }
+
 
 div.widgetWindow .yourVotes {
 	max-width: 2400px;
@@ -461,13 +461,17 @@ div.widgetWindow .yourVotes div.row .mediaThumbnail {
 
 div.widgetWindow .yourVotes div.row div.text {
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0 10px 0 50px;
     text-align: left;
 }
 
+
 .yourVotes div.icon.incorrect, .yourVotes div.icon.correct {
-    float: none;
-    margin: 0 auto;
+    height: 28px;
+    left: 10px;
+    margin: -14px auto 0;
+    position: absolute;
+    top: 50%;
     width: 28px;
 }
 
@@ -485,7 +489,7 @@ div.widgetWindow .yourVotes div.row div.text {
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
-	background: #3f3f3f;
+	background: #373737;
 }
 
 div.jqmWindow.dialog {
@@ -578,7 +582,7 @@ div.buttons {
 
 
 .jqmContent {
-    background-color: #3f3f3f;
+    background-color: #373737;
     border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
