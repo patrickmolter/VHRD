@@ -156,6 +156,7 @@ div.dialogContent > .caption {
 	-webkit-border-radius: 0;
 	height: 50px;
 	margin-bottom: 0px;
+	background: #373737;
 }
 .voteCB_dialog div.dialogContent > .caption {
 	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;
