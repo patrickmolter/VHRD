@@ -407,6 +407,17 @@ div.widgetWindow .yourVotes div.row {
 div.widgetWindow .yourVotes {
 	max-width: 2400px;
 }
+
+.yourVotes h2.label-name {
+    background: none repeat scroll 0 0 #373737;
+    font-family: "Open Sans Condensed Bold";
+    font-size: 24px !important;
+    height: 50px;
+    line-height: 1.4em !important;
+    margin: 0 0 20px !important;
+    padding: 10px 0 !important;
+}
+
 .yourVotesTitle {
     display: block;
 }
