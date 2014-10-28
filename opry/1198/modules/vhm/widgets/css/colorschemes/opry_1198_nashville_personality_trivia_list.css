@@ -375,7 +375,7 @@ div.row:hover .contribText img, div.row:hover .thumbnail img {
 	width: 50px;
 }
 .resultRow table {
-	display: block;
+	display: table;
 	width: 100%;
 }
 .resultRow td {
@@ -398,9 +398,6 @@ div.row:hover .contribText img, div.row:hover .thumbnail img {
 }
 
 div.widgetWindow .yourVotes div.row {
-	display: inline-block;
-	*display: inline;
-	zoom: 1;
 	/*background: url('/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/header_transparent_bg.png') top left repeat transparent;*/
 	background: #3f3f3f;
 	color: #fff;
@@ -479,6 +476,7 @@ div.widgetWindow .yourVotes div.row div.text {
     padding: 3px;
 	margin: 6px 0;
 	font-style: normal;
+	text-align: left;
 }
 
 
@@ -487,12 +485,12 @@ div.widgetWindow .yourVotes div.row div.text {
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
-	background: #fff;
+	background: #3f3f3f;
 }
 
 div.jqmWindow.dialog {
-    background: none repeat scroll 0 0 #FFFFFF;
-	border: 10px solid #c8c8c8;
+    background: none repeat scroll 0 0 transparent;
+	border: 0 none;
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
@@ -505,8 +503,11 @@ div.jqmWindow.dialog {
 	min-height: 138px;
 }
 
+
 div.dialogContent {
-	margin: 0;
+    border: 10px solid #c8c8c8;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
 div.dialogContent > .caption {
@@ -515,6 +516,8 @@ div.dialogContent > .caption {
 	-webkit-border-radius: 0;
 	height: 50px;
 	margin-bottom: 0px;
+	width: auto;
+	padding: 10px;
 }
 .voteCB_dialog div.dialogContent > .caption {
 	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;
@@ -526,6 +529,10 @@ div.icon.closeButton {
 	position: absolute;
 	top: -10px;
 	right: -3px;
+}
+
+div.buttons {
+    padding: 0;
 }
 
 .button, div.buttons button, .buttonBar .button {
@@ -571,20 +578,26 @@ div.icon.closeButton {
 
 
 .jqmContent {
-    background-color: #fff;
+    background-color: #3f3f3f;
     border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
 	padding: 0;
+	max-height: 100% !important;
 }
 .jqmContent.ACCOUNT_ACCESS_EXCEEDED > div {
 
 }
 
 div.dialogContent > div.caption span {
+border-bottom: 1px solid #fff;
+    font-family: "Open Sans Condensed Bold",Helvetica,Arial,sans-serif;
     font-size: 24px;
-    line-height: 50px;
-	font-family: "Open Sans Condensed Light", Helvetica, Arial, sans-serif;
+    line-height: 1.1em;
+    margin: 0 0 18px;
+    text-align: center;
+    text-transform: uppercase;
+	display: block;
 }
 
 div.buttons .button.jqmClose {
@@ -612,22 +625,35 @@ div.buttons .button.jqmClose:hover {
 	background: none transparent;		
 }
 
-/* SWEEPS */
+/* Entry Form */
+
+div#anonFields {
+    padding: 10px;
+    text-align: center;
+}
+
+div#loginAgents table, div#anonFields table {
+    margin: 0 auto;
+    width: 100%;
+}
+
 div#loginAgents table td, div#anonFields table td {
 	position: relative;
 	display: block;
 	padding: 0;
 }
 div#anonFields input, div#anonFields select {
-    border: 1px solid #ccc;
+    border: 1px solid #ccc ;
     box-shadow: none;
     color: #999;
     display: inline-block;
+	*display: inline;
+	zoom: 1;
     font-size: 14px;
     height: 24px;
     line-height: 24px;
     margin: 6px 0;
-    min-width: 94%;
+    width: 94%;
     padding: 4px;
 }
 
@@ -642,11 +668,16 @@ div#anonFields input#anonOpt {
 button#anonSubmit {
     left: 0;
     position: absolute;
-    top: 27px;
+    top: 18px;
+}
+
+.triviaWidget + button#anonSubmit {
+	top: 15px
 }
 
 .terms {
     text-align: center;
+	color: #fff;
 }
 
 @media only screen
