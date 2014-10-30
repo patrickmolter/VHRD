@@ -1,12 +1,60 @@
 @import url('http://www.redgoatcreative.com/vhrd/fxsp/_old/1184/modules/vhm/widgets/css/colorschemes/fxsp_1184_trivia_personality.css');
 
+#shareEventFB, #shareEventTwitter, .headerEventTitle { 
+	display: none !important;
+}
+
+html, body {
+	background: none #000 !important;
+}
+
 .widget {
-	padding: 30px 0;
+    background: url("../../img/fxsp/1200/chalk_bg.jpg") repeat-y scroll center top #1f1f1f;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;
+	margin: 0 auto;
+	background-size: 100% 100%;
+}
+
+.widgetHeader {
+    background: url("../../img/fxsp/1200/frame_top.png") no-repeat scroll center top transparent;
+    display: block !important;
+	background-size: 100% auto;
+}
+
+
+div.widgetHeaderInfo {
+    background: url("../../img/fxsp/1200/header.png") no-repeat scroll center center transparent;
+    height: 150px !important;
+    margin: 0 8%;
+	background-size: 100% auto;
+}
+
+div#questionWindow {
+	margin: 0 8%;
+}
+
+.questionWindow .question {
+	height: 90px;
 }
 
 
 #questionText > p {
     text-align: center;
+	color: #fff;
+}
+
+.widgetWindow {
+	margin: 0 8%;
+}
+
+.widgetWindow .row {
+	margin: 0 5px 24px;
+}
+
+div.row .thumbnail.hidden {
+	background: #8a8a8a;
 }
 
 .questionWindow.results {
@@ -82,6 +130,14 @@
     text-align: center !important;
     text-transform: uppercase;
     width: 100%;
+	color: #fff;
+}
+
+.widgetFooter {
+	background: url('../../img/fxsp/1200/frame_bot.png') center bottom no-repeat transparent;
+	background-size: 100% auto;
+	height: 60px;
+	bottom: 0;
 }
 
 /*FORM STYLES*/
@@ -90,10 +146,11 @@ div.dialogContent > .caption {
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
-	background: #373737;
+	background: url("../../img/fxsp/1200/header_entry_sm.png") no-repeat scroll center top #373737;
 	text-transform: uppercase;
 	font-size: 20px;
-	height: auto;
+	height: 60px;
+	margin-bottom: 36px;
 }
 div.icon.closeButton {
 	position: absolute;
@@ -103,7 +160,7 @@ div.icon.closeButton {
 
 div.buttons {
     padding: 0;
-	text-align: left;
+	text-align: right;
 	max-width: 320px;
 }
 
@@ -145,7 +202,8 @@ div.buttons {
 
 
 .jqmContent {
-    border-radius: 0;
+    color: #fff;
+	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
 	padding: 0;
@@ -162,6 +220,7 @@ div.dialogContent > div.caption span {
     text-align: center;
     text-transform: uppercase;
 	display: block;
+	text-indent: -9999px;
 }
 
 div.buttons .button.jqmClose {
@@ -223,18 +282,19 @@ div#anonFields input, div#anonFields select {
     width: 100%;
 }
 
-div#anonFields input#anonOpt {
+div#anonFields input#anonOpt, div#anonFields input#anonOpt2 {
     height: auto;
     margin: 0 10px 0 0;
     min-width: 1px;
 	width: auto;
+	display: none;
 }
 
 
 button#anonSubmit {
     left: 0;
     position: absolute;
-    top: 48px;
+    top: 162px;
 	background: none #3793ff;
 }
 
@@ -245,6 +305,7 @@ button#anonSubmit {
 .terms {
     text-align: center;
 	color: #fff;
+	margin-top: 18px !important;
 }
 
 @media only screen and (min-width:288px) {
@@ -254,6 +315,9 @@ button#anonSubmit {
 	}
 }
 @media only screen and (min-width:450px) {
+	.widgetHeader {
+		padding-top: 42px;
+	}
 	.yourVotesTitle.resultList {
 		font-size: 18px;
 		min-height: 24px;
@@ -265,13 +329,41 @@ button#anonSubmit {
 		top: 63px;
 	}
 }
+@media only screen and (min-width: 560px) {
+	.widgetHeader {
+		padding-top: 72px;
+	}
+}
 @media only screen and (min-width: 686px) {
+	div.widgetHeaderInfo {
+		height: 240px !important;
+	}
+	.widgetHeader {
+		padding-top: 60px;
+	}
 	.sharingBar {
 		top: 72px;
-	}	
+	}
+	div.dialogContent > .caption {
+	background: url("../../img/fxsp/1200/header_entry.png") no-repeat scroll center top #373737;
+	height: 30px;
+}
+	
+}
+
+@media only screen and (min-width: 770px) {
+	div.widgetHeaderInfo {
+		height: 240px !important;
+	}
 }
 @media only screen
 and (min-width : 930px) {
+	div.widgetHeaderInfo {
+		height: 320px !important;
+	}
+	.widgetHeader {
+		padding-top: 90px;
+	}
 	.resultList .title {
 		margin-bottom: 48px;
 	}
