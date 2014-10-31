@@ -200,6 +200,9 @@ div.buttons {
 #loginCancel.button:hover label {
 }
 
+.jqmOverlay {
+	background: none #000;
+}
 
 .jqmContent {
     color: #fff;
@@ -211,6 +214,10 @@ div.buttons {
 }
 .jqmContent.ACCOUNT_ACCESS_EXCEEDED > div {
 
+}
+
+div.dialog {
+	margin-top: 20%;
 }
 
 div.dialogContent > div.caption span {
