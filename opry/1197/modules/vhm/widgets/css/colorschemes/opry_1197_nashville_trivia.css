@@ -44,6 +44,7 @@ html, body {
 	font-family: "Open Sans Condensed Light", Helvetica, Arial, sans-serif;
 	max-width: 1000px;
 	border: 10px solid #c4c4c4;
+	overflow-x: hidden;
 }
 
 
