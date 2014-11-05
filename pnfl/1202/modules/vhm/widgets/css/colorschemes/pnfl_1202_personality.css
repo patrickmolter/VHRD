@@ -1,6 +1,6 @@
 html, body { background: #fff !important; overflow-x: hidden;}
 
-.widgetHeaderMisc, .headerEventDesc, .questionWindow .prevQuestion, .questionWindow .nextQuestion, .widgetNav, .askAreaWrap, .widgetFooter .tagLine, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, div.contribInfo, .contribText > span, .commentLink, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, div.buttons .button.jqmClose, .rankBar, .yourVotes .label-description, .buttonBar, .yourVotes .label-comment-area, .yourVotes .icon, .resultList br {
+.widgetHeaderMisc, .questionWindow .prevQuestion, .questionWindow .nextQuestion, .widgetNav, .askAreaWrap, .widgetFooter .tagLine, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, div.contribInfo, .contribText > span, .commentLink, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, div.buttons .button.jqmClose, .rankBar, .yourVotes .label-description, .buttonBar, .yourVotes .label-comment-area, .yourVotes .icon, .resultList br {
 	display: none !important;
 }
 
@@ -36,13 +36,6 @@ html, body { background: #fff !important; overflow-x: hidden;}
 }
 
 .widgetHeader {
-	background: -moz-linear-gradient(left,  rgba(0,67,115,1) 0%, rgba(0,67,115,0) 75%, rgba(0,67,115,0) 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,67,115,1)), color-stop(75%,rgba(0,67,115,0)), color-stop(100%,rgba(0,67,115,0)));
-	background: -webkit-linear-gradient(left,  rgba(0,67,115,1) 0%,rgba(0,67,115,0) 75%,rgba(0,67,115,0) 100%);
-	background: -o-linear-gradient(left,  rgba(0,67,115,1) 0%,rgba(0,67,115,0) 75%,rgba(0,67,115,0) 100%);
-	background: -ms-linear-gradient(left,  rgba(0,67,115,1) 0%,rgba(0,67,115,0) 75%,rgba(0,67,115,0) 100%);
-	background: linear-gradient(to right,  rgba(0,67,115,1) 0%,rgba(0,67,115,0) 75%,rgba(0,67,115,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004373', endColorstr='#00004373',GradientType=1 );
 	
 }
 
@@ -59,11 +52,26 @@ div.widgetHeaderInfo {
 }
 
 .headerEventTitle {
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: normal;
 	text-transform: uppercase;
 	text-align: left;
-	color: #fff;
+}
+
+.headerEventDesc {
+    background: url('../../img/pnfl/1202/chevrons.png') 360px center no-repeat, -moz-linear-gradient(left,  rgba(145,207,6,1) 0%, rgba(145,207,6,1) 50%, rgba(145,207,6,0) 75%, rgba(145,207,6,0) 100%);
+	background: url('../../img/pnfl/1202/chevrons.png') 360px center no-repeat, -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(145,207,6,1)), color-stop(50%,rgba(145,207,6,1)), color-stop(75%,rgba(145,207,6,0)), color-stop(100%,rgba(145,207,6,0)));
+	background: url('../../img/pnfl/1202/chevrons.png') 360px center no-repeat, -webkit-linear-gradient(left,  rgba(145,207,6,1) 0%,rgba(145,207,6,1) 50%,rgba(145,207,6,0) 75%,rgba(145,207,6,0) 100%);
+	background: url('../../img/pnfl/1202/chevrons.png') 360px center no-repeat, -o-linear-gradient(left,  rgba(145,207,6,1) 0%,rgba(145,207,6,1) 50%,rgba(145,207,6,0) 75%,rgba(145,207,6,0) 100%);
+	background: url('../../img/pnfl/1202/chevrons.png') 360px center no-repeat, -ms-linear-gradient(left,  rgba(145,207,6,1) 0%,rgba(145,207,6,1) 50%,rgba(145,207,6,0) 75%,rgba(145,207,6,0) 100%);
+	background: url('../../img/pnfl/1202/chevrons.png') 360px center no-repeat, linear-gradient(to right,  rgba(145,207,6,1) 0%,rgba(145,207,6,1) 50%,rgba(145,207,6,0) 75%,rgba(145,207,6,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91cf06', endColorstr='#0091cf06',GradientType=1 );
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: normal;
+    padding: 3px;
 }
 
 #shareEventFB,#shareEventTwitter {
@@ -275,13 +283,13 @@ div.row:hover .thumbnail.thumbWrapper {
 	z-index: -1;
 }
 div.row .thumbnail.hidden {
-	background: none #4c4c4c
+	background: none #00AEDB
 }
 div.row .thumbnail.small {
 	width: auto;
 }
 div.row:hover .thumbnail.hidden, div.row:hover .thumbnail {
-	background: none #00AEDB
+	background: url('../../img/pnfl/1202/check_bg.png') center center no-repeat #91cf06
 }
 
 div.row .contribText {
@@ -357,6 +365,7 @@ div.widgetWindow .yourVotes div.row {
 
 div.widgetWindow .yourVotes {
 	max-width: 2400px;
+	margin-top: 36px;
 }
 
 .yourVotes h2.label-name {
@@ -366,6 +375,7 @@ div.widgetWindow .yourVotes {
     padding: 0 10px !important;
 	text-align: left;
 	font-weight: normal;
+	display: none;
 }
 
 .yourVotesTitle {
@@ -382,6 +392,7 @@ div.widgetWindow .yourVotes {
 	margin: 0;
 	border-bottom: 0 none transparent;
 	text-transform: uppercase;
+	display: none;
 }
 
 
@@ -396,6 +407,7 @@ div.widgetWindow .yourVotes div.row .label-media {
     float: none;
     text-align: center;
     width: auto;
+	display: none;
 }
 
 div.widgetWindow .yourVotes div.row p {
@@ -522,6 +534,7 @@ div.buttons {
 	background: none #c4c4c4;	
 	text-shadow: none;
 	margin: 5px;
+	visibility: hidden;
 }
 .button:hover, div.buttons button:hover, .buttonBar .button:hover {
 	background: none #91cf06;
@@ -599,10 +612,10 @@ div#anonFields {
 div#loginAgents table, div#anonFields table {
     margin: 0 auto;
     width: 100%;
+	position: relative;
 }
 
 div#loginAgents table td, div#anonFields table td {
-	position: relative;
 	display: block;
 	padding: 0;
 }
@@ -633,7 +646,7 @@ div#anonFields input#anonOpt {
 button#anonSubmit {
     left: 0;
     position: absolute;
-    top: 36px;
+    bottom: -48px;
 }
 
 .triviaWidget + button#anonSubmit {
