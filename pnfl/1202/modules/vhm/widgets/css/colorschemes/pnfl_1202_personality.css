@@ -6,11 +6,11 @@ html, body { background: #fff !important; overflow-x: hidden;}
 
 .widget {
 	border: 0 none transparent;
-	background: url("../../img/pnfl/1202/logo.png") no-repeat scroll right top #fff;
+	background: url("../../img/pnfl/1202/logo.png") no-repeat scroll center bottom #fff;
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
-	padding: 0 0 30px;
+	padding: 0 0 100px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -36,7 +36,7 @@ html, body { background: #fff !important; overflow-x: hidden;}
 }
 
 .widgetHeader {
-	
+	background: url('../../img/pnfl/1202/chevrons.png') right center no-repeat #91cf06;
 }
 
 div.widgetHeaderInfo {
@@ -44,7 +44,7 @@ div.widgetHeaderInfo {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
-    color: #4c4c4c;
+    color: #fff;
     height: auto !important;
     padding: 10px;
     position: relative;
@@ -56,16 +56,11 @@ div.widgetHeaderInfo {
 	font-weight: normal;
 	text-transform: uppercase;
 	text-align: left;
+	color: #fff;
 }
 
 .headerEventDesc {
-    background: url('../../img/pnfl/1202/chevrons.png') 360px center no-repeat, -moz-linear-gradient(left,  rgba(145,207,6,1) 0%, rgba(145,207,6,1) 50%, rgba(145,207,6,0) 75%, rgba(145,207,6,0) 100%);
-	background: url('../../img/pnfl/1202/chevrons.png') 360px center no-repeat, -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(145,207,6,1)), color-stop(50%,rgba(145,207,6,1)), color-stop(75%,rgba(145,207,6,0)), color-stop(100%,rgba(145,207,6,0)));
-	background: url('../../img/pnfl/1202/chevrons.png') 360px center no-repeat, -webkit-linear-gradient(left,  rgba(145,207,6,1) 0%,rgba(145,207,6,1) 50%,rgba(145,207,6,0) 75%,rgba(145,207,6,0) 100%);
-	background: url('../../img/pnfl/1202/chevrons.png') 360px center no-repeat, -o-linear-gradient(left,  rgba(145,207,6,1) 0%,rgba(145,207,6,1) 50%,rgba(145,207,6,0) 75%,rgba(145,207,6,0) 100%);
-	background: url('../../img/pnfl/1202/chevrons.png') 360px center no-repeat, -ms-linear-gradient(left,  rgba(145,207,6,1) 0%,rgba(145,207,6,1) 50%,rgba(145,207,6,0) 75%,rgba(145,207,6,0) 100%);
-	background: url('../../img/pnfl/1202/chevrons.png') 360px center no-repeat, linear-gradient(to right,  rgba(145,207,6,1) 0%,rgba(145,207,6,1) 50%,rgba(145,207,6,0) 75%,rgba(145,207,6,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91cf06', endColorstr='#0091cf06',GradientType=1 );
+    
     box-sizing: border-box;
     color: #fff;
     font-size: 0.8em;
@@ -152,6 +147,23 @@ div.icon.next {
 .nextQuestion {
 	right: 10px
 }
+
+
+#questionText > p {
+    padding: 0;
+}
+.questionText p.question_item_text {
+    background: none #00AEDB;
+    bottom: 20px;
+    color: #fff;
+    display: block;
+    padding: 10px 20px !important;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+	box-sizing: border-box;
+}
+
 .widgetWindow {
 	text-align: center;
 	min-height: 312px;
@@ -365,7 +377,6 @@ div.widgetWindow .yourVotes div.row {
 
 div.widgetWindow .yourVotes {
 	max-width: 2400px;
-	margin-top: 36px;
 }
 
 .yourVotes h2.label-name {
@@ -375,7 +386,6 @@ div.widgetWindow .yourVotes {
     padding: 0 10px !important;
 	text-align: left;
 	font-weight: normal;
-	display: none;
 }
 
 .yourVotesTitle {
@@ -392,7 +402,6 @@ div.widgetWindow .yourVotes {
 	margin: 0;
 	border-bottom: 0 none transparent;
 	text-transform: uppercase;
-	display: none;
 }
 
 
@@ -407,17 +416,20 @@ div.widgetWindow .yourVotes div.row .label-media {
     float: none;
     text-align: center;
     width: auto;
-	display: none;
 }
 
 div.widgetWindow .yourVotes div.row p {
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
 div.row .shareText {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+}
+
+.yourVotes .label-media {
+	display: none;
 }
 
 .yourVotes .label-media .thumbnailarea {
@@ -457,6 +469,28 @@ div.widgetWindow .yourVotes div.row div.text {
 	font-style: normal;
 	text-align: left;
 }
+
+
+.yourVotes .row a {
+    text-decoration: none;
+}
+
+
+.yourVotes .row a.button_coupon button {
+    text-align: center;
+    width: 100%;
+	margin-top: 36px;
+}
+
+
+.yourVotes .row a.button_coupon button span {
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+	font-weight: bold;
+}
+
 
 .jqmOverlay {
 	border-radius: 0;
@@ -514,7 +548,7 @@ div.buttons {
     padding: 0;
 }
 
-.button, div.buttons button, .buttonBar .button {
+.button, div.buttons button, .buttonBar .button, a.button_coupon button {
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
@@ -529,6 +563,7 @@ div.buttons {
 	filter: alpha(opacity=100);
 	opacity: 1;
 	zoom: 1;
+	cursor: pointer;
 }
 #loginCancel.button {
 	background: none #c4c4c4;	
@@ -536,12 +571,12 @@ div.buttons {
 	margin: 5px;
 	visibility: hidden;
 }
-.button:hover, div.buttons button:hover, .buttonBar .button:hover {
+.button:hover, div.buttons button:hover, .buttonBar .button:hover, .button_coupon:hover button {
 	background: none #91cf06;
 	filter: alpha(opacity=80);
 	opacity: 0.8;
 }
-.button label, div.buttons button label, .buttonBar .button label {
+.button label, div.buttons button label, .buttonBar .button label, .button_coupon button span{
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 24px;
@@ -664,7 +699,7 @@ button#anonSubmit {
 		font-size: 3em !important
 	} 
 	.questionWindow .question {
-		width: 450px;
+		height: 350px
 	}
 	.questionWindow .questionText, .yourVotesTitle, .resultList .title, .resultList .title .yourScore {
 		min-height: 42px;
