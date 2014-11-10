@@ -1,0 +1,683 @@
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+@font-face {
+	font-family: 'Open Sans Condensed Bold';
+	src: url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondBold-webfont.eot');
+	src: local('☺'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondBold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondBold-webfont.woff') format('woff'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondBold-webfont.ttf') format('truetype'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondBold-webfont.svg#OpenSans-CondBold-webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Condensed Light';
+	src: url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondLight-webfont.eot');
+	src: local('☺'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondLight-webfont.woff') format('woff'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondLight-webfont.ttf') format('truetype'),
+	url('//static.vhmengine.com/fonts/open-sans-fontfacekit/OpenSans-CondLight-webfont.svg#OpenSans-CondBold-webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+    background: none repeat scroll 0 0 transparent !important;
+}
+.widget {
+	background: none transparent;
+	color: #fff;
+	border-radius: 0 0 0 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 0;
+	min-height: 0px !important;
+	font-family: "Open Sans Condensed Light", Helvetica, Arial, sans-serif;
+	max-width: 1000px;
+	overflow-x: hidden;
+}
+
+
+.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .resultRow td.voteUpLink, .rankBar, .commentLink, span.itemInfo, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar, .button.smackBox {
+	display: none !important;
+}
+
+
+.widget table {
+    border-collapse: collapse;
+	empty-cells: hide;
+	margin: 0;
+	padding: 0;
+}
+
+.widget table tr, .widget table td {
+    margin: 0;
+    padding: 0;
+}
+
+.widgetHeader {
+    background: url('/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/header_transparent_bg.png') top left repeat transparent;
+}
+
+div.widgetHeaderInfo {
+    background: none transparent;
+    border-radius: 0;
+    height: auto;
+	padding: 10px 115px 10px 10px;
+	min-height: 20px;
+}
+
+div.headerEventTitle {
+   /* text-shadow: 0 1px 4px #999;*/
+    text-transform: uppercase;
+	line-height: 1.1em;
+	font-size: 14px;
+	border-bottom: 1px solid #fff;
+	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;
+}
+
+#shareEventTwitter, #shareEventFB, .resultsShare {
+	right: 10px;
+	bottom: auto;
+    display: block;
+    height: 41px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-indent: 9999rem;
+    width: 41px;
+	background: url("../../img/opry/1203/sprite_social.png") no-repeat scroll left top transparent;
+	z-index: 999;
+}
+
+#shareEventTwitter {
+	background-position: right top;
+	right: 60px;
+}
+
+.resultsShare {
+    display: inline-block;
+	*display: block;
+	zoom: 1;
+    margin: 0 10px;
+	text-indent: -9999px;
+}
+
+#shareEventTwitter:hover {
+	background-position: right bottom;
+}
+#shareEventFB:hover {
+	background-position: left bottom;
+}
+
+.questionWindow {
+    background: url('/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/header_transparent_bg.png') top left repeat transparent;
+	box-sizing: border-box;
+    padding: 0 55px 10px 10px;
+    width: 100%;
+}
+
+.questionWindow .question {
+	margin: 0 0 10px;
+	height: 60px;
+	line-height: 1.3em;
+	font-weight: normal;
+	color: #fff;
+}
+
+.questionNumber {
+	display: none
+}
+
+.questionWindow .questionTextWrapper {
+	min-height: 42px;
+	height: 42px;
+	text-align: left;
+}
+.questionWindow .questionBackgroundFilter {
+	background: none transparent;
+}
+.questionWindow .questionText, .yourVotesTitle, .resultList .title {
+	display: block;
+	min-height: 42px;
+	height: auto;
+	text-align: left !important;
+	padding: 0;
+	vertical-align: top;
+}
+
+.questionWindow .prevQuestion, .questionWindow .nextQuestion {
+	margin-top: 80px;
+	position: absolute;
+	z-index: 100;
+	display: none;
+}
+.prevNumber, .nextNumber {
+	display: none
+}
+.prevQuestion {
+	left: 10px
+}
+.nextQuestion {
+	right: 10px
+}
+
+div.widgetWindow {
+	text-align: center;
+	min-height: 312px;
+}
+
+div.widgetWindow div.row {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: top;
+	position: relative;
+	margin: 20px 10px;
+	max-width: 180px;
+	max-height: 180px;
+	width: 120px;
+	height: 120px;
+	padding: 0;
+	text-align: center;
+	float: none;
+	background: none transparent;
+	border-radius: 0 0 0 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;  
+	box-sizing: border-box; 
+	border: 0 solid transparent;
+	overflow: hidden;
+}
+
+div.widgetWindow div.row.resultRow table.icons.hidden, .resultRow div.contribStatus.hidden {
+	display: block !important;
+}
+
+.resultRow div.contribStatus.hidden {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 8888;
+}
+
+
+div.widgetWindow div.row * {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	float: left;
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	padding: 0;
+}
+
+div.row > table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: hide;
+	display: block;
+	border: 0px none;
+	margin: 0;
+	position: relative;
+	height: 100%;
+}
+div.row td {
+	display: block;
+	float: none;
+	clear: both;
+	margin:0;
+	padding:0;
+}
+
+div.row table.icons {
+	display: block;
+	float: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+div.row table.icons td.link {
+	display: block;
+	padding: 101% 0 0;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	height: 0;
+	position: relative;
+	background: url('//cdn.vhmengine.com/static/images/spacer.gif')
+}
+
+.icons div.icon {
+    width: 100%;
+	height: 36px;
+	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet_hover.png") no-repeat center top transparent;
+	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet.png") no-repeat center top transparent;
+}
+.icons div.icon.voteUp {
+	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet.png") no-repeat center top transparent;
+}
+
+table.icons td.link:hover div.icon.voteUp {
+	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet_hover.png") no-repeat center top transparent;
+}
+
+
+div.contribInfo {
+	display: none;
+	clear: left;
+	font-size: larger;
+	font-weight: bold;
+	display: none
+}
+div.row .thumbnail.hidden, div.row .thumbnail {
+	display: block!important;
+	height: 100%;
+	position: absolute;
+	visibility: visible;
+	width: 100%;
+	z-index: -1
+}
+div.row .thumbnail.thumbWrapper {
+	z-index: 0;
+}
+div.row:hover .thumbnail.thumbWrapper {
+	z-index: -1;
+}
+div.row .thumbnail.hidden {
+	background: none #000;
+}
+div.row .thumbnail.small {
+	width: auto;
+}
+div.row:hover .thumbnail.hidden, div.row:hover .thumbnail {
+	background: none #58146E;
+}
+
+div.row .contribText {
+	height: auto;
+	color: #fff;
+	-ms-word-break: break-word;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+div.row .contribText p {
+	display: inline-block;
+	text-align: left;
+	position: absolute;
+	z-index: -1;
+	width: 160px;
+	left: 10px;
+	bottom: 10px;
+}
+
+.contribText>span {
+	display: none!important
+}
+.contribText p.image {
+	padding: 0
+}
+.contribText img, div.row .thumbnail img {
+	height: auto;
+	max-width: 100%;
+	width: 100%;
+	zoom: 1;
+	filter: alpha(opacity=100);
+	opacity: 1
+}
+div.row:hover .contribText img, div.row:hover .thumbnail img {
+	zoom: 1;
+	filter: alpha(opacity=40);
+	opacity: .4
+}
+
+.questionWindow.results {
+	overflow: visible !important;
+	padding: 0 10px 10px;
+	max-height: 1000px !important;
+}
+.resultList {
+	text-align: center;
+}
+.resultList .title .yourScore {
+	padding: 0;
+	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;
+	vertical-align: baseline;
+}
+.resultList .resultRow {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	background: none repeat scroll 0 0 #373737;
+    color: #fff;
+    margin: 6px 24px;
+    padding: 6px 10px;
+	width: 50px;
+}
+.resultRow table {
+	display: table;
+	width: 100%;
+}
+.resultRow td {
+    display: block !important;
+    float: none !important;
+	clear: both;
+    margin: 0 auto;
+	padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+.rankPercent {
+	color: #c4c4c4;
+	float: none;
+	clear: both;
+	margin: 0;
+	width: 100%;
+}
+
+div.widgetWindow .yourVotes div.row {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	background: url('/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/header_transparent_bg.png') top left repeat transparent;
+	color: #fff;
+	height: auto;
+}
+
+div.widgetWindow .yourVotes {
+	max-width: 2400px;
+}
+.yourVotesTitle {
+    display: block;
+}
+.yourVotesTitle.resultList {
+	color: #373737;
+	font-size: 18px;
+	font-weight: bold;
+	min-height: 24px;
+	padding: 0 10px 0;
+	margin-bottom: 0;
+	border-bottom: 0 none transparent;
+	text-align: center !important;
+}
+
+.resultList .title {
+		margin-bottom: 24px;
+		color: #fff;
+		vertical-align: baseline;
+	}
+.sharingBar {
+		top: 42px;
+	}
+div.widgetWindow .yourVotes div.row > * {
+    margin: 6px 0;
+	font-size: 14px;
+	line-height: 1.3em;
+	text-align: left;
+}
+
+div.widgetWindow .yourVotes div.row div.text {
+    box-sizing: border-box;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.yourVotes div.icon.incorrect, .yourVotes div.icon.correct {
+    float: none;
+    margin: 0 auto;
+    width: 28px;
+}
+
+.yourVotes .yourPick.correct, .yourVotes .yourPick.incorrect {
+    background: none repeat scroll 0 0 #373737;
+    padding: 3px;
+	margin: 6px 0;
+	font-style: normal;
+}
+
+.jqmOverlay {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	background: #3f3f3f;
+}
+
+div.jqmWindow.dialog {
+    background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	width: 100% !important;
+	left: 0 !important;
+	margin-left: 0 !important;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	min-height: 138px;
+}
+
+
+div.dialogContent {
+    border: 10px solid #c8c8c8;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+div.dialogContent > .caption {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	height: 50px;
+	margin-bottom: 0px;
+	width: auto;
+	padding: 10px;
+}
+.voteCB_dialog div.dialogContent > .caption {
+	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	line-height: 1.6em;
+}
+
+div.icon.closeButton {
+	position: absolute;
+	top: -10px;
+	right: -3px;
+}
+
+div.buttons {
+    padding: 0;
+}
+
+.button, div.buttons button, .buttonBar .button {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	background: none #3b579d;
+	border: 0 none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	color: #fff;
+	padding: 3px 9px;
+	margin: 0;
+	font-family: "Open Sans Condensed Bold", Helvetica, Arial, sans-serif;
+	height: 28px;
+}
+#loginCancel.button {
+	background: none #c4c4c4;	
+	text-shadow: none;
+	margin: 5px;
+}
+.button:hover, div.buttons button:hover, .buttonBar .button:hover {
+	background: #E3AC00;
+}
+#loginCancel.button:hover {
+	background: none #444;	
+}
+.button label, div.buttons button label, .buttonBar .button label {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 24px;
+	line-height: 24px;
+}
+#anonSubmit label, #loginCancel label {
+	font-size: 18px;
+}
+#loginCancel.button label {
+	color: #fff;
+}
+#loginCancel.button:hover label {
+}
+
+
+.jqmContent {
+    background-color: #3f3f3f;
+    border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 0;
+	max-height: 100% !important;
+}
+.jqmContent.ACCOUNT_ACCESS_EXCEEDED > div {
+
+}
+
+div.dialogContent > div.caption span {
+border-bottom: 1px solid #fff;
+    font-family: "Open Sans Condensed Bold",Helvetica,Arial,sans-serif;
+    font-size: 24px;
+    line-height: 1.1em;
+    margin: 0 0 18px;
+    text-align: center;
+    text-transform: uppercase;
+	display: block;
+}
+
+div.buttons .button.jqmClose {
+	background: #c4c4c4 none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	display: block;
+	margin: 0 auto;
+	text-shadow: none;
+}
+div.buttons .button.jqmClose:hover {
+	background: #3b579d none;
+}
+div.buttons .button.jqmClose:hover {
+	background-position: bottom center;
+}
+.jqmContent.ACCOUNT_ACCESS_EXCEEDED > div.buttons {
+	text-indent: 0;
+	width: auto;
+	height: auto;
+	background: none transparent;		
+}
+
+/* Entry Form */
+
+div#anonFields {
+    padding: 10px;
+    text-align: center;
+}
+
+div#loginAgents table, div#anonFields table {
+    margin: 0 auto;
+    width: 100%;
+}
+
+div#loginAgents table td, div#anonFields table td {
+	position: relative;
+	display: block;
+	padding: 0;
+}
+div#anonFields input, div#anonFields select {
+    border: 1px solid #ccc ;
+    box-shadow: none;
+    color: #999;
+    display: inline-block;
+	*display: inline;
+	zoom: 1;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    margin: 6px 0;
+    width: 94%;
+    padding: 4px;
+}
+
+
+div#anonFields input#anonOpt {
+    height: auto;
+    margin: 0 10px 0 0;
+    min-width: 1px;
+}
+
+
+button#anonSubmit {
+    left: 0;
+    position: absolute;
+    top: 18px;
+}
+
+.triviaWidget + button#anonSubmit {
+	top: 15px
+}
+
+.terms {
+    text-align: center;
+	color: #fff;
+}
+
+@media only screen
+and (min-width: 420px) {
+	
+	.questionWindow .question {
+		font-size: 24px;
+	}
+	div.widgetWindow {
+		min-height: 446px;
+	}
+	div.widgetWindow div.row {
+		width: 180px;
+		height: 180px;
+	}
+
+	div.row div.contribText {
+		font-size: 32px;
+	}
+	div.widgetWindow .yourVotes div.row > * {
+		font-size: 18px;
+	}
+	.resultList .title br {
+		display: none;
+	}
+}
