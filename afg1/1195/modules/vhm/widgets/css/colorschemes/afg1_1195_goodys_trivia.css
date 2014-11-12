@@ -403,12 +403,13 @@ table.askArea {
 	width: 100%
 }
 .widgetFooter {
-	background: none transparent;
+	background: url('../../img/afg1/1195/footer_disclaimer_mobile.png') center center no-repeat transparent;
 	position: absolute;
-	bottom: 10px;
+	bottom: 0;
 	width: 100%;
 	text-align:center;
 	margin: 0 auto;
+	height: 42px;
 }
 .widgetFooter, .tagLine {
 	color: #fff;
@@ -625,7 +626,11 @@ div.answerInfo.correct, .yourVotes .yourPick.correct {
 	.button label, div.buttons button label, .buttonBar .button label {
 		font-size: 24px;
 	}
-
+	.widgetFooter {
+		background: url('../../img/afg1/1195/footer_disclaimer.png') center center no-repeat transparent;
+		height: 30px;
+	}
+	
 }
 
 @media only screen
