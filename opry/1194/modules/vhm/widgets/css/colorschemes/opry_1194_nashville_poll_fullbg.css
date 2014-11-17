@@ -239,6 +239,10 @@ table.icons td.link:hover div.icon.voteUp {
 	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet_hover.png") no-repeat center top transparent;
 }
 
+div.icon.checked {
+	background: url("../../img/opry/1194/icon_voted_tablet.png") no-repeat center top transparent;
+}
+
 .thumbWrapper.small, .thumbWrapper.orig {
 	min-height: 120px;
 	height: auto;

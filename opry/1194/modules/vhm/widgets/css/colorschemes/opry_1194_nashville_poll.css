@@ -224,15 +224,19 @@ td.voteUpLink.link {
 .icons div.icon {
     width: 100%;
 	height: 36px;
-	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet_hover.png") no-repeat center top transparent;
-	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet.png") no-repeat center top transparent;
+	background: url("../../img/opry/1194/icon_vote_tablet_hover.png") no-repeat center top transparent;
+	background: url("../../img/opry/1194/icon_vote_tablet.png") no-repeat center top transparent;
 }
 .icons div.icon.voteUp {
-	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet.png") no-repeat center top transparent;
+	background: url("../../img/opry/1194/icon_vote_tablet.png") no-repeat center top transparent;
 }
 
 table.icons td.link:hover div.icon.voteUp {
-	background: url("http://www.redgoatcreative.com/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/icon_vote_tablet_hover.png") no-repeat center top transparent;
+	background: url("../../img/opry/1194/icon_vote_tablet_hover.png") no-repeat center top transparent;
+}
+
+div.icon.checked {
+	background: url("../../img/opry/1194/icon_voted_tablet.png") no-repeat center top transparent;
 }
 
 .thumbWrapper.small, .thumbWrapper.orig {
