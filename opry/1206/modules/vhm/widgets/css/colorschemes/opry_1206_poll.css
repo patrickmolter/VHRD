@@ -21,6 +21,15 @@
 html, body {
     background: none repeat scroll 0 0 transparent !important;
 }
+
+
+a {
+    color: #fff;
+}
+a:hover {
+	color: #e3ac00;
+}
+
 .widget {
 	background: none transparent;
 	color: #fff;
@@ -35,7 +44,7 @@ html, body {
 }
 
 
-.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .resultRow td.voteUpLink, .rankBar, .commentLink, span.itemInfo, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar, .button.smackBox {
+.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .rankBar, .commentLink, span.itemInfo, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar, .button.smackBox {
 	display: none !important;
 }
 
@@ -68,7 +77,7 @@ div.headerEventTitle {
    /* text-shadow: 0 1px 4px #999;*/
     text-transform: uppercase;
 	line-height: 1.1em;
-	font-size: 14px;
+	font-size: 1.5em;
 	border-bottom: 1px solid #fff;
 	font-family: "Josefina Sans Bold", Helvetica, Arial, sans-serif;
 }
@@ -183,6 +192,7 @@ div.widgetWindow div.row {
 	-moz-box-sizing: border-box;  
 	box-sizing: border-box; 
 	border: 0 solid transparent;
+	overflow: hidden;
 }
 
 
@@ -256,7 +266,7 @@ table.icons td {
 	text-align: center;
 }
 
-td.voterLink.link {
+td.voteUpLink.link {
     left: 0;
     position: absolute;
     top: 0;
@@ -278,7 +288,7 @@ table.icons div.icon.voteUp:hover {
 	background: url("/vhrd/opry/1203/modules/vhm/widgets/img/opry/1203/icon_vote_tablet_hover.png") no-repeat center top transparent;
 }
 
-div.icon.votedUp, div.row.upVotedQues div.icon {
+div.row.upVotedQues div.icon {
 	background: url("/vhrd/opry/1203/modules/vhm/widgets/img/opry/1203/icon_voted_tablet.png") no-repeat center top transparent;
 }
 
@@ -327,112 +337,6 @@ div.row .rankScore, div.row.resultRow:hover div.contribText {
 div.widgetWindow div.row.thankYouArea {
     font-size: 1.6em;
     width: 300px;
-}
-
-.questionWindow.results {
-	overflow: visible !important;
-	padding: 0 10px 10px;
-	max-height: 1000px !important;
-}
-.resultList {
-	text-align: center;
-}
-.resultList .title .yourScore {
-	padding: 0;
-	font-family: "Josefina Sans Bold", Helvetica, Arial, sans-serif;
-	vertical-align: baseline;
-}
-.resultList .resultRow {
-	display: inline-block;
-	*display: inline;
-	zoom: 1;
-	background: none repeat scroll 0 0 #373737;
-    color: #fff;
-    margin: 6px 24px;
-    padding: 6px 10px;
-	width: 50px;
-}
-.resultRow table {
-	display: table;
-	width: 100%;
-}
-.resultRow td {
-    display: block !important;
-    float: none !important;
-	clear: both;
-    margin: 0 auto;
-	padding: 0;
-    text-align: center;
-    width: 100%;
-}
-
-
-.rankPercent {
-	color: #c4c4c4;
-	float: none;
-	clear: both;
-	margin: 0;
-	width: 100%;
-}
-
-div.widgetWindow .yourVotes div.row {
-	display: inline-block;
-	*display: inline;
-	zoom: 1;
-	background: url('/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/header_transparent_bg.png') top left repeat transparent;
-	color: #fff;
-	height: auto;
-}
-
-div.widgetWindow .yourVotes {
-	max-width: 2400px;
-}
-.yourVotesTitle {
-    display: block;
-}
-.yourVotesTitle.resultList {
-	color: #373737;
-	font-size: 18px;
-	font-weight: bold;
-	min-height: 24px;
-	padding: 0 10px 0;
-	margin-bottom: 0;
-	border-bottom: 0 none transparent;
-	text-align: center !important;
-}
-
-.resultList .title {
-		margin-bottom: 24px;
-		color: #fff;
-		vertical-align: baseline;
-	}
-.sharingBar {
-		top: 42px;
-	}
-div.widgetWindow .yourVotes div.row > * {
-    margin: 6px 0;
-	font-size: 14px;
-	line-height: 1.3em;
-	text-align: left;
-}
-
-div.widgetWindow .yourVotes div.row div.text {
-    box-sizing: border-box;
-    padding: 0 10px;
-    text-align: left;
-}
-
-.yourVotes div.icon.incorrect, .yourVotes div.icon.correct {
-    float: none;
-    margin: 0 auto;
-    width: 28px;
-}
-
-.yourVotes .yourPick.correct, .yourVotes .yourPick.incorrect {
-    background: none repeat scroll 0 0 #373737;
-    padding: 3px;
-	margin: 6px 0;
-	font-style: normal;
 }
 
 .jqmOverlay {
@@ -649,7 +553,9 @@ button#anonSubmit {
 
 @media only screen
 and (min-width: 420px) {
-	
+	div.headerEventTitle {
+		font-size: 2.0em;
+	}
 	.questionWindow .question {
 		font-size: 24px;
 	}
@@ -660,7 +566,7 @@ and (min-width: 420px) {
 		width: 180px;
 	}
 	.icons div.icon {
-		height: 314px;
+		height: 340px;
 	}
 	div.row div.contribText {
 		font-size: 1.8em;
