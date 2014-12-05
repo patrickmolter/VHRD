@@ -44,7 +44,7 @@ html, body {
 	-webkit-border-radius: 0;
 	padding: 0;
 	min-height: 0px !important;
-	font-family: "Sanchez", Helvetica, Arial, sans-serif;
+	font-family: "Sanchez", Georgia, "Times New Roman", Times, serif;
 	max-width: 1000px;
 	overflow-x: hidden;
 }
@@ -351,7 +351,7 @@ div.widgetWindow div.row.thankYouArea {
 }
 .resultList .title .yourScore {
 	padding: 0;
-	font-family: "Sanchez", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	vertical-align: baseline;
 }
 .resultList .resultRow {
@@ -455,7 +455,7 @@ div.widgetWindow .yourVotes div.row div.text {
 }
 
 div.jqmWindow {
-	font-family: "Sanchez", Helvetica, Arial, sans-serif;
+	font-family: "Sanchez", Georgia, "Times New Roman", Times, serif;
 	font-weight: normal;
 }
 
@@ -518,7 +518,7 @@ div.buttons {
 	color: #fff;
 	padding: 3px 9px;
 	margin: 0;
-	font-family: "Sanchez", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	height: 28px;
 }
 #loginCancel.button {

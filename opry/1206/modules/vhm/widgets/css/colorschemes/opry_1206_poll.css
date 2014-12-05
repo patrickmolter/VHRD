@@ -40,14 +40,14 @@ a:hover {
 	-webkit-border-radius: 0;
 	padding: 0;
 	min-height: 0px !important;
-	font-family: "Sanchez", Helvetica, Arial, sans-serif;
+	font-family: "Sanchez", Georgia, "Times New Roman", Times, serif;
 	font-weight: normal;
 	max-width: 1000px;
 	overflow-x: hidden;
 }
 
 
-.widgetNav, .askAreaWrap, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .rankBar, .commentLink, span.itemInfo, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar, .button.smackBox {
+.widgetNav, .askAreaWrap, .eventInfo, .widgetFooter, .widgetSubfooter, .widgetBottom, .rowPager, table.linksArea, td.itemCounts, td.voteDownLink, .rankBar, .commentLink, span.itemInfo, div.contribInfo, .contribText > span, div.paneContent > .caption > span, .questionCB_dialog .dialogContent .caption, #commentingArea, .sharingBar, .button.smackBox {
 	display: none !important;
 }
 
@@ -65,7 +65,8 @@ a:hover {
 }
 
 .widgetHeader {
-    background: url('/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/header_transparent_bg.png') top left repeat transparent;
+    /*background: url('/vhrd/opry/1194/modules/vhm/widgets/img/opry/1194/header_transparent_bg.png') top left repeat transparent;*/
+	height: 42px;
 }
 
 div.widgetHeaderInfo {
@@ -363,7 +364,7 @@ div.widgetWindow div.row.thankYouArea {
 }
 
 div.jqmWindow {
-	font-family: "Sanchez", Helvetica, Arial, sans-serif;
+	font-family: "Sanchez", Georgia, "Times New Roman", Times, serif;
 	font-weight: normal;
 }
 
@@ -427,7 +428,7 @@ div.buttons {
 	color: #fff;
 	padding: 3px 9px;
 	margin: 0;
-	font-family: "Sanchez", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	height: 28px;
 }
 #loginCancel.button {
