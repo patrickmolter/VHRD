@@ -6,7 +6,10 @@
     width: extend-to-zoom;
     zoom: 1.0;
 }
-@font-face {
+@import url(//fonts.googleapis.com/css?family=Montserrat);
+@import url(//fonts.googleapis.com/css?family=Sanchez);
+
+/*@font-face {
 	font-family: 'Josefina Sans Regular';
 	src: url('../../../../../fonts/josefinsans-regular-webfont.eot');
 	src: local('☺'),
@@ -28,7 +31,7 @@
 	url('../../../../../fonts/josefinsans-bold-webfont.svg#josefinsans-bold-webfont') format('svg');
 	font-weight: normal;
 	font-style: normal;
-}
+}*/
 
 html, body {
     background: none repeat scroll 0 0 transparent !important;
@@ -41,7 +44,7 @@ html, body {
 	-webkit-border-radius: 0;
 	padding: 0;
 	min-height: 0px !important;
-	font-family: "Josefina Sans Regular", Helvetica, Arial, sans-serif;
+	font-family: "Sanchez", Helvetica, Arial, sans-serif;
 	max-width: 1000px;
 	overflow-x: hidden;
 }
@@ -81,19 +84,20 @@ div.headerEventTitle {
     text-transform: uppercase;
 	line-height: 1.1em;
 	font-size: 14px;
-	border-bottom: 1px solid #fff;
-	font-family: "Josefina Sans Bold", Helvetica, Arial, sans-serif;
+	/*border-bottom: 1px solid #fff;*/
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
 #shareEventTwitter, #shareEventFB, .resultsShare {
 	right: 10px;
 	bottom: auto;
+	top: 6px;
     display: block;
-    height: 41px;
+    height: 36px;
     margin-bottom: 0;
     overflow: hidden;
     text-indent: 9999rem;
-    width: 41px;
+    width: 36px;
 	background: url("../../img/opry/1203/sprite_social.png") no-repeat scroll left top transparent;
 	z-index: 999;
 }
@@ -315,16 +319,16 @@ div.row div.contribText {
 	top: auto;
 	left: auto;
 	z-index: 0;
-	background: #fff;
-	color: #000;
+	background: #000;
+	color: #fff;
 	width: 100%;
 	height: auto;
 	font-size: 1.2em;
 }
 
 div.row:hover div.contribText {
-	color: #fff;
-	background: #58146E;
+	color: #000;
+	background: #fff;
 }
 
 div.row div.contribText p {
@@ -347,7 +351,7 @@ div.widgetWindow div.row.thankYouArea {
 }
 .resultList .title .yourScore {
 	padding: 0;
-	font-family: "Josefina Sans Bold", Helvetica, Arial, sans-serif;
+	font-family: "Sanchez", Helvetica, Arial, sans-serif;
 	vertical-align: baseline;
 }
 .resultList .resultRow {
@@ -450,6 +454,11 @@ div.widgetWindow .yourVotes div.row div.text {
 	background: #3f3f3f;
 }
 
+div.jqmWindow {
+	font-family: "Sanchez", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
 div.jqmWindow.dialog {
     background: none repeat scroll 0 0 transparent;
 	border: 0 none;
@@ -482,7 +491,7 @@ div.dialogContent > .caption {
 	padding: 10px;
 }
 .voteCB_dialog div.dialogContent > .caption {
-	font-family: "Josefina Sans Bold", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	font-size: 32px;
 	line-height: 1.6em;
 }
@@ -501,7 +510,7 @@ div.buttons {
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
-	background: none #3b579d;
+	background: none #000;
 	border: 0 none;
 	box-shadow: none;
 	-moz-box-shadow: none;
@@ -509,7 +518,7 @@ div.buttons {
 	color: #fff;
 	padding: 3px 9px;
 	margin: 0;
-	font-family: "Josefina Sans Bold", Helvetica, Arial, sans-serif;
+	font-family: "Sanchez", Helvetica, Arial, sans-serif;
 	height: 28px;
 }
 #loginCancel.button {
@@ -518,7 +527,8 @@ div.buttons {
 	margin: 5px;
 }
 .button:hover, div.buttons button:hover, .buttonBar .button:hover {
-	background: #E3AC00;
+	background: #fff;
+	color: #000;
 }
 #loginCancel.button:hover {
 	background: none #444;	
@@ -553,7 +563,7 @@ div.buttons {
 
 div.dialogContent > div.caption span {
 border-bottom: 1px solid #fff;
-    font-family: "Josefina Sans Bold",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
     font-size: 24px;
     line-height: 1.1em;
     margin: 0 0 18px;
@@ -644,7 +654,9 @@ button#anonSubmit {
 
 @media only screen
 and (min-width: 420px) {
-	
+	div.headerEventTitle {
+		font-size: 1.8em;
+	}
 	.questionWindow .question {
 		font-size: 24px;
 	}

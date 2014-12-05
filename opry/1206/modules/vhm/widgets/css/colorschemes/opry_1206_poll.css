@@ -81,19 +81,20 @@ div.headerEventTitle {
     text-transform: uppercase;
 	line-height: 1.1em;
 	font-size: 1.5em;
-	border-bottom: 1px solid #fff;
+	/*border-bottom: 1px solid #fff;*/
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
 #shareEventTwitter, #shareEventFB, .resultsShare {
 	right: 10px;
 	bottom: auto;
+	top: 6px;
     display: block;
-    height: 41px;
+    height: 36px;
     margin-bottom: 0;
     overflow: hidden;
     text-indent: 9999rem;
-    width: 41px;
+    width: 36px;
 	background: url("/vhrd/opry/1203/modules/vhm/widgets/img/opry/1203/sprite_social.png") no-repeat scroll left top transparent;
 	z-index: 999;
 }
@@ -316,16 +317,16 @@ div.row div.contribText {
 	top: auto;
 	left: auto;
 	z-index: 0;
-	background: #fff;
-	color: #000;
+	background: #000;
+	color: #fff;
 	width: 100%;
 	height: auto;
 	font-size: 1.2em;
 }
 
 div.row:hover div.contribText, div.row.resultRow.upVotedQues div.contribText, div.row.resultRow.upVotedQues:hover div.contribText, div.row.upVotedQues .rankScore {
-	color: #fff;
-	background: #58146E;
+	color: #000;
+	background: #fff;
 }
 
 div.row div.contribText p {
@@ -333,8 +334,8 @@ div.row div.contribText p {
 }
 
 div.row .rankScore, div.row.resultRow:hover div.contribText {
-	background: #fff;
-	color: #000;
+	background: #000;
+	color: #fff;
 }
 
 div.widgetWindow div.row.thankYouArea {
@@ -418,7 +419,7 @@ div.buttons {
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
-	background: none #3b579d;
+	background: none #000;
 	border: 0 none;
 	box-shadow: none;
 	-moz-box-shadow: none;
@@ -426,7 +427,7 @@ div.buttons {
 	color: #fff;
 	padding: 3px 9px;
 	margin: 0;
-	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-family: "Sanchez", Helvetica, Arial, sans-serif;
 	height: 28px;
 }
 #loginCancel.button {
@@ -435,7 +436,7 @@ div.buttons {
 	margin: 5px;
 }
 .button:hover, div.buttons button:hover, .buttonBar .button:hover {
-	background: #E3AC00;
+	background: #fff;
 }
 #loginCancel.button:hover {
 	background: none #444;	
@@ -561,7 +562,7 @@ button#anonSubmit {
 @media only screen
 and (min-width: 420px) {
 	div.headerEventTitle {
-		font-size: 2.0em;
+		font-size: 1.8em;
 	}
 	.questionWindow .question {
 		font-size: 24px;
