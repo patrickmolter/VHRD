@@ -6,7 +6,9 @@
     width: extend-to-zoom;
     zoom: 1.0;
 }
-@font-face {
+@import url(//fonts.googleapis.com/css?family=Montserrat);
+@import url(//fonts.googleapis.com/css?family=Sanchez);
+/*@font-face {
     font-family: "Josefina Sans Regular";
     font-style: normal;
     font-weight: normal;
@@ -18,7 +20,7 @@
     font-weight: normal;
     src: local("☺"), url("//static.vhmengine.com/fonts/josefinsans/josefinsans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("//static.vhmengine.com/fonts/josefinsans/josefinsans-bold-webfont.woff") format("woff"), url("//static.vhmengine.com/fonts/josefinsans/josefinsans-bold-webfont.ttf") format("truetype"), url("//static.vhmengine.com/fonts/josefinsans/josefinsans-bold-webfont.svg#josefinsans-bold-webfont") format("svg");
 }
-html, body {
+*/html, body {
     background: none repeat scroll 0 0 transparent !important;
 }
 
@@ -38,7 +40,8 @@ a:hover {
 	-webkit-border-radius: 0;
 	padding: 0;
 	min-height: 0px !important;
-	font-family: "Josefina Sans Regular", Helvetica, Arial, sans-serif;
+	font-family: "Sanchez", Helvetica, Arial, sans-serif;
+	font-weight: normal;
 	max-width: 1000px;
 	overflow-x: hidden;
 }
@@ -79,7 +82,7 @@ div.headerEventTitle {
 	line-height: 1.1em;
 	font-size: 1.5em;
 	border-bottom: 1px solid #fff;
-	font-family: "Josefina Sans Bold", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
 #shareEventTwitter, #shareEventFB, .resultsShare {
@@ -358,6 +361,11 @@ div.widgetWindow div.row.thankYouArea {
     padding: 10px;
 }
 
+div.jqmWindow {
+	font-family: "Sanchez", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
 div.jqmWindow.dialog {
     background: none repeat scroll 0 0 transparent;
 	border: 0 none;
@@ -391,7 +399,7 @@ div.dialogContent > .caption {
 	padding: 10px;
 }
 .voteCB_dialog div.dialogContent > .caption {
-	font-family: "Josefina Sans Bold", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	font-size: 32px;
 	line-height: 1.6em;
 }
@@ -418,7 +426,7 @@ div.buttons {
 	color: #fff;
 	padding: 3px 9px;
 	margin: 0;
-	font-family: "Josefina Sans Bold", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	height: 28px;
 }
 #loginCancel.button {
@@ -462,12 +470,11 @@ div.buttons {
 
 div.dialogContent > div.caption span {
 border-bottom: 1px solid #fff;
-    font-family: "Josefina Sans Bold",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
     font-size: 24px;
     line-height: 1.1em;
     margin: 0 0 18px;
     text-align: center;
-    text-transform: uppercase;
 	display: block;
 }
 
